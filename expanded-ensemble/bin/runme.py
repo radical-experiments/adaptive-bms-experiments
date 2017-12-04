@@ -9,8 +9,8 @@ import argparse, os, glob
 
 
 ## User settings
-ENSEMBLE_SIZE=1    # Number of ensemble members / pipelines
-TOTAL_ITERS=1       # Number of iterations to run current trial
+ENSEMBLE_SIZE=16    # Number of ensemble members / pipelines
+TOTAL_ITERS=5       # Number of iterations to run current trial
 SEED = 1            # Seed for stage 1
 
 
@@ -80,7 +80,7 @@ def get_pipeline(instance, iterations):
                                 '$SHARED/cucurbit_7_uril_GMX.itp'
                                 ]
 
-        if it == 0:
+        if it == 1:
             t2.copy_input_data += [ '$Pipeline_%s_Stage_%s_Task_%s/CB7G3_run.mdp'%(p.uid, s1.uid, t1.uid), 
                                     '$SHARED/CB7G3.gro']
         else:
@@ -114,13 +114,13 @@ def get_pipeline(instance, iterations):
                                 'CB7G3_pullx.xvg > $SHARED/CB7G3_run{1}_gen{0}_pullx.xvg'.format(it,instance),
                                 'CB7G3.log > $SHARED/CB7G3_run{1}_gen{0}.log'.format(it,instance)
                             ]
-        t3.download_output_data = [ 'CB7G3.xtc > CB7G3_run{1}_gen{0}.xtc'.format(it, instance),
-                                    'CB7G3.log > CB7G3_run{1}_gen{0}.log'.format(it,instance),
-                                    'CB7G3_dhdl.xvg > CB7G3_run{1}_gen{0}_dhdl.xvg'.format(it,instance),
-                                    'CB7G3_pullf.xvg > CB7G3_run{1}_gen{0}_pullf.xvg'.format(it,instance),
-                                    'CB7G3_pullx.xvg > CB7G3_run{1}_gen{0}_pullx.xvg'.format(it,instance),
-                                    'CB7G3.gro > CB7G3_run{1}_gen{0}.gro'.format(it, instance)
-                                    ]
+        #t3.download_output_data = [ 'CB7G3.xtc > CB7G3_run{1}_gen{0}.xtc'.format(it, instance),
+        #                            'CB7G3.log > CB7G3_run{1}_gen{0}.log'.format(it,instance),
+        #                            'CB7G3_dhdl.xvg > CB7G3_run{1}_gen{0}_dhdl.xvg'.format(it,instance),
+        #                            'CB7G3_pullf.xvg > CB7G3_run{1}_gen{0}_pullf.xvg'.format(it,instance),
+        #                            'CB7G3_pullx.xvg > CB7G3_run{1}_gen{0}_pullx.xvg'.format(it,instance),
+        #                            'CB7G3.gro > CB7G3_run{1}_gen{0}.gro'.format(it, instance)
+        #                            ]
 
         # Add the Task to the Stage
         s3.add_tasks(t3)
@@ -135,13 +135,14 @@ def get_pipeline(instance, iterations):
 
         # Create a Task
         t4 = Task()
-        t4.pre_exec = [ 'module load python',
+        t4.pre_exec = [ 'module load python/2.7.7-anaconda',
                         'export PYTHONPATH=/home/vivek91/modules/alchemical-analysis/alchemical_analysis:$PYTHONPATH',
                         'export PYTHONPATH=/home/vivek91/modules/alchemical-analysis:$PYTHONPATH',
                         'export PYTHONPATH=/home/vivek91/.local/lib/python2.7/site-packages:$PYTHONPATH',
                         'ln -s ../staging_area data']
         t4.executable = ['python']
-        t4.arguments = [    '--newname=CB7G3_run.mdp',
+        t4.arguments = [    'analysis_2.py',
+                            '--newname=CB7G3_run.mdp',
                             '--template=CB7G3_template.mdp',
                             '--dir=./data',
                             #'--prev_data=%s'%DATA_LOC
@@ -149,16 +150,16 @@ def get_pipeline(instance, iterations):
                             '--run={1}'.format(it, instance)
                         ]
         t4.cores = 1
-        t4.link_input_data = [  '$SHARED/analysis_2.py',
+        t4.copy_input_data = [  '$SHARED/analysis_2.py',
                                 '$SHARED/alchemical_analysis.py',
                                 '$SHARED/CB7G3_template.mdp',
                             ]
-        t4.download_output_data = [ 'analyze_1/results.txt > results_run{1}_gen{0}.txt'.format(it, instance),
-                                    'STDOUT > stdout_run{1}_gen{0}'.format(it, instance),
-                                    'STDERR > stderr_run{1}_gen{0}'.format(it, instance),
-                                    'CB7G3_run.mdp > CB7G3_run{1}_gen{0}.mdp'.format(it, instance),
-                                    'results_average.txt > results_average_run{1}_gen{0}.txt'.format(it, instance)
-                                ]
+        #t4.download_output_data = [ 'analyze_1/results.txt > results_run{1}_gen{0}.txt'.format(it, instance),
+        #                            'STDOUT > stdout_run{1}_gen{0}'.format(it, instance),
+        #                            'STDERR > stderr_run{1}_gen{0}'.format(it, instance),
+        #                            'CB7G3_run.mdp > CB7G3_run{1}_gen{0}.mdp'.format(it, instance),
+        #                            'results_average.txt > results_average_run{1}_gen{0}.txt'.format(it, instance)
+        #                        ]
 
         # Add the Task to the Stage
         s4.add_tasks(t4)
@@ -183,7 +184,7 @@ if __name__ == '__main__':
     # resource is 'local.localhost' to execute locally
     res_dict = {
 
-            'resource': 'xsede.stampede',
+            'resource': 'xsede.supermic',
             'walltime': 15,
             'cores': total_cores,
             'project': 'TG-MCB090174',
@@ -206,14 +207,14 @@ if __name__ == '__main__':
                         './cucurbit_7_uril_GMX.itp']
 
     # Create Application Manager
-    appman = AppManager()
+    appman = AppManager(port=32781)
     #appman = AppManager(port=) # if using docker, specify port here.
 
     # Assign resource manager to the Application Manager
     appman.resource_manager = rman
 
     # Assign the workflow as a set of Pipelines to the Application Manager
-    appman.assign_workflow(pipes_set)
+    appman.assign_workflow(pipelines_set)
 
     # Run the Application Manager
     appman.run()
