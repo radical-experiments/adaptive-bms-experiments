@@ -122,6 +122,7 @@ def get_pipeline(instance, iterations):
                                    'CB7G3.gro > ./output/CB7G3_run{1}_gen{0}.gro'.format(it, instance)
                                    ]
 
+
         # Add the Task to the Stage
         s3.add_tasks(t3)
 
@@ -154,12 +155,14 @@ def get_pipeline(instance, iterations):
                                 '$SHARED/alchemical_analysis.py',
                                 '$SHARED/CB7G3_template.mdp',
                             ]
+                            
         t4.download_output_data = [ 'analyze_1/results.txt > ./output/results_run{1}_gen{0}.txt'.format(it, instance),
                                    'STDOUT > ./output/stdout_run{1}_gen{0}'.format(it, instance),
                                    'STDERR > ./output/stderr_run{1}_gen{0}'.format(it, instance),
                                    'CB7G3_run.mdp > ./output/CB7G3_run{1}_gen{0}.mdp'.format(it, instance),
                                    'results_average.txt > ./output/results_average_run{1}_gen{0}.txt'.format(it, instance)
                                ]
+
 
         # Add the Task to the Stage
         s4.add_tasks(t4)
@@ -207,7 +210,7 @@ if __name__ == '__main__':
                         './cucurbit_7_uril_GMX.itp']
 
     # Create Application Manager
-    appman = AppManager()
+    appman = AppManager(port=32781)
     #appman = AppManager(port=) # if using docker, specify port here.
 
     # Assign resource manager to the Application Manager
