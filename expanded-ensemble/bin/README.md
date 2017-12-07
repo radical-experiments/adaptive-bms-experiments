@@ -9,8 +9,16 @@ Supermic has had shortest queue times. Might be best to start with the same.
 
 ## EnTK, Radical Pilot Installation
 
-* Please see the instructions at ```http://radicalentk-06.readthedocs.io/en/arch-v0.6/install.html```.
-* Note: For the current version, you will have to install RabbitMQ. The above link provides two methods in which
+```
+pip install radical.pilot
+git clone git@github.com:radical-cybertools/radical.entk.git
+cd radical.entk
+git checkout experiments/ee
+cd ..
+pip install radical.entk
+```
+* Note: For the current version, you will have to install RabbitMQ. 
+[This link](http://radicalentk-06.readthedocs.io/en/arch-v0.6/install.html) provides two methods in which
 you can install RabbitMQ.
 
 
