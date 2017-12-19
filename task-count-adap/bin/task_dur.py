@@ -4,10 +4,13 @@ import os
 # ------------------------------------------------------------------------------
 # Set default verbosity
 
-if os.environ.get('RADICAL_ENTK_VERBOSE') == None:
+if not os.environ.get('RADICAL_ENTK_VERBOSE'):
     os.environ['RADICAL_ENTK_VERBOSE'] = 'INFO'
 
-MAX_STAGES = 5
+if not os.environ.get('RADICAL_PILOT_DBURL'):
+    os.environ['RADICAL_PILOT_DBURL'] = "mongodb://138.201.86.166:27017/ee_exp_4c"
+
+MAX_STAGES = 2
 CUR_STAGE = 1
 
 
@@ -59,10 +62,10 @@ def generate_pipeline():
 
     # Add post-exec to the Stage
     s1.post_exec = {
-                        'condition': func_condition,
-                        'on_true': func_on_true,
-                        'on_false': func_on_false
-                    }
+                       'condition': func_condition,
+                       'on_true': func_on_true,
+                       'on_false': func_on_false
+                   }
 
     # Add Stage to the Pipeline
     p.add_stages(s1)    
