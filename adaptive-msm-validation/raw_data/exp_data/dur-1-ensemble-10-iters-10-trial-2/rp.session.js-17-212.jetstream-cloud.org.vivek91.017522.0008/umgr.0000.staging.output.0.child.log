@@ -1,0 +1,721 @@
+2017-12-22 14:25:30,061: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 20 2017, 18:23:56) [GCC 5.4.0 20160609]
+2017-12-22 14:25:30,061: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    :                      pid: 19415
+2017-12-22 14:25:30,062: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    :                      tid: MainThread
+2017-12-22 14:25:30,062: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2017-12-22 14:25:31,098: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : initialize umgr.0000.staging.output.0.child
+2017-12-22 14:25:31,101: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : cfg: {'agents': {},
+ u'bridges': {u'control_pubsub': {'addr_in': 'tcp://172.30.238.6:39624',
+                                  'addr_out': 'tcp://172.30.238.6:39411',
+                                  u'bulk_size': 0,
+                                  u'log_level': u'debug',
+                                  u'stall_hwm': 1},
+              u'log_pubsub': {'addr_in': 'tcp://172.30.238.6:40277',
+                              'addr_out': 'tcp://172.30.238.6:42751',
+                              u'bulk_size': 0,
+                              u'log_level': u'debug',
+                              u'stall_hwm': 1},
+              u'state_pubsub': {'addr_in': 'tcp://172.30.238.6:45995',
+                                'addr_out': 'tcp://172.30.238.6:36314',
+                                u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1},
+              u'umgr_reschedule_pubsub': {'addr_in': 'tcp://172.30.238.6:43948',
+                                          'addr_out': 'tcp://172.30.238.6:40198',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1},
+              u'umgr_scheduling_queue': {'addr_in': 'tcp://172.30.238.6:38091',
+                                         'addr_out': 'tcp://172.30.238.6:40345',
+                                         u'bulk_size': 0,
+                                         u'log_level': u'debug',
+                                         u'stall_hwm': 1},
+              u'umgr_staging_input_queue': {'addr_in': 'tcp://172.30.238.6:46792',
+                                            'addr_out': 'tcp://172.30.238.6:46640',
+                                            u'bulk_size': 0,
+                                            u'log_level': u'debug',
+                                            u'stall_hwm': 1},
+              u'umgr_staging_output_queue': {'addr_in': 'tcp://172.30.238.6:41377',
+                                             'addr_out': 'tcp://172.30.238.6:40826',
+                                             u'bulk_size': 0,
+                                             u'log_level': u'debug',
+                                             u'stall_hwm': 1},
+              u'umgr_unschedule_pubsub': {'addr_in': 'tcp://172.30.238.6:44227',
+                                          'addr_out': 'tcp://172.30.238.6:42157',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1}},
+ u'bulk_collection_size': 100,
+ u'bulk_collection_time': 1.0,
+ 'cname': u'UMGRStagingOutputComponent',
+ u'components': {},
+ u'count': 1,
+ u'db_poll_sleeptime': 1.0,
+ 'number': 0,
+ 'owner': 'umgr.0000',
+ u'scheduler': u'round_robin',
+ 'uid': 'umgr.0000'}
+2017-12-22 14:25:31,101: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : start components: {}
+2017-12-22 14:25:31,101: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:31,101: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : START: umgr.0000.staging.output.0.child register publisher log_pubsub
+2017-12-22 14:25:31,101: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : using addr tcp://172.30.238.6:40277 for pubsub log_pubsub
+2017-12-22 14:25:31,103: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0004
+2017-12-22 14:25:31,103: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:31,103: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : START: umgr.0000.staging.output.0.child register publisher state_pubsub
+2017-12-22 14:25:31,104: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : using addr tcp://172.30.238.6:45995 for pubsub state_pubsub
+2017-12-22 14:25:31,107: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0004
+2017-12-22 14:25:31,107: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:31,107: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : START: umgr.0000.staging.output.0.child register publisher control_pubsub
+2017-12-22 14:25:31,107: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : using addr tcp://172.30.238.6:39624 for pubsub control_pubsub
+2017-12-22 14:25:31,108: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0004
+2017-12-22 14:25:31,108: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:31,108: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : START: umgr.0000.staging.output.0.child register subscriber umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb
+2017-12-22 14:25:31,109: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : using addr tcp://172.30.238.6:39411 for pubsub control_pubsub
+2017-12-22 14:25:31,110: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : parent name: umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb
+2017-12-22 14:25:31,110: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : start thread
+2017-12-22 14:25:31,111: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb.thread
+2017-12-22 14:25:31,112: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2017-12-22 14:25:31,112: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:31,112: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-12-22 14:25:31,113: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2017-12-22 14:25:31,113: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb.thread] alive
+2017-12-22 14:25:31,114: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : get msg: alive
+2017-12-22 14:25:31,114: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:31,114: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-12-22 14:25:31,114: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : child thread umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb started
+2017-12-22 14:25:31,114: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : umgr.0000.staging.output.0.child registered control_pubsub subscriber umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb
+2017-12-22 14:25:31,114: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:31,114: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : using addr tcp://172.30.238.6:40826 for input umgr_staging_output_queue
+2017-12-22 14:25:31,116: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : registered input umgr.0000.staging.output.0.child.work.UMGR_STAGING_OUTPUT_PENDING
+2017-12-22 14:25:31,116: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : START: umgr.0000.staging.output.0.child register input UMGR_STAGING_OUTPUT_PENDING: umgr.0000.staging.output.0.child.work.UMGR_STAGING_OUTPUT_PENDING
+2017-12-22 14:25:31,116: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : registered worker work [UMGR_STAGING_OUTPUT_PENDING]
+2017-12-22 14:25:31,116: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : child (me) initializing
+2017-12-22 14:25:31,116: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : parent name: umgr.0000.staging.output.0.child.watch
+2017-12-22 14:25:31,116: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : start thread
+2017-12-22 14:25:31,117: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: DEBUG   : child name: umgr.0000.staging.output.0.child.watch.thread
+2017-12-22 14:25:31,117: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : child (me) initializing
+2017-12-22 14:25:31,117: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:31,118: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-12-22 14:25:31,118: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : send alive
+2017-12-22 14:25:31,119: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : put message: [umgr.0000.staging.output.0.child.watch.thread] alive
+2017-12-22 14:25:31,120: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : get msg: alive
+2017-12-22 14:25:31,120: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:31,120: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-12-22 14:25:31,120: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : child thread umgr.0000.staging.output.0.child.watch started
+2017-12-22 14:25:31,120: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : child (me) is alive
+2017-12-22 14:25:31,120: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : send alive
+2017-12-22 14:25:31,120: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : send message: [umgr.0000.staging.output.0.child] alive
+2017-12-22 14:25:33,715: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : command ignored: add_pilots
+2017-12-22 14:26:47,944: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000004)
+2017-12-22 14:26:47,944: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000000)
+2017-12-22 14:26:47,944: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000006)
+2017-12-22 14:26:47,944: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000007)
+2017-12-22 14:26:47,945: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000002)
+2017-12-22 14:26:47,945: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000003)
+2017-12-22 14:26:47,945: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 6 [False, True]
+2017-12-22 14:26:47,945: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 6 [True, True]
+2017-12-22 14:26:47,945: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000004 [DONE]
+2017-12-22 14:26:47,945: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000000 [DONE]
+2017-12-22 14:26:47,945: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000006 [DONE]
+2017-12-22 14:26:47,945: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000007 [DONE]
+2017-12-22 14:26:47,945: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000002 [DONE]
+2017-12-22 14:26:47,945: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000003 [DONE]
+2017-12-22 14:26:49,092: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000001)
+2017-12-22 14:26:49,092: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000005)
+2017-12-22 14:26:49,092: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000008)
+2017-12-22 14:26:49,092: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 3 [False, True]
+2017-12-22 14:26:49,092: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 3 [True, True]
+2017-12-22 14:26:49,093: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000001 [DONE]
+2017-12-22 14:26:49,093: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000005 [DONE]
+2017-12-22 14:26:49,093: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000008 [DONE]
+2017-12-22 14:26:50,240: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000009)
+2017-12-22 14:26:50,240: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:26:50,240: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:26:50,241: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000009 [DONE]
+2017-12-22 14:27:01,734: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000010)
+2017-12-22 14:27:01,734: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:27:03,486: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: microstate_info.txt
+2017-12-22 14:27:03,486: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/microstate_info-0.txt
+2017-12-22 14:27:03,486: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- microstate_info.txt (<type 'str'>)
+2017-12-22 14:27:03,486: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    microstate_info.txt
+2017-12-22 14:27:03,487: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:27:03,487: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000010/
+2017-12-22 14:27:03,488: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000010/microstate_info.txt
+2017-12-22 14:27:03,488: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/microstate_info-0.txt (<type 'str'>)
+2017-12-22 14:27:03,488: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/microstate_info-0.txt
+2017-12-22 14:27:03,488: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:27:03,488: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:27:03,488: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-0.txt
+2017-12-22 14:27:03,488: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000010/microstate_info.txt
+2017-12-22 14:27:03,489: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-0.txt
+2017-12-22 14:27:04,645: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: macrostate_info.txt
+2017-12-22 14:27:04,645: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/macrostate_info-0.txt
+2017-12-22 14:27:04,645: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- macrostate_info.txt (<type 'str'>)
+2017-12-22 14:27:04,645: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    macrostate_info.txt
+2017-12-22 14:27:04,645: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:27:04,645: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000010/
+2017-12-22 14:27:04,645: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000010/macrostate_info.txt
+2017-12-22 14:27:04,645: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/macrostate_info-0.txt (<type 'str'>)
+2017-12-22 14:27:04,645: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/macrostate_info-0.txt
+2017-12-22 14:27:04,645: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:27:04,645: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:27:04,646: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-0.txt
+2017-12-22 14:27:04,646: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000010/macrostate_info.txt
+2017-12-22 14:27:04,646: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-0.txt
+2017-12-22 14:27:05,047: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:27:05,048: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000010 [DONE]
+2017-12-22 14:28:17,851: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000019)
+2017-12-22 14:28:17,851: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000012)
+2017-12-22 14:28:17,851: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 2 [False, True]
+2017-12-22 14:28:17,852: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 2 [True, True]
+2017-12-22 14:28:17,852: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000019 [DONE]
+2017-12-22 14:28:17,852: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000012 [DONE]
+2017-12-22 14:28:19,105: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000014)
+2017-12-22 14:28:19,105: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000011)
+2017-12-22 14:28:19,105: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000016)
+2017-12-22 14:28:19,105: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000015)
+2017-12-22 14:28:19,105: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000020)
+2017-12-22 14:28:19,105: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 5 [False, True]
+2017-12-22 14:28:19,106: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 5 [True, True]
+2017-12-22 14:28:19,107: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000014 [DONE]
+2017-12-22 14:28:19,107: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000011 [DONE]
+2017-12-22 14:28:19,107: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000016 [DONE]
+2017-12-22 14:28:19,107: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000015 [DONE]
+2017-12-22 14:28:19,108: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000020 [DONE]
+2017-12-22 14:28:20,304: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000018)
+2017-12-22 14:28:20,304: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000017)
+2017-12-22 14:28:20,304: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000013)
+2017-12-22 14:28:20,304: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 3 [False, True]
+2017-12-22 14:28:20,305: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 3 [True, True]
+2017-12-22 14:28:20,306: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000018 [DONE]
+2017-12-22 14:28:20,306: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000017 [DONE]
+2017-12-22 14:28:20,306: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000013 [DONE]
+2017-12-22 14:28:31,868: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000021)
+2017-12-22 14:28:31,868: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:28:31,870: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: microstate_info.txt
+2017-12-22 14:28:31,870: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/microstate_info-1.txt
+2017-12-22 14:28:31,870: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- microstate_info.txt (<type 'str'>)
+2017-12-22 14:28:31,870: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    microstate_info.txt
+2017-12-22 14:28:31,870: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:28:31,871: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000021/
+2017-12-22 14:28:31,871: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000021/microstate_info.txt
+2017-12-22 14:28:31,871: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/microstate_info-1.txt (<type 'str'>)
+2017-12-22 14:28:31,871: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/microstate_info-1.txt
+2017-12-22 14:28:31,871: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:28:31,871: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:28:31,872: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-1.txt
+2017-12-22 14:28:31,872: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000021/microstate_info.txt
+2017-12-22 14:28:31,872: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-1.txt
+2017-12-22 14:28:32,277: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: macrostate_info.txt
+2017-12-22 14:28:32,277: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/macrostate_info-1.txt
+2017-12-22 14:28:32,277: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- macrostate_info.txt (<type 'str'>)
+2017-12-22 14:28:32,277: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    macrostate_info.txt
+2017-12-22 14:28:32,277: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:28:32,278: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000021/
+2017-12-22 14:28:32,278: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000021/macrostate_info.txt
+2017-12-22 14:28:32,278: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/macrostate_info-1.txt (<type 'str'>)
+2017-12-22 14:28:32,278: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/macrostate_info-1.txt
+2017-12-22 14:28:32,278: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:28:32,278: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:28:32,278: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-1.txt
+2017-12-22 14:28:32,279: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000021/macrostate_info.txt
+2017-12-22 14:28:32,279: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-1.txt
+2017-12-22 14:28:32,688: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:28:32,691: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000021 [DONE]
+2017-12-22 14:29:46,587: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000026)
+2017-12-22 14:29:46,587: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000031)
+2017-12-22 14:29:46,587: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000027)
+2017-12-22 14:29:46,587: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000022)
+2017-12-22 14:29:46,587: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000029)
+2017-12-22 14:29:46,587: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000024)
+2017-12-22 14:29:46,588: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000028)
+2017-12-22 14:29:46,588: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 7 [False, True]
+2017-12-22 14:29:46,588: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 7 [True, True]
+2017-12-22 14:29:46,588: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000026 [DONE]
+2017-12-22 14:29:46,588: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000031 [DONE]
+2017-12-22 14:29:46,588: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000027 [DONE]
+2017-12-22 14:29:46,588: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000022 [DONE]
+2017-12-22 14:29:46,588: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000029 [DONE]
+2017-12-22 14:29:46,588: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000024 [DONE]
+2017-12-22 14:29:46,588: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000028 [DONE]
+2017-12-22 14:29:47,831: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000023)
+2017-12-22 14:29:47,831: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000025)
+2017-12-22 14:29:47,831: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000030)
+2017-12-22 14:29:47,832: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 3 [False, True]
+2017-12-22 14:29:47,832: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 3 [True, True]
+2017-12-22 14:29:47,832: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000023 [DONE]
+2017-12-22 14:29:47,832: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000025 [DONE]
+2017-12-22 14:29:47,832: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000030 [DONE]
+2017-12-22 14:29:59,897: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000032)
+2017-12-22 14:29:59,897: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:29:59,900: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: microstate_info.txt
+2017-12-22 14:29:59,900: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/microstate_info-2.txt
+2017-12-22 14:29:59,900: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- microstate_info.txt (<type 'str'>)
+2017-12-22 14:29:59,901: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    microstate_info.txt
+2017-12-22 14:29:59,901: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:29:59,901: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000032/
+2017-12-22 14:29:59,901: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000032/microstate_info.txt
+2017-12-22 14:29:59,901: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/microstate_info-2.txt (<type 'str'>)
+2017-12-22 14:29:59,901: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/microstate_info-2.txt
+2017-12-22 14:29:59,901: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:29:59,902: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:29:59,902: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-2.txt
+2017-12-22 14:29:59,902: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000032/microstate_info.txt
+2017-12-22 14:29:59,902: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-2.txt
+2017-12-22 14:30:00,309: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: macrostate_info.txt
+2017-12-22 14:30:00,309: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/macrostate_info-2.txt
+2017-12-22 14:30:00,309: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- macrostate_info.txt (<type 'str'>)
+2017-12-22 14:30:00,309: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    macrostate_info.txt
+2017-12-22 14:30:00,309: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:30:00,309: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000032/
+2017-12-22 14:30:00,310: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000032/macrostate_info.txt
+2017-12-22 14:30:00,310: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/macrostate_info-2.txt (<type 'str'>)
+2017-12-22 14:30:00,310: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/macrostate_info-2.txt
+2017-12-22 14:30:00,310: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:30:00,310: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:30:00,310: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-2.txt
+2017-12-22 14:30:00,311: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000032/macrostate_info.txt
+2017-12-22 14:30:00,311: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-2.txt
+2017-12-22 14:30:00,724: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:30:00,727: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000032 [DONE]
+2017-12-22 14:31:13,043: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000034)
+2017-12-22 14:31:13,043: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000033)
+2017-12-22 14:31:13,043: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 2 [False, True]
+2017-12-22 14:31:13,044: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 2 [True, True]
+2017-12-22 14:31:13,044: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000034 [DONE]
+2017-12-22 14:31:13,044: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000033 [DONE]
+2017-12-22 14:31:14,258: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000041)
+2017-12-22 14:31:14,258: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:14,258: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:14,259: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000041 [DONE]
+2017-12-22 14:31:15,618: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000039)
+2017-12-22 14:31:15,619: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000035)
+2017-12-22 14:31:15,619: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000038)
+2017-12-22 14:31:15,619: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000037)
+2017-12-22 14:31:15,619: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000042)
+2017-12-22 14:31:15,619: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000040)
+2017-12-22 14:31:15,619: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 6 [False, True]
+2017-12-22 14:31:15,619: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 6 [True, True]
+2017-12-22 14:31:15,620: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000039 [DONE]
+2017-12-22 14:31:15,620: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000035 [DONE]
+2017-12-22 14:31:15,620: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000038 [DONE]
+2017-12-22 14:31:15,620: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000037 [DONE]
+2017-12-22 14:31:15,620: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000042 [DONE]
+2017-12-22 14:31:15,620: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000040 [DONE]
+2017-12-22 14:31:16,846: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000036)
+2017-12-22 14:31:16,846: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:16,846: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:16,846: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000036 [DONE]
+2017-12-22 14:31:28,127: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000043)
+2017-12-22 14:31:28,127: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:28,128: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: microstate_info.txt
+2017-12-22 14:31:28,128: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/microstate_info-3.txt
+2017-12-22 14:31:28,128: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- microstate_info.txt (<type 'str'>)
+2017-12-22 14:31:28,128: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    microstate_info.txt
+2017-12-22 14:31:28,128: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:31:28,128: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000043/
+2017-12-22 14:31:28,129: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000043/microstate_info.txt
+2017-12-22 14:31:28,129: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/microstate_info-3.txt (<type 'str'>)
+2017-12-22 14:31:28,129: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/microstate_info-3.txt
+2017-12-22 14:31:28,129: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:31:28,129: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:31:28,129: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-3.txt
+2017-12-22 14:31:28,129: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000043/microstate_info.txt
+2017-12-22 14:31:28,129: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-3.txt
+2017-12-22 14:31:28,533: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: macrostate_info.txt
+2017-12-22 14:31:28,533: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/macrostate_info-3.txt
+2017-12-22 14:31:28,533: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- macrostate_info.txt (<type 'str'>)
+2017-12-22 14:31:28,534: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    macrostate_info.txt
+2017-12-22 14:31:28,534: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:31:28,534: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000043/
+2017-12-22 14:31:28,534: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000043/macrostate_info.txt
+2017-12-22 14:31:28,534: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/macrostate_info-3.txt (<type 'str'>)
+2017-12-22 14:31:28,535: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/macrostate_info-3.txt
+2017-12-22 14:31:28,535: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:31:28,535: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:31:28,535: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-3.txt
+2017-12-22 14:31:28,535: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000043/macrostate_info.txt
+2017-12-22 14:31:28,535: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-3.txt
+2017-12-22 14:31:28,946: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:28,946: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000043 [DONE]
+2017-12-22 14:32:40,815: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000045)
+2017-12-22 14:32:40,815: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000044)
+2017-12-22 14:32:40,815: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 2 [False, True]
+2017-12-22 14:32:40,816: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 2 [True, True]
+2017-12-22 14:32:40,816: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000045 [DONE]
+2017-12-22 14:32:40,816: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000044 [DONE]
+2017-12-22 14:32:42,149: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000051)
+2017-12-22 14:32:42,149: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000053)
+2017-12-22 14:32:42,150: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000049)
+2017-12-22 14:32:42,150: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000052)
+2017-12-22 14:32:42,150: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000046)
+2017-12-22 14:32:42,150: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 5 [False, True]
+2017-12-22 14:32:42,150: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 5 [True, True]
+2017-12-22 14:32:42,151: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000051 [DONE]
+2017-12-22 14:32:42,151: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000053 [DONE]
+2017-12-22 14:32:42,151: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000049 [DONE]
+2017-12-22 14:32:42,151: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000052 [DONE]
+2017-12-22 14:32:42,151: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000046 [DONE]
+2017-12-22 14:32:43,394: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000047)
+2017-12-22 14:32:43,394: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000050)
+2017-12-22 14:32:43,394: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000048)
+2017-12-22 14:32:43,394: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 3 [False, True]
+2017-12-22 14:32:43,395: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 3 [True, True]
+2017-12-22 14:32:43,395: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000047 [DONE]
+2017-12-22 14:32:43,395: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000050 [DONE]
+2017-12-22 14:32:43,395: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000048 [DONE]
+2017-12-22 14:32:54,639: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000054)
+2017-12-22 14:32:54,639: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:32:54,640: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: microstate_info.txt
+2017-12-22 14:32:54,640: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/microstate_info-4.txt
+2017-12-22 14:32:54,640: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- microstate_info.txt (<type 'str'>)
+2017-12-22 14:32:54,640: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    microstate_info.txt
+2017-12-22 14:32:54,640: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:32:54,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000054/
+2017-12-22 14:32:54,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000054/microstate_info.txt
+2017-12-22 14:32:54,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/microstate_info-4.txt (<type 'str'>)
+2017-12-22 14:32:54,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/microstate_info-4.txt
+2017-12-22 14:32:54,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:32:54,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:32:54,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-4.txt
+2017-12-22 14:32:54,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000054/microstate_info.txt
+2017-12-22 14:32:54,642: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-4.txt
+2017-12-22 14:32:55,088: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: macrostate_info.txt
+2017-12-22 14:32:55,089: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/macrostate_info-4.txt
+2017-12-22 14:32:55,089: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- macrostate_info.txt (<type 'str'>)
+2017-12-22 14:32:55,089: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    macrostate_info.txt
+2017-12-22 14:32:55,089: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:32:55,089: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000054/
+2017-12-22 14:32:55,089: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000054/macrostate_info.txt
+2017-12-22 14:32:55,090: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/macrostate_info-4.txt (<type 'str'>)
+2017-12-22 14:32:55,090: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/macrostate_info-4.txt
+2017-12-22 14:32:55,090: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:32:55,090: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:32:55,090: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-4.txt
+2017-12-22 14:32:55,090: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000054/macrostate_info.txt
+2017-12-22 14:32:55,090: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-4.txt
+2017-12-22 14:32:55,533: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:32:55,534: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000054 [DONE]
+2017-12-22 14:34:08,885: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000063)
+2017-12-22 14:34:08,885: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000064)
+2017-12-22 14:34:08,885: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000061)
+2017-12-22 14:34:08,885: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000056)
+2017-12-22 14:34:08,885: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000059)
+2017-12-22 14:34:08,885: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 5 [False, True]
+2017-12-22 14:34:08,885: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 5 [True, True]
+2017-12-22 14:34:08,886: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000063 [DONE]
+2017-12-22 14:34:08,886: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000064 [DONE]
+2017-12-22 14:34:08,886: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000061 [DONE]
+2017-12-22 14:34:08,886: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000056 [DONE]
+2017-12-22 14:34:08,886: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000059 [DONE]
+2017-12-22 14:34:10,330: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000055)
+2017-12-22 14:34:10,330: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000058)
+2017-12-22 14:34:10,330: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000057)
+2017-12-22 14:34:10,330: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000062)
+2017-12-22 14:34:10,330: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000060)
+2017-12-22 14:34:10,330: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 5 [False, True]
+2017-12-22 14:34:10,331: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 5 [True, True]
+2017-12-22 14:34:10,331: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000055 [DONE]
+2017-12-22 14:34:10,331: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000058 [DONE]
+2017-12-22 14:34:10,331: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000057 [DONE]
+2017-12-22 14:34:10,331: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000062 [DONE]
+2017-12-22 14:34:10,331: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000060 [DONE]
+2017-12-22 14:34:23,341: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000065)
+2017-12-22 14:34:23,342: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:34:23,342: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: microstate_info.txt
+2017-12-22 14:34:23,342: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/microstate_info-5.txt
+2017-12-22 14:34:23,342: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- microstate_info.txt (<type 'str'>)
+2017-12-22 14:34:23,342: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    microstate_info.txt
+2017-12-22 14:34:23,342: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:34:23,342: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000065/
+2017-12-22 14:34:23,342: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000065/microstate_info.txt
+2017-12-22 14:34:23,342: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/microstate_info-5.txt (<type 'str'>)
+2017-12-22 14:34:23,342: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/microstate_info-5.txt
+2017-12-22 14:34:23,343: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:34:23,343: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:34:23,343: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-5.txt
+2017-12-22 14:34:23,343: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000065/microstate_info.txt
+2017-12-22 14:34:23,343: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-5.txt
+2017-12-22 14:34:23,744: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: macrostate_info.txt
+2017-12-22 14:34:23,744: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/macrostate_info-5.txt
+2017-12-22 14:34:23,744: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- macrostate_info.txt (<type 'str'>)
+2017-12-22 14:34:23,744: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    macrostate_info.txt
+2017-12-22 14:34:23,744: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:34:23,744: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000065/
+2017-12-22 14:34:23,745: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000065/macrostate_info.txt
+2017-12-22 14:34:23,745: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/macrostate_info-5.txt (<type 'str'>)
+2017-12-22 14:34:23,745: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/macrostate_info-5.txt
+2017-12-22 14:34:23,745: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:34:23,745: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:34:23,745: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-5.txt
+2017-12-22 14:34:23,745: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000065/macrostate_info.txt
+2017-12-22 14:34:23,746: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-5.txt
+2017-12-22 14:34:24,147: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:34:24,148: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000065 [DONE]
+2017-12-22 14:35:36,459: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000067)
+2017-12-22 14:35:36,459: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000070)
+2017-12-22 14:35:36,459: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000071)
+2017-12-22 14:35:36,459: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000066)
+2017-12-22 14:35:36,459: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 4 [False, True]
+2017-12-22 14:35:36,459: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 4 [True, True]
+2017-12-22 14:35:36,459: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000067 [DONE]
+2017-12-22 14:35:36,459: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000070 [DONE]
+2017-12-22 14:35:36,460: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000071 [DONE]
+2017-12-22 14:35:36,460: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000066 [DONE]
+2017-12-22 14:35:37,843: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000072)
+2017-12-22 14:35:37,843: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000074)
+2017-12-22 14:35:37,843: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000075)
+2017-12-22 14:35:37,843: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000073)
+2017-12-22 14:35:37,843: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 4 [False, True]
+2017-12-22 14:35:37,843: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 4 [True, True]
+2017-12-22 14:35:37,844: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000072 [DONE]
+2017-12-22 14:35:37,844: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000074 [DONE]
+2017-12-22 14:35:37,844: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000075 [DONE]
+2017-12-22 14:35:37,844: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000073 [DONE]
+2017-12-22 14:35:39,202: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000068)
+2017-12-22 14:35:39,202: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000069)
+2017-12-22 14:35:39,202: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 2 [False, True]
+2017-12-22 14:35:39,202: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 2 [True, True]
+2017-12-22 14:35:39,202: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000068 [DONE]
+2017-12-22 14:35:39,203: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000069 [DONE]
+2017-12-22 14:35:51,413: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000076)
+2017-12-22 14:35:51,413: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:35:51,414: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: microstate_info.txt
+2017-12-22 14:35:51,414: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/microstate_info-6.txt
+2017-12-22 14:35:51,414: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- microstate_info.txt (<type 'str'>)
+2017-12-22 14:35:51,414: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    microstate_info.txt
+2017-12-22 14:35:51,415: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:35:51,415: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000076/
+2017-12-22 14:35:51,415: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000076/microstate_info.txt
+2017-12-22 14:35:51,415: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/microstate_info-6.txt (<type 'str'>)
+2017-12-22 14:35:51,415: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/microstate_info-6.txt
+2017-12-22 14:35:51,415: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:35:51,415: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:35:51,415: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-6.txt
+2017-12-22 14:35:51,415: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000076/microstate_info.txt
+2017-12-22 14:35:51,415: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-6.txt
+2017-12-22 14:35:51,820: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: macrostate_info.txt
+2017-12-22 14:35:51,820: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/macrostate_info-6.txt
+2017-12-22 14:35:51,820: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- macrostate_info.txt (<type 'str'>)
+2017-12-22 14:35:51,820: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    macrostate_info.txt
+2017-12-22 14:35:51,820: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:35:51,821: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000076/
+2017-12-22 14:35:51,821: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000076/macrostate_info.txt
+2017-12-22 14:35:51,821: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/macrostate_info-6.txt (<type 'str'>)
+2017-12-22 14:35:51,821: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/macrostate_info-6.txt
+2017-12-22 14:35:51,821: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:35:51,821: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:35:51,821: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-6.txt
+2017-12-22 14:35:51,822: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000076/macrostate_info.txt
+2017-12-22 14:35:51,822: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-6.txt
+2017-12-22 14:35:52,221: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:35:52,222: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000076 [DONE]
+2017-12-22 14:37:04,683: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000077)
+2017-12-22 14:37:04,683: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000083)
+2017-12-22 14:37:04,683: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000078)
+2017-12-22 14:37:04,683: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000082)
+2017-12-22 14:37:04,683: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000081)
+2017-12-22 14:37:04,683: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000085)
+2017-12-22 14:37:04,683: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000086)
+2017-12-22 14:37:04,683: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 7 [False, True]
+2017-12-22 14:37:04,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 7 [True, True]
+2017-12-22 14:37:04,686: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000077 [DONE]
+2017-12-22 14:37:04,686: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000083 [DONE]
+2017-12-22 14:37:04,687: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000078 [DONE]
+2017-12-22 14:37:04,687: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000082 [DONE]
+2017-12-22 14:37:04,687: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000081 [DONE]
+2017-12-22 14:37:04,687: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000085 [DONE]
+2017-12-22 14:37:04,687: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000086 [DONE]
+2017-12-22 14:37:06,069: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000084)
+2017-12-22 14:37:06,069: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:37:06,070: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:37:06,070: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000084 [DONE]
+2017-12-22 14:37:07,514: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000079)
+2017-12-22 14:37:07,514: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000080)
+2017-12-22 14:37:07,514: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 2 [False, True]
+2017-12-22 14:37:07,514: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 2 [True, True]
+2017-12-22 14:37:07,515: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000079 [DONE]
+2017-12-22 14:37:07,515: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000080 [DONE]
+2017-12-22 14:37:20,146: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000087)
+2017-12-22 14:37:20,147: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:37:20,148: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: microstate_info.txt
+2017-12-22 14:37:20,149: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/microstate_info-7.txt
+2017-12-22 14:37:20,149: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- microstate_info.txt (<type 'str'>)
+2017-12-22 14:37:20,149: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    microstate_info.txt
+2017-12-22 14:37:20,149: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:37:20,149: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000087/
+2017-12-22 14:37:20,149: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000087/microstate_info.txt
+2017-12-22 14:37:20,150: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/microstate_info-7.txt (<type 'str'>)
+2017-12-22 14:37:20,150: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/microstate_info-7.txt
+2017-12-22 14:37:20,150: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:37:20,150: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:37:20,150: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-7.txt
+2017-12-22 14:37:20,150: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000087/microstate_info.txt
+2017-12-22 14:37:20,150: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-7.txt
+2017-12-22 14:37:25,639: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: macrostate_info.txt
+2017-12-22 14:37:25,640: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/macrostate_info-7.txt
+2017-12-22 14:37:25,640: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- macrostate_info.txt (<type 'str'>)
+2017-12-22 14:37:25,640: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    macrostate_info.txt
+2017-12-22 14:37:25,640: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:37:25,640: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000087/
+2017-12-22 14:37:25,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000087/macrostate_info.txt
+2017-12-22 14:37:25,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/macrostate_info-7.txt (<type 'str'>)
+2017-12-22 14:37:25,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/macrostate_info-7.txt
+2017-12-22 14:37:25,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:37:25,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:37:25,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-7.txt
+2017-12-22 14:37:25,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000087/macrostate_info.txt
+2017-12-22 14:37:25,641: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-7.txt
+2017-12-22 14:37:26,041: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:37:26,042: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000087 [DONE]
+2017-12-22 14:38:38,853: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000093)
+2017-12-22 14:38:38,853: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000090)
+2017-12-22 14:38:38,853: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000089)
+2017-12-22 14:38:38,854: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000088)
+2017-12-22 14:38:38,854: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000094)
+2017-12-22 14:38:38,854: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000092)
+2017-12-22 14:38:38,854: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000095)
+2017-12-22 14:38:38,854: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000097)
+2017-12-22 14:38:38,854: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000091)
+2017-12-22 14:38:38,854: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000096)
+2017-12-22 14:38:38,854: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 10 [False, True]
+2017-12-22 14:38:38,854: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 10 [True, True]
+2017-12-22 14:38:38,854: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000093 [DONE]
+2017-12-22 14:38:38,855: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000090 [DONE]
+2017-12-22 14:38:38,855: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000089 [DONE]
+2017-12-22 14:38:38,855: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000088 [DONE]
+2017-12-22 14:38:38,855: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000094 [DONE]
+2017-12-22 14:38:38,855: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000092 [DONE]
+2017-12-22 14:38:38,855: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000095 [DONE]
+2017-12-22 14:38:38,855: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000097 [DONE]
+2017-12-22 14:38:38,855: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000091 [DONE]
+2017-12-22 14:38:38,855: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000096 [DONE]
+2017-12-22 14:38:52,921: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000098)
+2017-12-22 14:38:52,921: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:38:52,922: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: microstate_info.txt
+2017-12-22 14:38:52,922: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/microstate_info-8.txt
+2017-12-22 14:38:52,922: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- microstate_info.txt (<type 'str'>)
+2017-12-22 14:38:52,922: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    microstate_info.txt
+2017-12-22 14:38:52,922: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:38:52,922: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000098/
+2017-12-22 14:38:52,923: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000098/microstate_info.txt
+2017-12-22 14:38:52,923: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/microstate_info-8.txt (<type 'str'>)
+2017-12-22 14:38:52,923: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/microstate_info-8.txt
+2017-12-22 14:38:52,923: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:38:52,923: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:38:52,923: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-8.txt
+2017-12-22 14:38:52,923: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000098/microstate_info.txt
+2017-12-22 14:38:52,924: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-8.txt
+2017-12-22 14:38:53,322: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: macrostate_info.txt
+2017-12-22 14:38:53,322: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/macrostate_info-8.txt
+2017-12-22 14:38:53,322: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- macrostate_info.txt (<type 'str'>)
+2017-12-22 14:38:53,322: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    macrostate_info.txt
+2017-12-22 14:38:53,322: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:38:53,323: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000098/
+2017-12-22 14:38:53,323: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000098/macrostate_info.txt
+2017-12-22 14:38:53,323: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/macrostate_info-8.txt (<type 'str'>)
+2017-12-22 14:38:53,323: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/macrostate_info-8.txt
+2017-12-22 14:38:53,323: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:38:53,323: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:38:53,323: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-8.txt
+2017-12-22 14:38:53,323: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000098/macrostate_info.txt
+2017-12-22 14:38:53,323: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-8.txt
+2017-12-22 14:38:53,721: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:38:53,722: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000098 [DONE]
+2017-12-22 14:40:07,128: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000100)
+2017-12-22 14:40:07,128: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000099)
+2017-12-22 14:40:07,128: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000108)
+2017-12-22 14:40:07,128: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 3 [False, True]
+2017-12-22 14:40:07,128: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 3 [True, True]
+2017-12-22 14:40:07,128: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000100 [DONE]
+2017-12-22 14:40:07,129: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000099 [DONE]
+2017-12-22 14:40:07,129: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000108 [DONE]
+2017-12-22 14:40:08,774: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000102)
+2017-12-22 14:40:08,774: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000105)
+2017-12-22 14:40:08,774: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000104)
+2017-12-22 14:40:08,774: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000103)
+2017-12-22 14:40:08,774: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000107)
+2017-12-22 14:40:08,774: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 5 [False, True]
+2017-12-22 14:40:08,774: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 5 [True, True]
+2017-12-22 14:40:08,775: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000102 [DONE]
+2017-12-22 14:40:08,775: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000105 [DONE]
+2017-12-22 14:40:08,775: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000104 [DONE]
+2017-12-22 14:40:08,775: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000103 [DONE]
+2017-12-22 14:40:08,775: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000107 [DONE]
+2017-12-22 14:40:10,293: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000106)
+2017-12-22 14:40:10,294: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000101)
+2017-12-22 14:40:10,294: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 2 [False, True]
+2017-12-22 14:40:10,295: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 2 [True, True]
+2017-12-22 14:40:10,296: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000106 [DONE]
+2017-12-22 14:40:10,296: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000101 [DONE]
+2017-12-22 14:40:24,285: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000109)
+2017-12-22 14:40:24,285: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:40:24,285: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: microstate_info.txt
+2017-12-22 14:40:24,286: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/microstate_info-9.txt
+2017-12-22 14:40:24,286: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- microstate_info.txt (<type 'str'>)
+2017-12-22 14:40:24,286: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    microstate_info.txt
+2017-12-22 14:40:24,286: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:40:24,286: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000109/
+2017-12-22 14:40:24,286: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000109/microstate_info.txt
+2017-12-22 14:40:24,286: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/microstate_info-9.txt (<type 'str'>)
+2017-12-22 14:40:24,286: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/microstate_info-9.txt
+2017-12-22 14:40:24,286: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:40:24,286: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:40:24,286: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-9.txt
+2017-12-22 14:40:24,286: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000109/microstate_info.txt
+2017-12-22 14:40:24,286: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/microstate_info-9.txt
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: macrostate_info.txt
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: dur-1-ensemble-10-iters-10/macrostate_info-9.txt
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- macrostate_info.txt (<type 'str'>)
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    macrostate_info.txt
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000//unit.000109/
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000109/macrostate_info.txt
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : <- dur-1-ensemble-10-iters-10/macrostate_info-9.txt (<type 'str'>)
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    dur-1-ensemble-10-iters-10/macrostate_info-9.txt
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    pwd
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   :    expand with /home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : -> file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-9.txt
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : src: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000109/macrostate_info.txt
+2017-12-22 14:40:24,684: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : tgt: file:///home/vivek91/repos/adaptive-bms-experiments/adaptive-msm-validation/bin/dur-1-ensemble-10-iters-10/macrostate_info-9.txt
+2017-12-22 14:40:25,081: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:40:25,081: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000109 [DONE]
+2017-12-22 14:40:41,193: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : command ignored: cancel_pilots
+2017-12-22 14:40:41,714: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : recv message: 
+2017-12-22 14:40:41,714: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : message received: 
+2017-12-22 14:40:41,714: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: WARNING : received empty string, parent closed ep
+2017-12-22 14:40:41,714: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : watcher closes
+2017-12-22 14:40:41,714: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : put message: [umgr.0000.staging.output.0.child.watch.thread] work finished
+2017-12-22 14:40:41,715: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2017-12-22 14:40:41,715: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2017-12-22 14:40:41,715: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : put message: [umgr.0000.staging.output.0.child.watch.thread] terminating
+2017-12-22 14:40:42,101: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_finalize_common()
+2017-12-22 14:40:42,102: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : WARNING : alive check: proc invalid - stop [False - True]
+2017-12-22 14:40:42,189: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : stop umgr.0000.staging.output.0.child (19415 : 19415 : MainThread) [radical.utils.process.Default.is_valid]
+2017-12-22 14:40:42,201: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : parent stops child  19415 -> 19415 [umgr.0000.staging.output.0.child]
+2017-12-22 14:40:42,201: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : send message: [umgr.0000.staging.output.0.child] STOP
+2017-12-22 14:40:42,201: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2017-12-22 14:40:42,202: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_finalize_common()
+2017-12-22 14:40:42,202: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : TERM : umgr.0000.staging.output.0.child unregister publisher log_pubsub
+2017-12-22 14:40:42,202: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : unregistered publisher log_pubsub
+2017-12-22 14:40:42,203: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : TERM : umgr.0000.staging.output.0.child unregister publisher state_pubsub
+2017-12-22 14:40:42,203: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : unregistered publisher state_pubsub
+2017-12-22 14:40:42,203: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : TERM : umgr.0000.staging.output.0.child unregister publisher control_pubsub
+2017-12-22 14:40:42,204: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : unregistered publisher control_pubsub
+2017-12-22 14:40:42,204: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : umgr.0000.staging.output.0.child close prof
+2017-12-22 14:40:42,217: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : parent stops child
+2017-12-22 14:40:42,217: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-12-22 14:40:42,217: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_finalize_common (NOOP)
+2017-12-22 14:40:42,218: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : parent stops child
+2017-12-22 14:40:42,218: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-12-22 14:40:42,218: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2017-12-22 14:40:42,218: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb.thread] terminating
+2017-12-22 14:40:42,219: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : WARNING : super umgr.0000.staging.output.0.child is invalid
+2017-12-22 14:40:42,219: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : WARNING : component umgr.0000.staging.output.0.child is invalid
+2017-12-22 14:40:42,221: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : stop umgr.0000.staging.output.0.child (19415 : 19415 : MainThread) [radical.pilot.utils.component.Default.is_valid]
+2017-12-22 14:40:42,221: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : WARNING : publisher log_pubsub is not registered
+2017-12-22 14:40:42,221: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : WARNING : publisher state_pubsub is not registered
+2017-12-22 14:40:42,221: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : WARNING : publisher control_pubsub is not registered
+2017-12-22 14:40:42,221: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : umgr.0000.staging.output.0.child close prof
+2017-12-22 14:40:42,221: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : send message: [umgr.0000.staging.output.0.child] terminating
+2017-12-22 14:40:42,221: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2017-12-22 14:40:42,222: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : parent stops child

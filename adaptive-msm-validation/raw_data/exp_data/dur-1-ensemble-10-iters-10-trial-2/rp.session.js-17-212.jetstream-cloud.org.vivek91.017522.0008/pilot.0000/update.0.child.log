@@ -1,0 +1,366 @@
+2017-12-22 14:25:21,489: update.0.child      : update.0                        : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2017-12-22 14:25:21,492: update.0.child      : update.0                        : MainThread     : INFO    :                      pid: 45238
+2017-12-22 14:25:21,492: update.0.child      : update.0                        : MainThread     : INFO    :                      tid: MainThread
+2017-12-22 14:25:21,492: update.0.child      : update.0                        : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2017-12-22 14:25:21,556: update.0.child      : update.0                        : MainThread     : INFO    : initialize update.0.child
+2017-12-22 14:25:21,563: update.0.child      : update.0                        : MainThread     : INFO    : cfg: {'agent_launch_method': 'SSH',
+ 'agent_name': 'agent_0',
+ 'agents': {},
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.137:36453',
+                                       'addr_out': 'tcp://204.90.41.137:36755',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.137:39720',
+                                         'addr_out': 'tcp://204.90.41.137:41255',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.137:39592',
+                                        'addr_out': 'tcp://204.90.41.137:37436',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.137:42914',
+                                           'addr_out': 'tcp://204.90.41.137:43394',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.137:46462',
+                                            'addr_out': 'tcp://204.90.41.137:35132',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.137:46475',
+                                         'addr_out': 'tcp://204.90.41.137:39028',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://204.90.41.137:33994',
+                                'addr_out': 'tcp://204.90.41.137:43765',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://204.90.41.137:46063',
+                            'addr_out': 'tcp://204.90.41.137:45376',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://204.90.41.137:36371',
+                              'addr_out': 'tcp://204.90.41.137:40414',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'cname': 'UpdateWorker',
+ 'components': {},
+ 'cores': 200,
+ 'cores_per_node': 20,
+ 'count': 1,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': None,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://entk:entk@ds163826.mlab.com:63826/adap-msm',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'logdir': '.',
+ 'lrms': 'TORQUE',
+ 'lrms_info': {'agent_nodes': {},
+               'cores_per_node': 20,
+               'lm_info': {},
+               'name': 'Torque',
+               'node_list': ['smic137',
+                             'smic146',
+                             'smic147',
+                             'smic148',
+                             'smic149',
+                             'smic150',
+                             'smic151',
+                             'smic152',
+                             'smic153',
+                             'smic154']},
+ 'max_io_loglength': 1024,
+ 'mode': 'shared',
+ 'mpi_launch_method': 'MPIEXEC',
+ 'number': 0,
+ 'owner': 'agent_0',
+ 'pilot_id': 'pilot.0000',
+ 'pilot_sandbox': '/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/',
+ 'resource_cfg': {'agent_launch_method': 'SSH',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': '20',
+                  'default_queue': 'workq',
+                  'default_remote_workdir': '/work/$USER',
+                  'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)",
+                  'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                             'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'},
+                  'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/',
+                  'label': 'xsede.supermic_ssh',
+                  'lrms': 'TORQUE',
+                  'mpi_launch_method': 'MPIEXEC',
+                  'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.',
+                  'pre_bootstrap_1': ['module load python/2.7.7-anaconda'],
+                  'python_dist': 'default',
+                  'rp_version': 'local',
+                  'schemas': ['gsissh', 'ssh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/',
+                          'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'},
+                  'task_launch_method': 'SSH',
+                  'valid_roots': ['/work'],
+                  'virtenv_mode': 'create'},
+ 'resource_sandbox': '/work/vivek91/radical.pilot.sandbox',
+ 'runtime': 150,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008',
+ 'session_sandbox': '/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'target': 'local',
+ 'task_launch_method': 'SSH',
+ 'uid': 'agent_0',
+ 'workdir': '/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000'}
+2017-12-22 14:25:21,563: update.0.child      : update.0                        : MainThread     : DEBUG   : start components: {}
+2017-12-22 14:25:21,563: update.0.child      : update.0                        : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:21,563: update.0.child      : update.0                        : MainThread     : DEBUG   : START: update.0.child register publisher log_pubsub
+2017-12-22 14:25:21,564: update.0.child      : update.0                        : MainThread     : DEBUG   : using addr tcp://204.90.41.137:46063 for pubsub log_pubsub
+2017-12-22 14:25:21,569: update.0.child      : update.0                        : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0003
+2017-12-22 14:25:21,569: update.0.child      : update.0                        : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:21,569: update.0.child      : update.0                        : MainThread     : DEBUG   : START: update.0.child register publisher state_pubsub
+2017-12-22 14:25:21,570: update.0.child      : update.0                        : MainThread     : DEBUG   : using addr tcp://204.90.41.137:36371 for pubsub state_pubsub
+2017-12-22 14:25:21,575: update.0.child      : update.0                        : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0003
+2017-12-22 14:25:21,575: update.0.child      : update.0                        : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:21,576: update.0.child      : update.0                        : MainThread     : DEBUG   : START: update.0.child register publisher control_pubsub
+2017-12-22 14:25:21,576: update.0.child      : update.0                        : MainThread     : DEBUG   : using addr tcp://204.90.41.137:33994 for pubsub control_pubsub
+2017-12-22 14:25:21,581: update.0.child      : update.0                        : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0003
+2017-12-22 14:25:21,583: update.0.child      : update.0                        : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:21,583: update.0.child      : update.0                        : MainThread     : DEBUG   : START: update.0.child register subscriber update.0.child.subscriber._cancel_monitor_cb
+2017-12-22 14:25:21,583: update.0.child      : update.0                        : MainThread     : DEBUG   : using addr tcp://204.90.41.137:43765 for pubsub control_pubsub
+2017-12-22 14:25:21,588: update.0.child      : update.0                        : MainThread     : DEBUG   : parent name: update.0.child.subscriber._cancel_monitor_cb
+2017-12-22 14:25:21,588: update.0.child      : update.0                        : MainThread     : DEBUG   : start thread
+2017-12-22 14:25:21,588: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: update.0.child.subscriber._cancel_monitor_cb.thread
+2017-12-22 14:25:21,589: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2017-12-22 14:25:21,589: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:21,589: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-12-22 14:25:21,589: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2017-12-22 14:25:21,589: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [update.0.child.subscriber._cancel_monitor_cb.thread] alive
+2017-12-22 14:25:21,590: update.0.child      : update.0                        : MainThread     : INFO    : get msg: alive
+2017-12-22 14:25:21,590: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:21,590: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-12-22 14:25:21,590: update.0.child      : update.0                        : MainThread     : DEBUG   : child thread update.0.child.subscriber._cancel_monitor_cb started
+2017-12-22 14:25:21,590: update.0.child      : update.0                        : MainThread     : DEBUG   : update.0.child registered control_pubsub subscriber update.0.child.subscriber._cancel_monitor_cb
+2017-12-22 14:25:21,814: update.0.child      : update.0                        : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:21,814: update.0.child      : update.0                        : MainThread     : DEBUG   : START: update.0.child register subscriber update.0.child.subscriber._state_cb
+2017-12-22 14:25:21,814: update.0.child      : update.0                        : MainThread     : DEBUG   : using addr tcp://204.90.41.137:40414 for pubsub state_pubsub
+2017-12-22 14:25:21,820: update.0.child      : update.0                        : MainThread     : DEBUG   : parent name: update.0.child.subscriber._state_cb
+2017-12-22 14:25:21,820: update.0.child      : update.0                        : MainThread     : DEBUG   : start thread
+2017-12-22 14:25:21,820: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : child name: update.0.child.subscriber._state_cb.thread
+2017-12-22 14:25:21,820: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: INFO    : child (me) initializing
+2017-12-22 14:25:21,821: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:21,821: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-12-22 14:25:21,821: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: INFO    : send alive
+2017-12-22 14:25:21,821: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: INFO    : put message: [update.0.child.subscriber._state_cb.thread] alive
+2017-12-22 14:25:21,822: update.0.child      : update.0                        : MainThread     : INFO    : get msg: alive
+2017-12-22 14:25:21,822: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:21,822: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-12-22 14:25:21,822: update.0.child      : update.0                        : MainThread     : DEBUG   : child thread update.0.child.subscriber._state_cb started
+2017-12-22 14:25:21,822: update.0.child      : update.0                        : MainThread     : DEBUG   : update.0.child registered state_pubsub subscriber update.0.child.subscriber._state_cb
+2017-12-22 14:25:21,822: update.0.child      : update.0                        : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:21,822: update.0.child      : update.0                        : MainThread     : DEBUG   : START: update.0.child register idler update.0.child.idler._idle_cb
+2017-12-22 14:25:21,822: update.0.child      : update.0                        : MainThread     : DEBUG   : parent name: update.0.child.idler._idle_cb
+2017-12-22 14:25:21,822: update.0.child      : update.0                        : MainThread     : DEBUG   : start thread
+2017-12-22 14:25:21,823: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : child name: update.0.child.idler._idle_cb.thread
+2017-12-22 14:25:21,823: update.0.child      : update.0                        : update.0.child.idler._idle_cb: INFO    : child (me) initializing
+2017-12-22 14:25:21,823: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:21,823: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-12-22 14:25:21,823: update.0.child      : update.0                        : update.0.child.idler._idle_cb: INFO    : send alive
+2017-12-22 14:25:21,823: update.0.child      : update.0                        : update.0.child.idler._idle_cb: INFO    : put message: [update.0.child.idler._idle_cb.thread] alive
+2017-12-22 14:25:21,824: update.0.child      : update.0                        : MainThread     : INFO    : get msg: alive
+2017-12-22 14:25:21,824: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:21,824: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-12-22 14:25:21,824: update.0.child      : update.0                        : MainThread     : DEBUG   : child thread update.0.child.idler._idle_cb started
+2017-12-22 14:25:21,824: update.0.child      : update.0                        : MainThread     : DEBUG   : update.0.child registered idler update.0.child.idler._idle_cb
+2017-12-22 14:25:21,824: update.0.child      : update.0                        : MainThread     : INFO    : child (me) initializing
+2017-12-22 14:25:21,824: update.0.child      : update.0                        : MainThread     : DEBUG   : parent name: update.0.child.watch
+2017-12-22 14:25:21,825: update.0.child      : update.0                        : MainThread     : DEBUG   : start thread
+2017-12-22 14:25:21,825: update.0.child      : update.0                        : update.0.child.watch: DEBUG   : child name: update.0.child.watch.thread
+2017-12-22 14:25:21,825: update.0.child      : update.0                        : update.0.child.watch: INFO    : child (me) initializing
+2017-12-22 14:25:21,825: update.0.child      : update.0                        : update.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:21,825: update.0.child      : update.0                        : update.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-12-22 14:25:21,825: update.0.child      : update.0                        : update.0.child.watch: INFO    : send alive
+2017-12-22 14:25:21,825: update.0.child      : update.0                        : update.0.child.watch: INFO    : put message: [update.0.child.watch.thread] alive
+2017-12-22 14:25:21,826: update.0.child      : update.0                        : MainThread     : INFO    : get msg: alive
+2017-12-22 14:25:21,826: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:21,826: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-12-22 14:25:21,826: update.0.child      : update.0                        : MainThread     : DEBUG   : child thread update.0.child.watch started
+2017-12-22 14:25:21,826: update.0.child      : update.0                        : MainThread     : INFO    : child (me) is alive
+2017-12-22 14:25:21,826: update.0.child      : update.0                        : MainThread     : INFO    : send alive
+2017-12-22 14:25:21,826: update.0.child      : update.0                        : MainThread     : INFO    : send message: [update.0.child] alive
+2017-12-22 14:25:22,859: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:25:36,823: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 10, 'nUpserted': 0, 'nMatched': 10, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:25:37,917: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 40, 'nUpserted': 0, 'nMatched': 40, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:26:46,242: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:26:47,382: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 18, 'nUpserted': 0, 'nMatched': 18, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:26:48,753: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 9, 'nUpserted': 0, 'nMatched': 9, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:26:50,049: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:26:52,418: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:26:54,088: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 4, 'nUpserted': 0, 'nMatched': 4, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:26:59,567: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:27:01,131: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:27:08,042: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 10, 'nUpserted': 0, 'nMatched': 10, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:27:09,180: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 40, 'nUpserted': 0, 'nMatched': 40, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:28:16,491: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:28:17,595: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 6, 'nUpserted': 0, 'nMatched': 6, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:28:18,634: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 15, 'nUpserted': 0, 'nMatched': 15, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:28:20,314: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 8, 'nUpserted': 0, 'nMatched': 8, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:28:22,601: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:28:24,354: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 4, 'nUpserted': 0, 'nMatched': 4, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:28:30,029: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:28:31,398: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:28:35,127: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 10, 'nUpserted': 0, 'nMatched': 10, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:28:36,442: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 40, 'nUpserted': 0, 'nMatched': 40, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:29:44,836: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:29:46,179: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 21, 'nUpserted': 0, 'nMatched': 21, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:29:47,574: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 8, 'nUpserted': 0, 'nMatched': 8, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:29:50,727: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:29:52,615: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 4, 'nUpserted': 0, 'nMatched': 4, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:29:58,564: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:29:59,658: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:30:02,178: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:30:03,699: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 8, 'nUpserted': 0, 'nMatched': 8, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:30:04,738: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 40, 'nUpserted': 0, 'nMatched': 40, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:31:11,077: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:31:12,868: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 5, 'nUpserted': 0, 'nMatched': 5, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:31:13,884: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 4, 'nUpserted': 0, 'nMatched': 4, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:31:14,954: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 17, 'nUpserted': 0, 'nMatched': 17, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:31:15,990: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 3, 'nUpserted': 0, 'nMatched': 3, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:31:18,910: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:31:20,031: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 4, 'nUpserted': 0, 'nMatched': 4, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:31:27,009: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:31:28,109: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:31:30,361: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:31:31,500: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 16, 'nUpserted': 0, 'nMatched': 16, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:31:33,153: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 32, 'nUpserted': 0, 'nMatched': 32, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:32:39,428: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:32:40,732: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 6, 'nUpserted': 0, 'nMatched': 6, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:32:41,771: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 15, 'nUpserted': 0, 'nMatched': 15, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:32:43,287: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 8, 'nUpserted': 0, 'nMatched': 8, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:32:45,066: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:32:46,326: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 4, 'nUpserted': 0, 'nMatched': 4, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:32:53,056: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:32:54,405: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:32:58,624: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 10, 'nUpserted': 0, 'nMatched': 10, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:33:00,450: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 40, 'nUpserted': 0, 'nMatched': 40, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:34:07,977: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:34:09,028: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 15, 'nUpserted': 0, 'nMatched': 15, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:34:10,617: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 14, 'nUpserted': 0, 'nMatched': 14, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:34:13,231: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:34:14,657: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 4, 'nUpserted': 0, 'nMatched': 4, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:34:22,004: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:34:23,736: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:34:25,717: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:34:26,775: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 8, 'nUpserted': 0, 'nMatched': 8, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:34:27,890: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 8, 'nUpserted': 0, 'nMatched': 8, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:34:29,816: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 32, 'nUpserted': 0, 'nMatched': 32, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:35:34,027: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:35:35,931: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 3, 'nUpserted': 0, 'nMatched': 3, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:35:36,967: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 8, 'nUpserted': 0, 'nMatched': 8, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:35:38,037: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 12, 'nUpserted': 0, 'nMatched': 12, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:35:39,073: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 6, 'nUpserted': 0, 'nMatched': 6, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:35:41,458: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:35:43,114: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 4, 'nUpserted': 0, 'nMatched': 4, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:35:50,058: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:35:51,192: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:35:53,946: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:35:55,084: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 16, 'nUpserted': 0, 'nMatched': 16, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:35:56,235: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 32, 'nUpserted': 0, 'nMatched': 32, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:37:02,469: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:37:04,362: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:37:05,413: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 19, 'nUpserted': 0, 'nMatched': 19, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:37:06,380: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 3, 'nUpserted': 0, 'nMatched': 3, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:37:07,451: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 5, 'nUpserted': 0, 'nMatched': 5, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:37:09,694: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:37:11,490: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 4, 'nUpserted': 0, 'nMatched': 4, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:37:18,899: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:37:20,569: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:37:28,426: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 10, 'nUpserted': 0, 'nMatched': 10, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:37:29,619: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 40, 'nUpserted': 0, 'nMatched': 40, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:38:37,532: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:38:38,675: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 24, 'nUpserted': 0, 'nMatched': 24, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:38:39,748: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 5, 'nUpserted': 0, 'nMatched': 5, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:38:41,996: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:38:43,787: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 4, 'nUpserted': 0, 'nMatched': 4, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:38:51,459: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:38:52,867: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:38:55,519: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:38:56,908: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 8, 'nUpserted': 0, 'nMatched': 8, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:38:57,947: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 40, 'nUpserted': 0, 'nMatched': 40, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:40:04,182: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:40:05,786: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 3, 'nUpserted': 0, 'nMatched': 3, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:40:06,889: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 6, 'nUpserted': 0, 'nMatched': 6, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:40:07,928: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 15, 'nUpserted': 0, 'nMatched': 15, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:40:09,081: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 5, 'nUpserted': 0, 'nMatched': 5, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:40:12,301: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:40:14,122: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 4, 'nUpserted': 0, 'nMatched': 4, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:40:22,014: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:40:23,235: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-12-22 14:40:43,347: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : got termination command
+2017-12-22 14:40:43,440: update.0.child      : update.0                        : MainThread     : DEBUG   : TERM : update.0.child unregister idler update.0.child.idler._idle_cb
+2017-12-22 14:40:43,517: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : stop update.0.child (45238 : 45238 : update.0.child.subscriber._cancel_monitor_cb) [radical.pilot.worker.update.Update.stop]
+2017-12-22 14:40:43,526: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : parent stops child  45238 -> 45238 [update.0.child]
+2017-12-22 14:40:43,526: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : send message: [update.0.child] STOP
+2017-12-22 14:40:43,526: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : update.0.child unregister idler update.0.child.idler._idle_cb
+2017-12-22 14:40:43,526: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for update.0.child.subscriber._cancel_monitor_cb - do not join
+2017-12-22 14:40:43,526: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : update.0.child unregistered idler update.0.child.idler._idle_cb
+2017-12-22 14:40:43,526: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : update.0.child unregister subscriber update.0.child.subscriber._state_cb
+2017-12-22 14:40:43,526: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered subscriber update.0.child.subscriber._state_cb
+2017-12-22 14:40:43,526: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_common()
+2017-12-22 14:40:43,526: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : update.0.child unregister publisher log_pubsub
+2017-12-22 14:40:43,528: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher log_pubsub
+2017-12-22 14:40:43,528: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : update.0.child unregister publisher state_pubsub
+2017-12-22 14:40:43,530: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher state_pubsub
+2017-12-22 14:40:43,530: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : update.0.child unregister publisher control_pubsub
+2017-12-22 14:40:43,531: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher control_pubsub
+2017-12-22 14:40:43,531: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : update.0.child close prof
+2017-12-22 14:40:43,545: update.0.child      : update.0                        : update.0.child.watch: INFO    : recv message: 
+2017-12-22 14:40:43,545: update.0.child      : update.0                        : update.0.child.watch: INFO    : message received: 
+2017-12-22 14:40:43,545: update.0.child      : update.0                        : update.0.child.watch: WARNING : received empty string, parent closed ep
+2017-12-22 14:40:43,545: update.0.child      : update.0                        : update.0.child.watch: INFO    : watcher closes
+2017-12-22 14:40:43,545: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for update.0.child.subscriber._cancel_monitor_cb - do not join
+2017-12-22 14:40:43,546: update.0.child      : update.0                        : update.0.child.watch: INFO    : put message: [update.0.child.watch.thread] work finished
+2017-12-22 14:40:43,546: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : child calls stop()
+2017-12-22 14:40:43,546: update.0.child      : update.0                        : update.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2017-12-22 14:40:43,546: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for update.0.child.subscriber._cancel_monitor_cb - do not join
+2017-12-22 14:40:43,546: update.0.child      : update.0                        : update.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2017-12-22 14:40:43,546: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for update.0.child.subscriber._cancel_monitor_cb - do not join
+2017-12-22 14:40:43,546: update.0.child      : update.0                        : update.0.child.watch: INFO    : put message: [update.0.child.watch.thread] terminating
+2017-12-22 14:40:43,546: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for update.0.child.subscriber._cancel_monitor_cb - do not join
+2017-12-22 14:40:43,547: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for update.0.child.subscriber._cancel_monitor_cb - do not join
+2017-12-22 14:40:43,547: update.0.child      : update.0                        : MainThread     : WARNING : timed cb update.0.child.idler._idle_cb is not registered
+2017-12-22 14:40:43,547: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2017-12-22 14:40:43,547: update.0.child      : update.0                        : MainThread     : DEBUG   : TERM : update.0.child unregister subscriber update.0.child.subscriber._state_cb
+2017-12-22 14:40:43,547: update.0.child      : update.0                        : MainThread     : WARNING : subscriber _state_cb is not registered
+2017-12-22 14:40:43,547: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_finalize_common()
+2017-12-22 14:40:43,547: update.0.child      : update.0                        : MainThread     : WARNING : publisher log_pubsub is not registered
+2017-12-22 14:40:43,547: update.0.child      : update.0                        : MainThread     : WARNING : publisher state_pubsub is not registered
+2017-12-22 14:40:43,547: update.0.child      : update.0                        : MainThread     : WARNING : publisher control_pubsub is not registered
+2017-12-22 14:40:43,548: update.0.child      : update.0                        : MainThread     : DEBUG   : update.0.child close prof
+2017-12-22 14:40:43,548: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [update.0.child.subscriber._cancel_monitor_cb.thread] terminating
+2017-12-22 14:40:43,548: update.0.child      : update.0                        : MainThread     : INFO    : send message: [update.0.child] terminating
+2017-12-22 14:40:43,548: update.0.child      : update.0                        : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2017-12-22 14:40:43,548: update.0.child      : update.0                        : MainThread     : INFO    : parent stops child
+2017-12-22 14:40:43,548: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-12-22 14:40:43,548: update.0.child      : update.0                        : MainThread     : INFO    : parent stops child
+2017-12-22 14:40:43,548: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-12-22 14:40:43,550: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : ru_finalize_child (NOOP)
+2017-12-22 14:40:43,551: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: INFO    : put message: [update.0.child.subscriber._state_cb.thread] terminating
+2017-12-22 14:40:43,552: update.0.child      : update.0                        : MainThread     : INFO    : parent stops child
+2017-12-22 14:40:43,552: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-12-22 14:40:43,552: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_finalize_common (NOOP)
+2017-12-22 14:40:43,565: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : ru_finalize_child (NOOP)
+2017-12-22 14:40:43,565: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : ru_finalize_common (NOOP)
+2017-12-22 14:40:43,565: update.0.child      : update.0                        : update.0.child.idler._idle_cb: INFO    : put message: [update.0.child.idler._idle_cb.thread] terminating

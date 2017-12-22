@@ -37,7 +37,7 @@ def get_pipeline():
                 t.link_input_data = ['$SHARED/ala2.pdb', '$SHARED/simulate.py']
             else:
                 t.link_input_data = [   '$SHARED/simulate.py',
-                                        '%s/ala2-%s.pdb > ala2.pdb' %(it_task_uids[it-1]['msm'], e)
+                                        '%s/ala2-%s.pdb > ala2.pdb' %(it_task_uids[it-1]['msm'][0], e)
                                     ]
 
             s1.add_tasks(t)
@@ -65,7 +65,7 @@ def get_pipeline():
         t.download_output_data = [ 'microstate_info.txt > dur-%s-ensemble-%s-iters-%s/microstate_info-%s.txt' % (NS, ENSEMBLE_SIZE, TOTAL_ITERS, it),
                                     'macrostate_info.txt > dur-%s-ensemble-%s-iters-%s/macrostate_info-%s.txt' % (NS, ENSEMBLE_SIZE, TOTAL_ITERS, it)]
 
-        for i in range(it):
+        for i in range(it+1):
             for j in range(ENSEMBLE_SIZE):
                 t.link_input_data += ['%s/trajectory.dcd > trajectory-%s_%s.dcd' %(it_task_uids[i]['openmm'][j], i, j)]
 
@@ -91,7 +91,7 @@ if __name__ == '__main__':
     res_dict = {
 
             'resource': 'xsede.supermic',
-            'walltime': 15,
+            'walltime': 15*TOTAL_ITERS,
             'cores': total_cores,
             'project': 'TG-MCB090174',
             'access_schema': 'gsissh'
@@ -103,7 +103,7 @@ if __name__ == '__main__':
     rman.shared_data = [ './ala2.pdb','./simulate.py','./analyze.py' ]
 
     # Create Application Manager
-    appman = AppManager(port=32781)
+    appman = AppManager(port=32809)
     #appman = AppManager(port=) # if using docker, specify port here.
 
     # Assign resource manager to the Application Manager

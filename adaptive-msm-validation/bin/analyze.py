@@ -131,7 +131,7 @@ if __name__ == '__main__':
     #plt.savefig('macrostate_clusters.png')
 
 
-    f = open('microstate_info.txt','w')
+    f=open('microstate_info.txt','w')
     f.write('Cluster centers \n\n')
     for val in clusterer.cluster_centers_:
         f.write(str(val)+'\n')
@@ -144,12 +144,19 @@ if __name__ == '__main__':
     for val in pcca.state_labels_:
         f.write(str(val) + '\n')
 
+    f.write('\nEigen uncertainty\n\n')
+    for val in pcca.uncertainty_eigenvalues():
+        f.write(str(val) + '\n')
+
+    f.write('\nEigen values\n\n')
+    for val in pcca.eigenvalues_:
+        f.write(str(val) + '\n')
     f.close()
 
 
     msm = MarkovStateModel(lag_time=2)
     msm.fit(macro_trajs)
-    
+
     f = open('macrostate_info.txt','w')
     f.write('Cluster centers \n\n')
     for val in clusterer.cluster_centers_:
@@ -163,6 +170,13 @@ if __name__ == '__main__':
     for val in msm.state_labels_:
         f.write(str(val) + '\n')
 
+    f.write('\nEigen uncertainty\n\n')
+    for val in msm.uncertainty_eigenvalues():
+        f.write(str(val) + '\n')
+
+    f.write('\nEigen values\n\n')
+    for val in msm.eigenvalues_:
+        f.write(str(val) + '\n')
     f.close()
 
     xtcs = glob('*.xtc')

@@ -1,0 +1,1016 @@
+2017-12-22 14:25:21,926: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2017-12-22 14:25:21,930: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    :                      pid: 45260
+2017-12-22 14:25:21,930: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    :                      tid: MainThread
+2017-12-22 14:25:21,930: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2017-12-22 14:25:21,998: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : initialize agent_0.executing.0.child
+2017-12-22 14:25:22,005: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : cfg: {'agent_launch_method': 'SSH',
+ 'agent_name': 'agent_0',
+ 'agents': {},
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.137:36453',
+                                       'addr_out': 'tcp://204.90.41.137:36755',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.137:39720',
+                                         'addr_out': 'tcp://204.90.41.137:41255',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.137:39592',
+                                        'addr_out': 'tcp://204.90.41.137:37436',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.137:42914',
+                                           'addr_out': 'tcp://204.90.41.137:43394',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.137:46462',
+                                            'addr_out': 'tcp://204.90.41.137:35132',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.137:46475',
+                                         'addr_out': 'tcp://204.90.41.137:39028',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://204.90.41.137:33994',
+                                'addr_out': 'tcp://204.90.41.137:43765',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://204.90.41.137:46063',
+                            'addr_out': 'tcp://204.90.41.137:45376',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://204.90.41.137:36371',
+                              'addr_out': 'tcp://204.90.41.137:40414',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'cname': 'AgentExecutingComponent',
+ 'components': {},
+ 'cores': 200,
+ 'cores_per_node': 20,
+ 'count': 1,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': None,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://entk:entk@ds163826.mlab.com:63826/adap-msm',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'logdir': '.',
+ 'lrms': 'TORQUE',
+ 'lrms_info': {'agent_nodes': {},
+               'cores_per_node': 20,
+               'lm_info': {},
+               'name': 'Torque',
+               'node_list': ['smic137',
+                             'smic146',
+                             'smic147',
+                             'smic148',
+                             'smic149',
+                             'smic150',
+                             'smic151',
+                             'smic152',
+                             'smic153',
+                             'smic154']},
+ 'max_io_loglength': 1024,
+ 'mode': 'shared',
+ 'mpi_launch_method': 'MPIEXEC',
+ 'number': 0,
+ 'owner': 'agent_0',
+ 'pilot_id': 'pilot.0000',
+ 'pilot_sandbox': '/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/',
+ 'resource_cfg': {'agent_launch_method': 'SSH',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': '20',
+                  'default_queue': 'workq',
+                  'default_remote_workdir': '/work/$USER',
+                  'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)",
+                  'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                             'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'},
+                  'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/',
+                  'label': 'xsede.supermic_ssh',
+                  'lrms': 'TORQUE',
+                  'mpi_launch_method': 'MPIEXEC',
+                  'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.',
+                  'pre_bootstrap_1': ['module load python/2.7.7-anaconda'],
+                  'python_dist': 'default',
+                  'rp_version': 'local',
+                  'schemas': ['gsissh', 'ssh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/',
+                          'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'},
+                  'task_launch_method': 'SSH',
+                  'valid_roots': ['/work'],
+                  'virtenv_mode': 'create'},
+ 'resource_sandbox': '/work/vivek91/radical.pilot.sandbox',
+ 'runtime': 150,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008',
+ 'session_sandbox': '/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'target': 'local',
+ 'task_launch_method': 'SSH',
+ 'uid': 'agent_0',
+ 'workdir': '/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000'}
+2017-12-22 14:25:22,005: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start components: {}
+2017-12-22 14:25:22,005: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:22,005: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher log_pubsub
+2017-12-22 14:25:22,006: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.137:46063 for pubsub log_pubsub
+2017-12-22 14:25:22,011: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0004
+2017-12-22 14:25:22,012: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:22,012: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher state_pubsub
+2017-12-22 14:25:22,012: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.137:36371 for pubsub state_pubsub
+2017-12-22 14:25:22,018: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0004
+2017-12-22 14:25:22,018: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:22,018: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher control_pubsub
+2017-12-22 14:25:22,018: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.137:33994 for pubsub control_pubsub
+2017-12-22 14:25:22,024: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0004
+2017-12-22 14:25:22,025: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:22,025: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register subscriber agent_0.executing.0.child.subscriber._cancel_monitor_cb
+2017-12-22 14:25:22,025: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.137:43765 for pubsub control_pubsub
+2017-12-22 14:25:22,030: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : parent name: agent_0.executing.0.child.subscriber._cancel_monitor_cb
+2017-12-22 14:25:22,031: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start thread
+2017-12-22 14:25:22,031: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: agent_0.executing.0.child.subscriber._cancel_monitor_cb.thread
+2017-12-22 14:25:22,031: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2017-12-22 14:25:22,031: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:22,031: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-12-22 14:25:22,031: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2017-12-22 14:25:22,031: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [agent_0.executing.0.child.subscriber._cancel_monitor_cb.thread] alive
+2017-12-22 14:25:22,032: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : get msg: alive
+2017-12-22 14:25:22,032: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:22,032: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-12-22 14:25:22,032: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : child thread agent_0.executing.0.child.subscriber._cancel_monitor_cb started
+2017-12-22 14:25:22,032: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : agent_0.executing.0.child registered control_pubsub subscriber agent_0.executing.0.child.subscriber._cancel_monitor_cb
+2017-12-22 14:25:22,032: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:22,033: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.137:36755 for input agent_executing_queue
+2017-12-22 14:25:22,039: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered input agent_0.executing.0.child.work.AGENT_EXECUTING_PENDING
+2017-12-22 14:25:22,039: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register input AGENT_EXECUTING_PENDING: agent_0.executing.0.child.work.AGENT_EXECUTING_PENDING
+2017-12-22 14:25:22,039: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered worker work [AGENT_EXECUTING_PENDING]
+2017-12-22 14:25:22,039: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:22,039: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register output AGENT_STAGING_OUTPUT_PENDING
+2017-12-22 14:25:22,039: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.137:46462 for output agent_staging_output_queue
+2017-12-22 14:25:22,045: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered output    : AGENT_STAGING_OUTPUT_PENDING : agent_staging_output_queue : agent.staging.output.queue.input.0000
+2017-12-22 14:25:22,045: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:22,045: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher agent_unschedule_pubsub
+2017-12-22 14:25:22,045: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.137:46475 for pubsub agent_unschedule_pubsub
+2017-12-22 14:25:22,052: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : agent_unschedule_pubsub : agent.unschedule.pubsub.pub.0000
+2017-12-22 14:25:22,052: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:25:22,053: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register subscriber agent_0.executing.0.child.subscriber.command_cb
+2017-12-22 14:25:22,053: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.137:43765 for pubsub control_pubsub
+2017-12-22 14:25:22,058: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : parent name: agent_0.executing.0.child.subscriber.command_cb
+2017-12-22 14:25:22,059: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start thread
+2017-12-22 14:25:22,059: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : child name: agent_0.executing.0.child.subscriber.command_cb.thread
+2017-12-22 14:25:22,059: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : child (me) initializing
+2017-12-22 14:25:22,059: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:22,059: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-12-22 14:25:22,059: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : send alive
+2017-12-22 14:25:22,059: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : put message: [agent_0.executing.0.child.subscriber.command_cb.thread] alive
+2017-12-22 14:25:22,060: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : get msg: alive
+2017-12-22 14:25:22,060: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:22,060: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-12-22 14:25:22,060: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : child thread agent_0.executing.0.child.subscriber.command_cb started
+2017-12-22 14:25:22,060: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : agent_0.executing.0.child registered control_pubsub subscriber agent_0.executing.0.child.subscriber.command_cb
+2017-12-22 14:25:22,078: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : child (me) initializing
+2017-12-22 14:25:22,078: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : parent name: agent_0.executing.0.child.watch
+2017-12-22 14:25:22,078: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start thread
+2017-12-22 14:25:22,079: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : child name: agent_0.executing.0.child.watch.thread
+2017-12-22 14:25:22,079: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : child (me) initializing
+2017-12-22 14:25:22,079: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:22,079: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-12-22 14:25:22,079: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : send alive
+2017-12-22 14:25:22,079: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : put message: [agent_0.executing.0.child.watch.thread] alive
+2017-12-22 14:25:22,080: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : get msg: alive
+2017-12-22 14:25:22,080: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:25:22,080: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-12-22 14:25:22,080: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : child thread agent_0.executing.0.child.watch started
+2017-12-22 14:25:22,080: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : child (me) is alive
+2017-12-22 14:25:22,080: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : send alive
+2017-12-22 14:25:22,080: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : send message: [agent_0.executing.0.child] alive
+2017-12-22 14:25:36,796: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000000)
+2017-12-22 14:25:36,796: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:25:36,797: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:25:36,801: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000000 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000000/unit.000000.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000000
+2017-12-22 14:25:36,807: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000001)
+2017-12-22 14:25:36,807: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:25:36,807: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:25:36,811: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000001 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic146  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000001/unit.000001.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000001
+2017-12-22 14:25:36,816: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000002)
+2017-12-22 14:25:36,816: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:25:36,817: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:25:36,820: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000002 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic147  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000002/unit.000002.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000002
+2017-12-22 14:25:36,825: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000003)
+2017-12-22 14:25:36,826: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:25:36,826: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:25:36,829: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000003 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic148  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000003/unit.000003.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000003
+2017-12-22 14:25:36,835: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000004)
+2017-12-22 14:25:36,835: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:25:36,835: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:25:36,839: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000004 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic149  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000004/unit.000004.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000004
+2017-12-22 14:25:36,843: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000005)
+2017-12-22 14:25:36,844: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:25:36,844: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:25:36,847: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000005 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic150  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000005/unit.000005.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000005
+2017-12-22 14:25:36,852: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000006)
+2017-12-22 14:25:36,852: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:25:36,852: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:25:36,855: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000006 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic151  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000006/unit.000006.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000006
+2017-12-22 14:25:36,860: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000007)
+2017-12-22 14:25:36,860: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:25:36,861: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:25:36,864: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000007 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic152  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000007/unit.000007.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000007
+2017-12-22 14:25:36,869: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000008)
+2017-12-22 14:25:36,869: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:25:36,870: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:25:36,873: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000008 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic153  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000008/unit.000008.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000008
+2017-12-22 14:25:36,878: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000009)
+2017-12-22 14:25:36,879: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:25:36,879: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:25:36,882: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000009 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic154  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000009/unit.000009.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000009
+2017-12-22 14:26:46,205: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000004 has return code 0.
+2017-12-22 14:26:46,208: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:26:46,208: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:26:46,308: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000000 has return code 0.
+2017-12-22 14:26:46,308: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:26:46,309: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:26:46,309: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000006 has return code 0.
+2017-12-22 14:26:46,309: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:26:46,309: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:26:46,510: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000007 has return code 0.
+2017-12-22 14:26:46,510: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:26:46,510: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:26:46,611: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000002 has return code 0.
+2017-12-22 14:26:46,611: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:26:46,611: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:26:46,711: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000003 has return code 0.
+2017-12-22 14:26:46,712: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:26:46,712: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:26:47,313: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000001 has return code 0.
+2017-12-22 14:26:47,313: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:26:47,313: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:26:47,314: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000005 has return code 0.
+2017-12-22 14:26:47,314: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:26:47,314: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:26:48,015: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000008 has return code 0.
+2017-12-22 14:26:48,015: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:26:48,016: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:26:48,717: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000009 has return code 0.
+2017-12-22 14:26:48,717: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:26:48,717: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:26:52,407: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000010)
+2017-12-22 14:26:52,407: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:26:52,407: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:26:52,410: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000010 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000010/unit.000010.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000010
+2017-12-22 14:26:59,533: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000010 has return code 0.
+2017-12-22 14:26:59,533: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:26:59,533: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:27:08,014: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000019)
+2017-12-22 14:27:08,015: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:27:08,015: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:27:08,019: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000019 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000019/unit.000019.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000019
+2017-12-22 14:27:08,025: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000014)
+2017-12-22 14:27:08,025: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:27:08,025: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:27:08,029: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000014 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic146  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000014/unit.000014.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000014
+2017-12-22 14:27:08,035: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000016)
+2017-12-22 14:27:08,035: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:27:08,035: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:27:08,038: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000016 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic147  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000016/unit.000016.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000016
+2017-12-22 14:27:08,044: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000015)
+2017-12-22 14:27:08,044: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:27:08,045: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:27:08,048: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000015 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic148  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000015/unit.000015.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000015
+2017-12-22 14:27:08,053: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000020)
+2017-12-22 14:27:08,054: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:27:08,054: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:27:08,057: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000020 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic149  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000020/unit.000020.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000020
+2017-12-22 14:27:08,062: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000013)
+2017-12-22 14:27:08,062: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:27:08,063: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:27:08,066: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000013 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic150  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000013/unit.000013.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000013
+2017-12-22 14:27:08,071: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000018)
+2017-12-22 14:27:08,071: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:27:08,071: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:27:08,075: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000018 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic151  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000018/unit.000018.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000018
+2017-12-22 14:27:08,079: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000017)
+2017-12-22 14:27:08,080: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:27:08,080: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:27:08,083: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000017 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic152  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000017/unit.000017.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000017
+2017-12-22 14:27:08,089: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000012)
+2017-12-22 14:27:08,089: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:27:08,089: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:27:08,092: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000012 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic153  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000012/unit.000012.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000012
+2017-12-22 14:27:08,097: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000011)
+2017-12-22 14:27:08,098: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:27:08,098: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:27:08,101: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000011 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic154  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000011/unit.000011.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000011
+2017-12-22 14:28:16,456: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000019 has return code 0.
+2017-12-22 14:28:16,457: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:28:16,457: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:28:17,259: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000012 has return code 0.
+2017-12-22 14:28:17,259: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:28:17,259: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:28:17,560: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000014 has return code 0.
+2017-12-22 14:28:17,560: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:28:17,560: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:28:17,661: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000011 has return code 0.
+2017-12-22 14:28:17,661: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:28:17,661: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:28:17,862: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000016 has return code 0.
+2017-12-22 14:28:17,862: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:28:17,862: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:28:18,063: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000015 has return code 0.
+2017-12-22 14:28:18,063: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:28:18,063: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:28:18,063: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000020 has return code 0.
+2017-12-22 14:28:18,063: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:28:18,064: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:28:18,565: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000018 has return code 0.
+2017-12-22 14:28:18,565: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:28:18,565: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:28:18,766: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000017 has return code 0.
+2017-12-22 14:28:18,766: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:28:18,766: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:28:18,967: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000013 has return code 0.
+2017-12-22 14:28:18,967: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:28:18,967: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:28:22,605: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000021)
+2017-12-22 14:28:22,605: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:28:22,605: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:28:22,609: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000021 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000021/unit.000021.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000021
+2017-12-22 14:28:29,983: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000021 has return code 0.
+2017-12-22 14:28:29,984: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:28:29,984: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:28:35,098: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000031)
+2017-12-22 14:28:35,099: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:28:35,099: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:28:35,103: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000031 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000031/unit.000031.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000031
+2017-12-22 14:28:35,109: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000029)
+2017-12-22 14:28:35,110: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:28:35,110: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:28:35,114: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000029 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic146  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000029/unit.000029.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000029
+2017-12-22 14:28:35,119: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000027)
+2017-12-22 14:28:35,120: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:28:35,120: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:28:35,124: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000027 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic147  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000027/unit.000027.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000027
+2017-12-22 14:28:35,130: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000026)
+2017-12-22 14:28:35,130: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:28:35,131: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:28:35,134: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000026 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic148  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000026/unit.000026.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000026
+2017-12-22 14:28:35,139: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000025)
+2017-12-22 14:28:35,139: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:28:35,139: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:28:35,143: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000025 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic149  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000025/unit.000025.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000025
+2017-12-22 14:28:35,148: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000022)
+2017-12-22 14:28:35,148: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:28:35,148: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:28:35,151: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000022 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic150  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000022/unit.000022.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000022
+2017-12-22 14:28:35,156: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000024)
+2017-12-22 14:28:35,156: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:28:35,157: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:28:35,160: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000024 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic151  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000024/unit.000024.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000024
+2017-12-22 14:28:35,165: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000023)
+2017-12-22 14:28:35,165: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:28:35,165: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:28:35,169: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000023 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic152  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000023/unit.000023.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000023
+2017-12-22 14:28:35,174: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000030)
+2017-12-22 14:28:35,174: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:28:35,175: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:28:35,178: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000030 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic153  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000030/unit.000030.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000030
+2017-12-22 14:28:35,184: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000028)
+2017-12-22 14:28:35,184: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:28:35,184: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:28:35,187: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000028 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic154  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000028/unit.000028.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000028
+2017-12-22 14:29:44,802: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000027 has return code 0.
+2017-12-22 14:29:44,802: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:29:44,802: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:29:45,303: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000026 has return code 0.
+2017-12-22 14:29:45,304: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:29:45,304: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:29:45,404: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000031 has return code 0.
+2017-12-22 14:29:45,405: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:29:45,405: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:29:45,405: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000022 has return code 0.
+2017-12-22 14:29:45,405: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:29:45,406: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:29:45,406: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000029 has return code 0.
+2017-12-22 14:29:45,406: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:29:45,406: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:29:45,406: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000024 has return code 0.
+2017-12-22 14:29:45,407: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:29:45,407: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:29:45,507: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000028 has return code 0.
+2017-12-22 14:29:45,507: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:29:45,508: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:29:46,109: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000023 has return code 0.
+2017-12-22 14:29:46,109: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:29:46,109: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:29:46,210: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000025 has return code 0.
+2017-12-22 14:29:46,210: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:29:46,210: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:29:46,310: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000030 has return code 0.
+2017-12-22 14:29:46,311: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:29:46,311: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:29:50,755: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000032)
+2017-12-22 14:29:50,755: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:29:50,756: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:29:50,759: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000032 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000032/unit.000032.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000032
+2017-12-22 14:29:58,529: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000032 has return code 0.
+2017-12-22 14:29:58,530: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:29:58,530: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:30:02,151: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000034)
+2017-12-22 14:30:02,151: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:30:02,151: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:30:02,155: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000034 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000034/unit.000034.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000034
+2017-12-22 14:30:02,161: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000033)
+2017-12-22 14:30:02,161: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:30:02,161: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:30:02,165: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000033 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic146  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000033/unit.000033.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000033
+2017-12-22 14:30:04,324: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000040)
+2017-12-22 14:30:04,324: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:30:04,324: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:30:04,328: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000040 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic147  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000040/unit.000040.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000040
+2017-12-22 14:30:04,334: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000038)
+2017-12-22 14:30:04,334: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:30:04,335: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:30:04,338: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000038 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic148  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000038/unit.000038.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000038
+2017-12-22 14:30:04,344: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000042)
+2017-12-22 14:30:04,344: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:30:04,344: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:30:04,348: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000042 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic149  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000042/unit.000042.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000042
+2017-12-22 14:30:04,353: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000041)
+2017-12-22 14:30:04,354: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:30:04,354: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:30:04,357: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000041 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic150  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000041/unit.000041.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000041
+2017-12-22 14:30:04,362: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000039)
+2017-12-22 14:30:04,363: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:30:04,363: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:30:04,366: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000039 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic151  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000039/unit.000039.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000039
+2017-12-22 14:30:04,372: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000037)
+2017-12-22 14:30:04,372: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:30:04,372: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:30:04,390: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000037 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic152  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000037/unit.000037.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000037
+2017-12-22 14:30:04,395: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000035)
+2017-12-22 14:30:04,395: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:30:04,395: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:30:04,399: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000035 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic153  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000035/unit.000035.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000035
+2017-12-22 14:30:04,405: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000036)
+2017-12-22 14:30:04,405: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:30:04,405: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:30:04,409: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000036 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic154  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000036/unit.000036.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000036
+2017-12-22 14:31:11,042: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000034 has return code 0.
+2017-12-22 14:31:11,042: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:11,043: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:31:11,945: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000033 has return code 0.
+2017-12-22 14:31:11,945: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:11,945: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:31:13,147: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000041 has return code 0.
+2017-12-22 14:31:13,148: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:13,148: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:31:13,849: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000039 has return code 0.
+2017-12-22 14:31:13,849: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:13,850: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:31:13,850: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000035 has return code 0.
+2017-12-22 14:31:13,850: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:13,850: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:31:14,051: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000038 has return code 0.
+2017-12-22 14:31:14,051: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:14,051: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:31:14,051: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000037 has return code 0.
+2017-12-22 14:31:14,052: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:14,052: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:31:14,353: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000042 has return code 0.
+2017-12-22 14:31:14,353: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:14,353: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:31:14,554: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000040 has return code 0.
+2017-12-22 14:31:14,554: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:14,554: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:31:14,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000036 has return code 0.
+2017-12-22 14:31:14,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:14,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:31:18,944: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000043)
+2017-12-22 14:31:18,944: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:18,944: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:31:18,948: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000043 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000043/unit.000043.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000043
+2017-12-22 14:31:26,974: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000043 has return code 0.
+2017-12-22 14:31:26,975: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:31:26,975: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:31:30,335: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000045)
+2017-12-22 14:31:30,335: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:30,335: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:31:30,339: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000045 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000045/unit.000045.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000045
+2017-12-22 14:31:30,345: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000044)
+2017-12-22 14:31:30,345: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:30,345: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:31:30,348: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000044 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic146  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000044/unit.000044.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000044
+2017-12-22 14:31:31,471: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000048)
+2017-12-22 14:31:31,472: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:31,472: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:31:31,476: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000048 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic147  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000048/unit.000048.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000048
+2017-12-22 14:31:31,482: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000046)
+2017-12-22 14:31:31,482: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:31,482: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:31:31,486: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000046 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic148  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000046/unit.000046.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000046
+2017-12-22 14:31:31,492: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000051)
+2017-12-22 14:31:31,492: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:31,492: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:31:31,496: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000051 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic149  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000051/unit.000051.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000051
+2017-12-22 14:31:31,501: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000053)
+2017-12-22 14:31:31,501: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:31,502: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:31:31,505: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000053 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic150  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000053/unit.000053.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000053
+2017-12-22 14:31:31,510: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000050)
+2017-12-22 14:31:31,510: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:31,510: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:31:31,514: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000050 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic151  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000050/unit.000050.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000050
+2017-12-22 14:31:31,519: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000047)
+2017-12-22 14:31:31,519: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:31,519: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:31:31,523: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000047 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic152  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000047/unit.000047.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000047
+2017-12-22 14:31:31,527: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000049)
+2017-12-22 14:31:31,528: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:31,528: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:31:31,531: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000049 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic153  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000049/unit.000049.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000049
+2017-12-22 14:31:31,536: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000052)
+2017-12-22 14:31:31,536: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:31:31,536: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:31:31,539: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000052 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic154  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000052/unit.000052.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000052
+2017-12-22 14:32:39,394: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000045 has return code 0.
+2017-12-22 14:32:39,394: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:32:39,394: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:32:40,096: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000044 has return code 0.
+2017-12-22 14:32:40,096: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:32:40,096: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:32:40,697: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000051 has return code 0.
+2017-12-22 14:32:40,698: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:32:40,698: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:32:40,798: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000053 has return code 0.
+2017-12-22 14:32:40,798: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:32:40,799: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:32:40,899: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000049 has return code 0.
+2017-12-22 14:32:40,899: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:32:40,900: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:32:41,000: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000052 has return code 0.
+2017-12-22 14:32:41,000: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:32:41,000: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:32:41,101: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000046 has return code 0.
+2017-12-22 14:32:41,101: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:32:41,101: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:32:41,702: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000047 has return code 0.
+2017-12-22 14:32:41,702: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:32:41,703: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:32:42,003: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000050 has return code 0.
+2017-12-22 14:32:42,004: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:32:42,004: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:32:42,204: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000048 has return code 0.
+2017-12-22 14:32:42,205: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:32:42,205: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:32:45,142: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000054)
+2017-12-22 14:32:45,142: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:32:45,143: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:32:45,146: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000054 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000054/unit.000054.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000054
+2017-12-22 14:32:53,021: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000054 has return code 0.
+2017-12-22 14:32:53,022: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:32:53,022: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:32:58,597: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000064)
+2017-12-22 14:32:58,597: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:32:58,597: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:32:58,601: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000064 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000064/unit.000064.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000064
+2017-12-22 14:32:58,607: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000055)
+2017-12-22 14:32:58,607: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:32:58,607: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:32:58,623: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000055 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic146  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000055/unit.000055.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000055
+2017-12-22 14:32:58,629: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000058)
+2017-12-22 14:32:58,629: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:32:58,629: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:32:58,633: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000058 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic147  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000058/unit.000058.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000058
+2017-12-22 14:32:58,638: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000062)
+2017-12-22 14:32:58,638: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:32:58,638: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:32:58,641: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000062 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic148  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000062/unit.000062.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000062
+2017-12-22 14:32:58,645: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000061)
+2017-12-22 14:32:58,645: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:32:58,646: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:32:58,649: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000061 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic149  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000061/unit.000061.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000061
+2017-12-22 14:32:58,654: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000056)
+2017-12-22 14:32:58,654: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:32:58,654: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:32:58,657: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000056 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic150  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000056/unit.000056.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000056
+2017-12-22 14:32:58,663: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000057)
+2017-12-22 14:32:58,663: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:32:58,663: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:32:58,666: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000057 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic151  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000057/unit.000057.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000057
+2017-12-22 14:32:58,672: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000060)
+2017-12-22 14:32:58,672: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:32:58,672: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:32:58,675: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000060 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic152  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000060/unit.000060.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000060
+2017-12-22 14:32:58,680: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000059)
+2017-12-22 14:32:58,680: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:32:58,680: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:32:58,683: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000059 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic153  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000059/unit.000059.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000059
+2017-12-22 14:32:58,688: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000063)
+2017-12-22 14:32:58,688: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:32:58,688: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:32:58,691: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000063 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic154  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000063/unit.000063.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000063
+2017-12-22 14:34:07,943: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000063 has return code 0.
+2017-12-22 14:34:07,943: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:34:07,943: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:34:08,445: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000064 has return code 0.
+2017-12-22 14:34:08,445: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:34:08,445: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:34:08,445: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000061 has return code 0.
+2017-12-22 14:34:08,445: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:34:08,446: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:34:08,546: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000056 has return code 0.
+2017-12-22 14:34:08,546: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:34:08,546: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:34:08,546: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000059 has return code 0.
+2017-12-22 14:34:08,547: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:34:08,547: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:34:08,948: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000055 has return code 0.
+2017-12-22 14:34:08,948: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:34:08,948: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:34:08,948: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000058 has return code 0.
+2017-12-22 14:34:08,949: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:34:08,949: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:34:09,049: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000057 has return code 0.
+2017-12-22 14:34:09,049: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:34:09,049: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:34:09,350: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000062 has return code 0.
+2017-12-22 14:34:09,350: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:34:09,351: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:34:09,551: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000060 has return code 0.
+2017-12-22 14:34:09,551: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:34:09,551: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:34:13,336: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000065)
+2017-12-22 14:34:13,336: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:34:13,337: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:34:13,340: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000065 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000065/unit.000065.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000065
+2017-12-22 14:34:21,970: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000065 has return code 0.
+2017-12-22 14:34:21,970: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:34:21,971: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:34:25,690: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000067)
+2017-12-22 14:34:25,690: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:34:25,691: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:34:25,695: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000067 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000067/unit.000067.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000067
+2017-12-22 14:34:25,701: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000066)
+2017-12-22 14:34:25,701: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:34:25,701: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:34:25,705: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000066 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic146  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000066/unit.000066.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000066
+2017-12-22 14:34:27,863: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000074)
+2017-12-22 14:34:27,863: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:34:27,863: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:34:27,867: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000074 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic147  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000074/unit.000074.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000074
+2017-12-22 14:34:27,872: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000070)
+2017-12-22 14:34:27,873: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:34:27,873: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:34:27,876: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000070 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic148  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000070/unit.000070.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000070
+2017-12-22 14:34:27,881: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000069)
+2017-12-22 14:34:27,882: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:34:27,882: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:34:27,885: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000069 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic149  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000069/unit.000069.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000069
+2017-12-22 14:34:27,890: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000073)
+2017-12-22 14:34:27,890: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:34:27,891: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:34:27,894: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000073 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic150  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000073/unit.000073.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000073
+2017-12-22 14:34:27,898: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000072)
+2017-12-22 14:34:27,898: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:34:27,899: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:34:27,902: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000072 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic151  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000072/unit.000072.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000072
+2017-12-22 14:34:27,906: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000068)
+2017-12-22 14:34:27,906: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:34:27,907: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:34:27,910: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000068 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic152  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000068/unit.000068.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000068
+2017-12-22 14:34:27,915: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000071)
+2017-12-22 14:34:27,915: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:34:27,915: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:34:27,919: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000071 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic153  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000071/unit.000071.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000071
+2017-12-22 14:34:27,924: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000075)
+2017-12-22 14:34:27,924: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:34:27,924: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:34:27,927: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000075 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic154  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000075/unit.000075.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000075
+2017-12-22 14:35:33,993: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000067 has return code 0.
+2017-12-22 14:35:33,993: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:35:33,993: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:35:35,897: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000070 has return code 0.
+2017-12-22 14:35:35,897: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:35:35,897: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:35:36,398: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000071 has return code 0.
+2017-12-22 14:35:36,398: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:35:36,399: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:35:36,599: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000066 has return code 0.
+2017-12-22 14:35:36,599: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:35:36,599: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:35:37,201: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000072 has return code 0.
+2017-12-22 14:35:37,201: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:35:37,201: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:35:37,402: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000074 has return code 0.
+2017-12-22 14:35:37,402: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:35:37,402: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:35:37,502: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000075 has return code 0.
+2017-12-22 14:35:37,503: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:35:37,503: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:35:37,703: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000073 has return code 0.
+2017-12-22 14:35:37,704: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:35:37,704: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:35:38,605: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000068 has return code 0.
+2017-12-22 14:35:38,606: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:35:38,606: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:35:38,906: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000069 has return code 0.
+2017-12-22 14:35:38,907: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:35:38,907: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:35:41,600: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000076)
+2017-12-22 14:35:41,600: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:35:41,601: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:35:41,604: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000076 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000076/unit.000076.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000076
+2017-12-22 14:35:50,023: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000076 has return code 0.
+2017-12-22 14:35:50,024: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:35:50,024: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:35:53,920: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000077)
+2017-12-22 14:35:53,921: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:35:53,921: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:35:53,924: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000077 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000077/unit.000077.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000077
+2017-12-22 14:35:53,930: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000078)
+2017-12-22 14:35:53,930: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:35:53,931: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:35:53,934: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000078 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic146  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000078/unit.000078.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000078
+2017-12-22 14:35:55,056: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000081)
+2017-12-22 14:35:55,056: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:35:55,056: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:35:55,060: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000081 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic147  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000081/unit.000081.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000081
+2017-12-22 14:35:55,065: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000085)
+2017-12-22 14:35:55,066: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:35:55,066: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:35:55,070: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000085 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic148  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000085/unit.000085.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000085
+2017-12-22 14:35:55,074: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000086)
+2017-12-22 14:35:55,075: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:35:55,075: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:35:55,079: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000086 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic149  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000086/unit.000086.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000086
+2017-12-22 14:35:55,083: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000079)
+2017-12-22 14:35:55,083: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:35:55,084: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:35:55,087: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000079 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic150  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000079/unit.000079.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000079
+2017-12-22 14:35:55,091: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000082)
+2017-12-22 14:35:55,091: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:35:55,091: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:35:55,094: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000082 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic151  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000082/unit.000082.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000082
+2017-12-22 14:35:55,099: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000083)
+2017-12-22 14:35:55,099: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:35:55,099: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:35:55,103: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000083 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic152  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000083/unit.000083.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000083
+2017-12-22 14:35:55,107: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000084)
+2017-12-22 14:35:55,107: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:35:55,107: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:35:55,111: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000084 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic153  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000084/unit.000084.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000084
+2017-12-22 14:35:55,116: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000080)
+2017-12-22 14:35:55,116: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:35:55,116: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:35:55,119: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000080 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic154  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000080/unit.000080.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000080
+2017-12-22 14:37:02,434: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000077 has return code 0.
+2017-12-22 14:37:02,434: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:37:02,435: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:37:04,539: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000083 has return code 0.
+2017-12-22 14:37:04,539: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:37:04,539: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:37:04,639: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000078 has return code 0.
+2017-12-22 14:37:04,640: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:37:04,640: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:37:04,640: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000082 has return code 0.
+2017-12-22 14:37:04,640: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:37:04,640: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:37:04,741: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000081 has return code 0.
+2017-12-22 14:37:04,741: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:37:04,741: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:37:05,042: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000085 has return code 0.
+2017-12-22 14:37:05,042: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:37:05,042: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:37:05,042: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000086 has return code 0.
+2017-12-22 14:37:05,043: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:37:05,043: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:37:05,343: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000084 has return code 0.
+2017-12-22 14:37:05,344: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:37:05,344: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:37:06,346: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000079 has return code 0.
+2017-12-22 14:37:06,346: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:37:06,346: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:37:06,547: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000080 has return code 0.
+2017-12-22 14:37:06,547: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:37:06,547: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:37:09,805: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000087)
+2017-12-22 14:37:09,805: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:37:09,805: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:37:09,809: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000087 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000087/unit.000087.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000087
+2017-12-22 14:37:18,864: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000087 has return code 0.
+2017-12-22 14:37:18,865: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:37:18,865: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:37:28,399: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000093)
+2017-12-22 14:37:28,399: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:37:28,400: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:37:28,403: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000093 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000093/unit.000093.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000093
+2017-12-22 14:37:28,409: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000092)
+2017-12-22 14:37:28,409: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:37:28,410: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:37:28,436: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000092 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic146  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000092/unit.000092.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000092
+2017-12-22 14:37:28,442: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000097)
+2017-12-22 14:37:28,442: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:37:28,442: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:37:28,446: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000097 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic147  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000097/unit.000097.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000097
+2017-12-22 14:37:28,451: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000091)
+2017-12-22 14:37:28,452: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:37:28,452: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:37:28,455: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000091 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic148  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000091/unit.000091.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000091
+2017-12-22 14:37:28,460: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000089)
+2017-12-22 14:37:28,460: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:37:28,461: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:37:28,464: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000089 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic149  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000089/unit.000089.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000089
+2017-12-22 14:37:28,470: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000094)
+2017-12-22 14:37:28,470: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:37:28,470: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:37:28,473: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000094 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic150  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000094/unit.000094.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000094
+2017-12-22 14:37:28,478: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000095)
+2017-12-22 14:37:28,479: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:37:28,479: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:37:28,482: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000095 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic151  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000095/unit.000095.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000095
+2017-12-22 14:37:28,488: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000096)
+2017-12-22 14:37:28,488: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:37:28,488: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:37:28,492: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000096 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic152  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000096/unit.000096.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000096
+2017-12-22 14:37:28,498: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000090)
+2017-12-22 14:37:28,498: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:37:28,498: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:37:28,502: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000090 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic153  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000090/unit.000090.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000090
+2017-12-22 14:37:28,507: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000088)
+2017-12-22 14:37:28,507: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:37:28,507: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:37:28,511: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000088 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic154  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000088/unit.000088.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000088
+2017-12-22 14:38:37,498: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000093 has return code 0.
+2017-12-22 14:38:37,498: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:38:37,498: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:38:37,599: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000090 has return code 0.
+2017-12-22 14:38:37,599: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:38:37,599: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:38:37,700: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000089 has return code 0.
+2017-12-22 14:38:37,700: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:38:37,700: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:38:37,700: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000088 has return code 0.
+2017-12-22 14:38:37,700: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:38:37,701: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:38:38,001: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000094 has return code 0.
+2017-12-22 14:38:38,002: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:38:38,002: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:38:38,202: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000092 has return code 0.
+2017-12-22 14:38:38,203: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:38:38,203: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:38:38,303: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000095 has return code 0.
+2017-12-22 14:38:38,303: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:38:38,303: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:38:38,404: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000097 has return code 0.
+2017-12-22 14:38:38,404: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:38:38,404: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:38:38,605: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000091 has return code 0.
+2017-12-22 14:38:38,605: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:38:38,605: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:38:38,806: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000096 has return code 0.
+2017-12-22 14:38:38,806: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:38:38,806: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:38:42,121: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000098)
+2017-12-22 14:38:42,121: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:38:42,121: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:38:42,125: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000098 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000098/unit.000098.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000098
+2017-12-22 14:38:51,425: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000098 has return code 0.
+2017-12-22 14:38:51,425: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:38:51,426: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:38:55,492: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000100)
+2017-12-22 14:38:55,492: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:38:55,492: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:38:55,496: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000100 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000100/unit.000100.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000100
+2017-12-22 14:38:55,502: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000099)
+2017-12-22 14:38:55,502: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:38:55,502: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:38:55,506: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000099 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic146  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000099/unit.000099.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000099
+2017-12-22 14:38:57,664: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000108)
+2017-12-22 14:38:57,665: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:38:57,665: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:38:57,668: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000108 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic147  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000108/unit.000108.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000108
+2017-12-22 14:38:57,674: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000103)
+2017-12-22 14:38:57,674: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:38:57,674: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:38:57,678: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000103 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic148  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000103/unit.000103.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000103
+2017-12-22 14:38:57,682: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000101)
+2017-12-22 14:38:57,683: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:38:57,683: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:38:57,686: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000101 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic149  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000101/unit.000101.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000101
+2017-12-22 14:38:57,691: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000106)
+2017-12-22 14:38:57,692: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:38:57,692: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:38:57,695: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000106 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic150  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000106/unit.000106.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000106
+2017-12-22 14:38:57,700: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000104)
+2017-12-22 14:38:57,700: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:38:57,700: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:38:57,703: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000104 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic151  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000104/unit.000104.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000104
+2017-12-22 14:38:57,707: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000102)
+2017-12-22 14:38:57,707: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:38:57,708: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:38:57,711: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000102 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic152  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000102/unit.000102.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000102
+2017-12-22 14:38:57,716: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000107)
+2017-12-22 14:38:57,716: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:38:57,716: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:38:57,720: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000107 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic153  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000107/unit.000107.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000107
+2017-12-22 14:38:57,724: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000105)
+2017-12-22 14:38:57,724: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:38:57,725: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:38:57,728: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000105 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic154  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000105/unit.000105.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000105
+2017-12-22 14:40:04,147: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000100 has return code 0.
+2017-12-22 14:40:04,148: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:40:04,148: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:40:05,751: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000099 has return code 0.
+2017-12-22 14:40:05,751: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:40:05,752: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:40:06,453: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000108 has return code 0.
+2017-12-22 14:40:06,453: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:40:06,453: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:40:06,854: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000102 has return code 0.
+2017-12-22 14:40:06,854: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:40:06,855: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:40:06,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000105 has return code 0.
+2017-12-22 14:40:06,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:40:06,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:40:07,056: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000104 has return code 0.
+2017-12-22 14:40:07,056: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:40:07,056: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:40:07,257: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000103 has return code 0.
+2017-12-22 14:40:07,257: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:40:07,257: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:40:07,658: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000107 has return code 0.
+2017-12-22 14:40:07,658: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:40:07,658: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:40:07,859: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000106 has return code 0.
+2017-12-22 14:40:07,859: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:40:07,859: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:40:08,260: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000101 has return code 0.
+2017-12-22 14:40:08,260: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:40:08,261: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:40:12,452: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000109)
+2017-12-22 14:40:12,452: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-12-22 14:40:12,452: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2017-12-22 14:40:12,456: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000109 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic137  /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000109/unit.000109.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0008/pilot.0000/unit.000109
+2017-12-22 14:40:21,980: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000109 has return code 0.
+2017-12-22 14:40:21,980: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-22 14:40:21,981: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2017-12-22 14:40:43,347: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : command_cb [control_pubsub]: {'cmd': 'terminate', 'arg': None}
+2017-12-22 14:40:43,348: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : got termination command
+2017-12-22 14:40:43,411: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : recv message: 
+2017-12-22 14:40:43,411: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : message received: 
+2017-12-22 14:40:43,411: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: WARNING : received empty string, parent closed ep
+2017-12-22 14:40:43,411: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : watcher closes
+2017-12-22 14:40:43,411: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : put message: [agent_0.executing.0.child.watch.thread] work finished
+2017-12-22 14:40:43,411: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2017-12-22 14:40:43,411: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2017-12-22 14:40:43,412: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : put message: [agent_0.executing.0.child.watch.thread] terminating
+2017-12-22 14:40:43,493: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_finalize_common()
+2017-12-22 14:40:43,493: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : alive check: proc invalid - stop [False - True]
+2017-12-22 14:40:43,516: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : stop agent_0.executing.0.child (45260 : 45260 : agent_0.executing.0.child.subscriber._cancel_monitor_cb) [radical.pilot.utils.component.Popen._cancel_monitor_cb]
+2017-12-22 14:40:43,522: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : parent stops child  45260 -> 45260 [agent_0.executing.0.child]
+2017-12-22 14:40:43,522: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : send message: [agent_0.executing.0.child] STOP
+2017-12-22 14:40:43,522: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2017-12-22 14:40:43,523: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_common()
+2017-12-22 14:40:43,523: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.executing.0.child unregister publisher log_pubsub
+2017-12-22 14:40:43,524: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher log_pubsub
+2017-12-22 14:40:43,524: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.executing.0.child unregister publisher state_pubsub
+2017-12-22 14:40:43,526: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher state_pubsub
+2017-12-22 14:40:43,526: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.executing.0.child unregister publisher control_pubsub
+2017-12-22 14:40:43,527: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher control_pubsub
+2017-12-22 14:40:43,528: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : agent_0.executing.0.child close prof
+2017-12-22 14:40:43,535: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.executing.0.child.subscriber._cancel_monitor_cb - do not join
+2017-12-22 14:40:43,535: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : child calls stop()
+2017-12-22 14:40:43,535: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.executing.0.child.subscriber._cancel_monitor_cb - do not join
+2017-12-22 14:40:43,535: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.executing.0.child.subscriber._cancel_monitor_cb - do not join
+2017-12-22 14:40:43,535: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2017-12-22 14:40:43,536: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [agent_0.executing.0.child.subscriber._cancel_monitor_cb.thread] terminating
+2017-12-22 14:40:43,537: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : stop agent_0.executing.0.child (45260 : 45260 : MainThread) [radical.utils.process.Popen.is_valid]
+2017-12-22 14:40:43,537: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : super agent_0.executing.0.child is invalid
+2017-12-22 14:40:43,537: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : component agent_0.executing.0.child is invalid
+2017-12-22 14:40:43,539: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : stop agent_0.executing.0.child (45260 : 45260 : MainThread) [radical.pilot.utils.component.Popen.is_valid]
+2017-12-22 14:40:43,539: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : publisher log_pubsub is not registered
+2017-12-22 14:40:43,539: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : publisher state_pubsub is not registered
+2017-12-22 14:40:43,539: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : publisher control_pubsub is not registered
+2017-12-22 14:40:43,539: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : agent_0.executing.0.child close prof
+2017-12-22 14:40:43,539: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : send message: [agent_0.executing.0.child] terminating
+2017-12-22 14:40:43,539: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2017-12-22 14:40:43,539: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : parent stops child
+2017-12-22 14:40:43,539: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-12-22 14:40:43,539: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : parent stops child
+2017-12-22 14:40:43,539: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-12-22 14:40:43,541: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : ru_finalize_child (NOOP)
+2017-12-22 14:40:43,541: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : put message: [agent_0.executing.0.child.subscriber.command_cb.thread] terminating

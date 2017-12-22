@@ -1,0 +1,178 @@
+2017-12-22 14:44:15,143: update.0            : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2017-12-22 14:44:15,146: update.0            : MainProcess                     : MainThread     : INFO    :                      pid: 50721
+2017-12-22 14:44:15,146: update.0            : MainProcess                     : MainThread     : INFO    :                      tid: MainThread
+2017-12-22 14:44:15,146: update.0            : MainProcess                     : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2017-12-22 14:44:15,207: update.0            : MainProcess                     : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:44:15,207: update.0            : MainProcess                     : MainThread     : DEBUG   : start process
+2017-12-22 14:44:15,551: update.0            : MainProcess                     : MainThread     : INFO    : recv message: alive
+2017-12-22 14:44:15,551: update.0            : MainProcess                     : MainThread     : INFO    : initialize update.0
+2017-12-22 14:44:15,558: update.0            : MainProcess                     : MainThread     : INFO    : cfg: {'agent_launch_method': 'SSH',
+ 'agent_name': 'agent_0',
+ 'agents': {},
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.137:41841',
+                                       'addr_out': 'tcp://204.90.41.137:40590',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.137:38786',
+                                         'addr_out': 'tcp://204.90.41.137:46038',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.137:36573',
+                                        'addr_out': 'tcp://204.90.41.137:42857',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.137:35452',
+                                           'addr_out': 'tcp://204.90.41.137:42864',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.137:41216',
+                                            'addr_out': 'tcp://204.90.41.137:33474',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.137:42042',
+                                         'addr_out': 'tcp://204.90.41.137:44175',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://204.90.41.137:32831',
+                                'addr_out': 'tcp://204.90.41.137:40054',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://204.90.41.137:40309',
+                            'addr_out': 'tcp://204.90.41.137:46228',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://204.90.41.137:34982',
+                              'addr_out': 'tcp://204.90.41.137:45238',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'cname': 'UpdateWorker',
+ 'components': {},
+ 'cores': 200,
+ 'cores_per_node': 20,
+ 'count': 1,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': None,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://entk:entk@ds163826.mlab.com:63826/adap-msm',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'logdir': '.',
+ 'lrms': 'TORQUE',
+ 'lrms_info': {'agent_nodes': {},
+               'cores_per_node': 20,
+               'lm_info': {},
+               'name': 'Torque',
+               'node_list': ['smic137',
+                             'smic146',
+                             'smic147',
+                             'smic148',
+                             'smic149',
+                             'smic150',
+                             'smic151',
+                             'smic152',
+                             'smic153',
+                             'smic154']},
+ 'max_io_loglength': 1024,
+ 'mode': 'shared',
+ 'mpi_launch_method': 'MPIEXEC',
+ 'number': 0,
+ 'owner': 'agent_0',
+ 'pilot_id': 'pilot.0000',
+ 'pilot_sandbox': '/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0009/pilot.0000/',
+ 'resource_cfg': {'agent_launch_method': 'SSH',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': '20',
+                  'default_queue': 'workq',
+                  'default_remote_workdir': '/work/$USER',
+                  'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)",
+                  'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                             'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'},
+                  'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/',
+                  'label': 'xsede.supermic_ssh',
+                  'lrms': 'TORQUE',
+                  'mpi_launch_method': 'MPIEXEC',
+                  'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.',
+                  'pre_bootstrap_1': ['module load python/2.7.7-anaconda'],
+                  'python_dist': 'default',
+                  'rp_version': 'local',
+                  'schemas': ['gsissh', 'ssh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/',
+                          'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'},
+                  'task_launch_method': 'SSH',
+                  'valid_roots': ['/work'],
+                  'virtenv_mode': 'create'},
+ 'resource_sandbox': '/work/vivek91/radical.pilot.sandbox',
+ 'runtime': 150,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0009',
+ 'session_sandbox': '/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0009',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'target': 'local',
+ 'task_launch_method': 'SSH',
+ 'uid': 'agent_0',
+ 'workdir': '/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017522.0009/pilot.0000'}
+2017-12-22 14:44:15,558: update.0            : MainProcess                     : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:44:15,558: update.0            : MainProcess                     : MainThread     : DEBUG   : START: update.0 register publisher log_pubsub
+2017-12-22 14:44:15,559: update.0            : MainProcess                     : MainThread     : DEBUG   : using addr tcp://204.90.41.137:40309 for pubsub log_pubsub
+2017-12-22 14:44:15,563: update.0            : MainProcess                     : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0003
+2017-12-22 14:44:15,564: update.0            : MainProcess                     : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:44:15,564: update.0            : MainProcess                     : MainThread     : DEBUG   : START: update.0 register publisher state_pubsub
+2017-12-22 14:44:15,564: update.0            : MainProcess                     : MainThread     : DEBUG   : using addr tcp://204.90.41.137:34982 for pubsub state_pubsub
+2017-12-22 14:44:15,568: update.0            : MainProcess                     : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0003
+2017-12-22 14:44:15,568: update.0            : MainProcess                     : MainThread     : DEBUG   : alive check in term
+2017-12-22 14:44:15,568: update.0            : MainProcess                     : MainThread     : DEBUG   : START: update.0 register publisher control_pubsub
+2017-12-22 14:44:15,568: update.0            : MainProcess                     : MainThread     : DEBUG   : using addr tcp://204.90.41.137:32831 for pubsub control_pubsub
+2017-12-22 14:44:15,573: update.0            : MainProcess                     : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0003
+2017-12-22 14:44:15,573: update.0            : MainProcess                     : MainThread     : DEBUG   : parent name: update.0.watch
+2017-12-22 14:44:15,573: update.0            : MainProcess                     : MainThread     : DEBUG   : start thread
+2017-12-22 14:44:15,573: update.0            : MainProcess                     : update.0.watch : DEBUG   : child name: update.0.watch.thread
+2017-12-22 14:44:15,574: update.0            : MainProcess                     : update.0.watch : INFO    : child (me) initializing
+2017-12-22 14:44:15,574: update.0            : MainProcess                     : update.0.watch : DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:44:15,574: update.0            : MainProcess                     : update.0.watch : DEBUG   : ru_initialize_child (NOOP)
+2017-12-22 14:44:15,574: update.0            : MainProcess                     : update.0.watch : INFO    : send alive
+2017-12-22 14:44:15,574: update.0            : MainProcess                     : update.0.watch : INFO    : put message: [update.0.watch.thread] alive
+2017-12-22 14:44:15,575: update.0            : MainProcess                     : MainThread     : INFO    : get msg: alive
+2017-12-22 14:44:15,575: update.0            : MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-12-22 14:44:15,575: update.0            : MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-12-22 14:44:15,575: update.0            : MainProcess                     : MainThread     : DEBUG   : child thread update.0.watch started
+2017-12-22 14:44:15,575: update.0            : MainProcess                     : MainThread     : INFO    : child is alive
+2017-12-22 14:44:15,575: update.0            : MainProcess                     : MainThread     : DEBUG   : process class started child
+2017-12-22 14:59:32,208: update.0            : MainProcess                     : update.0.watch : INFO    : recv message: STOP
+2017-12-22 14:59:32,208: update.0            : MainProcess                     : update.0.watch : INFO    : message received: STOP
+2017-12-22 14:59:32,208: update.0            : MainProcess                     : update.0.watch : INFO    : STOP received: STOP
+2017-12-22 14:59:32,209: update.0            : MainProcess                     : update.0.watch : INFO    : watcher closes
+2017-12-22 14:59:32,209: update.0            : MainProcess                     : update.0.watch : INFO    : put message: [update.0.watch.thread] work finished
+2017-12-22 14:59:32,209: update.0            : MainProcess                     : update.0.watch : DEBUG   : ru_finalize_child (NOOP)
+2017-12-22 14:59:32,209: update.0            : MainProcess                     : update.0.watch : DEBUG   : ru_finalize_common (NOOP)
+2017-12-22 14:59:32,209: update.0            : MainProcess                     : update.0.watch : INFO    : put message: [update.0.watch.thread] terminating
+2017-12-22 14:59:33,218: update.0            : MainProcess                     : MainThread     : INFO    : stop update.0 (50721 : 50895 : MainThread) [radical.pilot.worker.update.Update.stop]
+2017-12-22 14:59:33,240: update.0            : MainProcess                     : MainThread     : INFO    : parent stops child  50721 -> 50895 [update.0]
+2017-12-22 14:59:33,240: update.0            : MainProcess                     : MainThread     : INFO    : send message: [update.0] STOP
+2017-12-22 14:59:33,240: update.0            : MainProcess                     : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2017-12-22 14:59:33,240: update.0            : MainProcess                     : MainThread     : DEBUG   : ru_finalize_common()
+2017-12-22 14:59:33,241: update.0            : MainProcess                     : MainThread     : DEBUG   : TERM : update.0 unregister publisher log_pubsub
+2017-12-22 14:59:33,241: update.0            : MainProcess                     : MainThread     : DEBUG   : unregistered publisher log_pubsub
+2017-12-22 14:59:33,241: update.0            : MainProcess                     : MainThread     : DEBUG   : TERM : update.0 unregister publisher state_pubsub
+2017-12-22 14:59:33,242: update.0            : MainProcess                     : MainThread     : DEBUG   : unregistered publisher state_pubsub
+2017-12-22 14:59:33,242: update.0            : MainProcess                     : MainThread     : DEBUG   : TERM : update.0 unregister publisher control_pubsub
+2017-12-22 14:59:33,242: update.0            : MainProcess                     : MainThread     : DEBUG   : unregistered publisher control_pubsub
+2017-12-22 14:59:33,242: update.0            : MainProcess                     : MainThread     : DEBUG   : update.0 close prof
+2017-12-22 14:59:33,245: update.0            : MainProcess                     : MainThread     : INFO    : parent stops child
+2017-12-22 14:59:33,245: update.0            : MainProcess                     : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-12-22 14:59:33,245: update.0            : MainProcess                     : MainThread     : DEBUG   : ru_finalize_common (NOOP)
