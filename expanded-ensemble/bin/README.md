@@ -49,6 +49,9 @@ Next, you need to set a few environment variables:
 export RADICAL_ENTK_VERBOSE=info
 export RADICAL_PILOT_DBURL="mongo db url"
 export RP_ENABLE_OLD_DEFINES=True
+export SAGA_PTY_SSH_TIMEOUT=300
+export RADICAL_ENTK_PROFILE=True
+export RADICAL_PILOT_PROFILE=True
 ```
 
 
