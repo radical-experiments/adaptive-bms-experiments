@@ -11,11 +11,10 @@ Supermic has had shortest queue times. Might be best to start with the same.
 
 ```
 pip install radical.pilot
-git clone git@github.com:radical-cybertools/radical.entk.git
+git clone https://github.com/radical-cybertools/radical.entk.git
 cd radical.entk
-git checkout experiments/ee
-cd ..
-pip install radical.entk
+git checkout devel
+pip install .
 ```
 * Note: For the current version, you will have to install RabbitMQ. 
 [This link](http://radicalentk-06.readthedocs.io/en/arch-v0.6/install.html) provides two methods in which
@@ -50,6 +49,9 @@ Next, you need to set a few environment variables:
 export RADICAL_ENTK_VERBOSE=info
 export RADICAL_PILOT_DBURL="mongo db url"
 export RP_ENABLE_OLD_DEFINES=True
+export SAGA_PTY_SSH_TIMEOUT=300
+export RADICAL_ENTK_PROFILE=True
+export RADICAL_PILOT_PROFILE=True
 ```
 
 
