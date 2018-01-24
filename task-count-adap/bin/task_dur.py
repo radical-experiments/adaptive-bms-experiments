@@ -1,5 +1,5 @@
 from radical.entk import Pipeline, Stage, Task, AppManager, ResourceManager
-import os
+import os, sys
 
 # ------------------------------------------------------------------------------
 # Set default verbosity
@@ -10,15 +10,13 @@ if not os.environ.get('RADICAL_ENTK_VERBOSE'):
 if not os.environ.get('RADICAL_PILOT_DBURL'):
     os.environ['RADICAL_PILOT_DBURL'] = "mongodb://138.201.86.166:27017/ee_exp_4c"
 
-MAX_STAGES = 2
 CUR_STAGE = 1
-
 
 def generate_pipeline():
     
     def func_condition():
 
-        global CUR_STAGE, MAX_STAGES
+        global CUR_STAGE
     
         if CUR_STAGE < MAX_STAGES:
             CUR_STAGE += 1
@@ -31,14 +29,21 @@ def generate_pipeline():
         global CUR_STAGE
 
         s = Stage()
-        print 'func uid: ', s.uid
         
         t = Task()    
-        t.executable = ['/bin/echo']   
-        t.arguments = ['This is added stage %s'%CUR_STAGE] 
+        t.pre_exec = ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH']
+        t.executable = ['stress-ng']   
+        t.arguments = [ '-c', '1', '-t', str(duration)] 
 
         # Add the Task to the Stage
         s.add_tasks(t)
+
+        # Add post-exec to the Stage
+        s.post_exec = {
+                       'condition': func_condition,
+                       'on_true': func_on_true,
+                       'on_false': func_on_false
+                    }
 
         p.add_stages(s)
 
@@ -50,12 +55,11 @@ def generate_pipeline():
 
     # Create a Stage object 
     s1 = Stage()
-    print 'Main uid: ', s1.uid
 
-    # Create a Task object which creates a file named 'output.txt' of size 1 MB
     t1 = Task()    
-    t1.executable = ['/bin/echo']   
-    t1.arguments = ['This is the original stage'] 
+    t1.pre_exec = ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH']
+    t1.executable = ['stress-ng']   
+    t1.arguments = [ '-c', '1', '-t', str(duration)]  
 
     # Add the Task to the Stage
     s1.add_tasks(t1)
@@ -74,6 +78,8 @@ def generate_pipeline():
 
 if __name__ == '__main__':
 
+    duration = int(sys.argv[1])
+    MAX_STAGES = int(sys.argv[2])
 
     # Create a dictionary describe four mandatory keys:
     # resource, walltime, cores and project
@@ -81,7 +87,7 @@ if __name__ == '__main__':
     res_dict = {
 
             'resource': 'xsede.supermic',
-            'walltime': 10,
+            'walltime': duration*(MAX_STAGES+1) + 20,
             'cores': 21,
             'project': 'TG-MCB090174',
             'access_schema': 'gsissh'
