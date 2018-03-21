@@ -1,0 +1,441 @@
+2018-01-24 11:48:36,890: umgr.0000           : task-manager                    : MainThread     : INFO    : python.interpreter   version: 2.7.6 (default, Jun 22 2015, 17:58:13) [GCC 4.8.2]
+2018-01-24 11:48:36,890: umgr.0000           : task-manager                    : MainThread     : INFO    :                      pid: 13507
+2018-01-24 11:48:36,890: umgr.0000           : task-manager                    : MainThread     : INFO    :                      tid: MainThread
+2018-01-24 11:48:36,890: umgr.0000           : task-manager                    : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2018-01-24 11:48:36,961: umgr.0000           : task-manager                    : MainThread     : DEBUG   : alive check in term
+2018-01-24 11:48:36,961: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start process
+2018-01-24 11:48:36,961: umgr.0000           : task-manager                    : MainThread     : INFO    : initialize umgr.0000
+2018-01-24 11:48:36,962: umgr.0000           : task-manager                    : MainThread     : INFO    : cfg: {u'bridges': {u'umgr_reschedule_pubsub': {u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1},
+              u'umgr_scheduling_queue': {u'bulk_size': 0,
+                                         u'log_level': u'debug',
+                                         u'stall_hwm': 1},
+              u'umgr_staging_input_queue': {u'bulk_size': 0,
+                                            u'log_level': u'debug',
+                                            u'stall_hwm': 1},
+              u'umgr_staging_output_queue': {u'bulk_size': 0,
+                                             u'log_level': u'debug',
+                                             u'stall_hwm': 1},
+              u'umgr_unschedule_pubsub': {u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1}},
+ u'bulk_collection_size': 100,
+ u'bulk_collection_time': 1.0,
+ u'components': {u'UMGRSchedulingComponent': {u'count': 1},
+                 u'UMGRStagingInputComponent': {u'count': 1},
+                 u'UMGRStagingOutputComponent': {u'count': 1}},
+ u'db_poll_sleeptime': 1.0,
+ 'owner': 'umgr.0000',
+ u'scheduler': u'round_robin'}
+2018-01-24 11:48:36,962: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start bridges   : {u'umgr_reschedule_pubsub': {u'bulk_size': 0,
+                             u'log_level': u'debug',
+                             u'stall_hwm': 1},
+ u'umgr_scheduling_queue': {u'bulk_size': 0,
+                            u'log_level': u'debug',
+                            u'stall_hwm': 1},
+ u'umgr_staging_input_queue': {u'bulk_size': 0,
+                               u'log_level': u'debug',
+                               u'stall_hwm': 1},
+ u'umgr_staging_output_queue': {u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1},
+ u'umgr_unschedule_pubsub': {u'bulk_size': 0,
+                             u'log_level': u'debug',
+                             u'stall_hwm': 1}}
+2018-01-24 11:48:36,962: umgr.0000           : task-manager                    : MainThread     : INFO    : create bridge umgr_reschedule_pubsub
+2018-01-24 11:48:36,999: umgr.0000           : task-manager                    : MainThread     : INFO    : created bridge umgr_reschedule_pubsub (umgr.reschedule.pubsub.bridge.0000)
+2018-01-24 11:48:36,999: umgr.0000           : task-manager                    : MainThread     : INFO    : create bridge umgr_staging_input_queue
+2018-01-24 11:48:37,021: umgr.0000           : task-manager                    : MainThread     : INFO    : created bridge umgr_staging_input_queue (umgr.staging.input.queue.bridge.0000)
+2018-01-24 11:48:37,021: umgr.0000           : task-manager                    : MainThread     : INFO    : create bridge umgr_staging_output_queue
+2018-01-24 11:48:37,046: umgr.0000           : task-manager                    : MainThread     : INFO    : created bridge umgr_staging_output_queue (umgr.staging.output.queue.bridge.0000)
+2018-01-24 11:48:37,046: umgr.0000           : task-manager                    : MainThread     : INFO    : create bridge umgr_unschedule_pubsub
+2018-01-24 11:48:37,067: umgr.0000           : task-manager                    : MainThread     : INFO    : created bridge umgr_unschedule_pubsub (umgr.unschedule.pubsub.bridge.0000)
+2018-01-24 11:48:37,067: umgr.0000           : task-manager                    : MainThread     : INFO    : create bridge umgr_scheduling_queue
+2018-01-24 11:48:37,100: umgr.0000           : task-manager                    : MainThread     : INFO    : created bridge umgr_scheduling_queue (umgr.scheduling.queue.bridge.0000)
+2018-01-24 11:48:37,100: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start components: {u'UMGRSchedulingComponent': {u'count': 1},
+ u'UMGRStagingInputComponent': {u'count': 1},
+ u'UMGRStagingOutputComponent': {u'count': 1}}
+2018-01-24 11:48:37,100: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start 1 component(s) UMGRStagingInputComponent
+2018-01-24 11:48:37,284: umgr.0000           : task-manager                    : MainThread     : INFO    : umgr.0000                      starts umgr.0000.staging.input.0
+2018-01-24 11:48:37,284: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start 1 component(s) UMGRStagingOutputComponent
+2018-01-24 11:48:37,464: umgr.0000           : task-manager                    : MainThread     : INFO    : umgr.0000                      starts umgr.0000.staging.output.0
+2018-01-24 11:48:37,464: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start 1 component(s) UMGRSchedulingComponent
+2018-01-24 11:48:37,663: umgr.0000           : task-manager                    : MainThread     : INFO    : umgr.0000                      starts umgr.0000.scheduling.0
+2018-01-24 11:48:37,663: umgr.0000           : task-manager                    : MainThread     : DEBUG   : alive check in term
+2018-01-24 11:48:37,663: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register publisher log_pubsub
+2018-01-24 11:48:37,663: umgr.0000           : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.29.241.4:53271 for pubsub log_pubsub
+2018-01-24 11:48:37,664: umgr.0000           : task-manager                    : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0006
+2018-01-24 11:48:37,665: umgr.0000           : task-manager                    : MainThread     : DEBUG   : alive check in term
+2018-01-24 11:48:37,665: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register publisher state_pubsub
+2018-01-24 11:48:37,665: umgr.0000           : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.29.241.4:59453 for pubsub state_pubsub
+2018-01-24 11:48:37,666: umgr.0000           : task-manager                    : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0006
+2018-01-24 11:48:37,666: umgr.0000           : task-manager                    : MainThread     : DEBUG   : alive check in term
+2018-01-24 11:48:37,666: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register publisher control_pubsub
+2018-01-24 11:48:37,666: umgr.0000           : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.29.241.4:53365 for pubsub control_pubsub
+2018-01-24 11:48:37,668: umgr.0000           : task-manager                    : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0006
+2018-01-24 11:48:37,668: umgr.0000           : task-manager                    : MainThread     : DEBUG   : process class started (no child)
+2018-01-24 11:48:37,668: umgr.0000           : task-manager                    : MainThread     : INFO    : started umgr umgr.0000
+2018-01-24 11:48:37,668: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register output UMGR_SCHEDULING_PENDING
+2018-01-24 11:48:37,668: umgr.0000           : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.29.241.4:47157 for output umgr_scheduling_queue
+2018-01-24 11:48:37,669: umgr.0000           : task-manager                    : MainThread     : DEBUG   : registered output    : UMGR_SCHEDULING_PENDING : umgr_scheduling_queue : umgr.scheduling.queue.input.0000
+2018-01-24 11:48:37,670: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register output UMGR_STAGING_OUTPUT_PENDING
+2018-01-24 11:48:37,670: umgr.0000           : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.29.241.4:41299 for output umgr_staging_output_queue
+2018-01-24 11:48:37,671: umgr.0000           : task-manager                    : MainThread     : DEBUG   : registered output    : UMGR_STAGING_OUTPUT_PENDING : umgr_staging_output_queue : umgr.staging.output.queue.input.0000
+2018-01-24 11:48:37,671: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register idler umgr.0000.idler._state_pull_cb
+2018-01-24 11:48:37,671: umgr.0000           : task-manager                    : MainThread     : DEBUG   : parent name: umgr.0000.idler._state_pull_cb
+2018-01-24 11:48:37,671: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start thread
+2018-01-24 11:48:37,672: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : child name: umgr.0000.idler._state_pull_cb.thread
+2018-01-24 11:48:37,672: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : child (me) initializing
+2018-01-24 11:48:37,672: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-01-24 11:48:37,672: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-01-24 11:48:37,672: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : send alive
+2018-01-24 11:48:37,672: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : put message: [umgr.0000.idler._state_pull_cb.thread] alive
+2018-01-24 11:48:37,673: umgr.0000           : task-manager                    : MainThread     : INFO    : get msg: alive
+2018-01-24 11:48:37,673: umgr.0000           : task-manager                    : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-01-24 11:48:37,673: umgr.0000           : task-manager                    : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-01-24 11:48:37,673: umgr.0000           : task-manager                    : MainThread     : DEBUG   : child thread umgr.0000.idler._state_pull_cb started
+2018-01-24 11:48:37,674: umgr.0000           : task-manager                    : MainThread     : DEBUG   : umgr.0000 registered idler umgr.0000.idler._state_pull_cb
+2018-01-24 11:48:37,674: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register idler umgr.0000.idler._unit_pull_cb
+2018-01-24 11:48:37,674: umgr.0000           : task-manager                    : MainThread     : DEBUG   : parent name: umgr.0000.idler._unit_pull_cb
+2018-01-24 11:48:37,674: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start thread
+2018-01-24 11:48:37,674: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : child name: umgr.0000.idler._unit_pull_cb.thread
+2018-01-24 11:48:37,674: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : child (me) initializing
+2018-01-24 11:48:37,674: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-01-24 11:48:37,675: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-01-24 11:48:37,675: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : send alive
+2018-01-24 11:48:37,675: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : put message: [umgr.0000.idler._unit_pull_cb.thread] alive
+2018-01-24 11:48:37,675: umgr.0000           : task-manager                    : MainThread     : INFO    : get msg: alive
+2018-01-24 11:48:37,675: umgr.0000           : task-manager                    : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-01-24 11:48:37,676: umgr.0000           : task-manager                    : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-01-24 11:48:37,676: umgr.0000           : task-manager                    : MainThread     : DEBUG   : child thread umgr.0000.idler._unit_pull_cb started
+2018-01-24 11:48:37,676: umgr.0000           : task-manager                    : MainThread     : DEBUG   : umgr.0000 registered idler umgr.0000.idler._unit_pull_cb
+2018-01-24 11:48:37,676: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register subscriber umgr.0000.subscriber._state_sub_cb
+2018-01-24 11:48:37,676: umgr.0000           : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.29.241.4:40222 for pubsub state_pubsub
+2018-01-24 11:48:37,678: umgr.0000           : task-manager                    : MainThread     : DEBUG   : parent name: umgr.0000.subscriber._state_sub_cb
+2018-01-24 11:48:37,678: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start thread
+2018-01-24 11:48:37,679: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : child name: umgr.0000.subscriber._state_sub_cb.thread
+2018-01-24 11:48:37,682: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : child (me) initializing
+2018-01-24 11:48:37,682: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-01-24 11:48:37,682: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-01-24 11:48:37,682: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : send alive
+2018-01-24 11:48:37,683: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : put message: [umgr.0000.subscriber._state_sub_cb.thread] alive
+2018-01-24 11:48:37,683: umgr.0000           : task-manager                    : MainThread     : INFO    : get msg: alive
+2018-01-24 11:48:37,684: umgr.0000           : task-manager                    : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-01-24 11:48:37,684: umgr.0000           : task-manager                    : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-01-24 11:48:37,684: umgr.0000           : task-manager                    : MainThread     : DEBUG   : child thread umgr.0000.subscriber._state_sub_cb started
+2018-01-24 11:48:37,979: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:37,979: umgr.0000           : task-manager                    : MainThread     : DEBUG   : umgr.0000 registered state_pubsub subscriber umgr.0000.subscriber._state_sub_cb
+2018-01-24 11:48:38,025: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2018-01-24 11:48:38,051: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-24 11:48:38,051: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2018-01-24 11:48:38,051: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-01-24 11:48:38,052: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': None, 'uid': 'unit.000000', 'stdout': None, 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': None, 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'UMGR_SCHEDULING_PENDING', 'stderr': None, 'pilot': None, 'type': 'unit', 'unit_sandbox': None, 'pilot_sandbox': None}>
+2018-01-24 11:48:38,052: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_SCHEDULING_PENDING.
+2018-01-24 11:48:38,052: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:48:38,060: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-01-24 11:48:38,060: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': None, 'uid': 'unit.000000', 'stdout': None, 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': None, 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'UMGR_SCHEDULING', 'stderr': None, 'pilot': None, 'type': 'unit', 'unit_sandbox': None, 'pilot_sandbox': None}>
+2018-01-24 11:48:38,060: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_SCHEDULING.
+2018-01-24 11:48:38,060: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:48:38,066: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-01-24 11:48:38,066: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': None, 'uid': 'unit.000000', 'stdout': None, 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': None, 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'UMGR_STAGING_INPUT_PENDING', 'stderr': None, 'pilot': None, 'type': 'unit', 'unit_sandbox': None, 'pilot_sandbox': None}>
+2018-01-24 11:48:38,066: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_STAGING_INPUT_PENDING.
+2018-01-24 11:48:38,067: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:48:38,077: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-01-24 11:48:38,077: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': None, 'uid': 'unit.000000', 'stdout': None, 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': None, 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'UMGR_STAGING_INPUT', 'stderr': None, 'pilot': None, 'type': 'unit', 'unit_sandbox': None, 'pilot_sandbox': None}>
+2018-01-24 11:48:38,078: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_STAGING_INPUT.
+2018-01-24 11:48:38,078: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:48:38,085: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-01-24 11:48:38,086: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': '/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'AGENT_STAGING_INPUT_PENDING', 'stderr': None, 'pilot': 'pilot.0000', 'type': 'unit', 'unit_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000//unit.000000/', 'pilot_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000/'}>
+2018-01-24 11:48:38,086: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_STAGING_INPUT_PENDING.
+2018-01-24 11:48:38,086: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:48:39,006: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:40,033: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:41,033: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': u'/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': u'AGENT_STAGING_INPUT', 'stderr': None, 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000/'}>
+2018-01-24 11:48:41,033: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_STAGING_INPUT.
+2018-01-24 11:48:41,033: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:48:41,063: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:42,065: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': u'/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'AGENT_SCHEDULING_PENDING', 'stderr': None, 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000/'}>
+2018-01-24 11:48:42,066: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_SCHEDULING_PENDING.
+2018-01-24 11:48:42,066: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:48:42,070: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': u'/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'AGENT_SCHEDULING', 'stderr': None, 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000/'}>
+2018-01-24 11:48:42,070: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_SCHEDULING.
+2018-01-24 11:48:42,070: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:48:42,075: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': u'/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'AGENT_EXECUTING_PENDING', 'stderr': None, 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000/'}>
+2018-01-24 11:48:42,075: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_EXECUTING_PENDING.
+2018-01-24 11:48:42,075: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:48:42,085: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': u'/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': u'AGENT_EXECUTING', 'stderr': None, 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000/'}>
+2018-01-24 11:48:42,086: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_EXECUTING.
+2018-01-24 11:48:42,086: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:48:42,122: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:43,149: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:44,176: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:45,203: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:46,230: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:47,257: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:48,286: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:49,313: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:50,339: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:51,367: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:52,394: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:53,421: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:54,448: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:55,474: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:56,501: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:57,528: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:58,555: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:48:59,582: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:00,609: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:01,637: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:02,664: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:03,695: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:04,722: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:05,749: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:06,776: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:07,802: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:08,830: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:09,857: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:10,884: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:11,911: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:12,938: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:13,965: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:14,992: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:16,019: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:17,046: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:18,072: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:19,099: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:20,126: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:21,152: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:22,183: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:23,209: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:24,236: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:25,262: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:26,289: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:27,316: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:28,342: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:29,369: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:30,396: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:31,423: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:32,451: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:33,477: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:34,504: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:35,531: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:36,558: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:37,584: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:38,611: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:39,638: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:40,666: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:41,693: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:42,720: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:43,747: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:44,774: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:45,801: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:46,828: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:47,855: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:48,882: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:49,909: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:50,936: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:51,964: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:52,990: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:54,017: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:55,043: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:56,069: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:57,096: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:58,124: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:49:59,150: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:00,177: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:01,204: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:02,231: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:03,258: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:04,367: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:05,395: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:06,421: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:07,448: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:08,475: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:09,503: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:10,531: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:11,557: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:12,584: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:13,610: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:14,637: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:15,664: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:16,690: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:17,717: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:18,743: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:19,770: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:20,797: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:21,824: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:22,850: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:23,876: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:24,904: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:25,932: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:26,960: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:27,986: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:29,014: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:30,041: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:31,067: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:32,094: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:33,123: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:34,150: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:35,177: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:36,204: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:37,231: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:38,258: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:39,284: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:40,311: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:41,338: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:42,364: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:43,391: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:44,417: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:45,445: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:46,472: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:47,499: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:48,526: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:49,553: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:50,580: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:51,607: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:52,633: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:53,660: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:54,687: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:55,714: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:56,741: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:57,768: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:58,795: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:50:59,822: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:00,849: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:01,876: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:02,902: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:03,930: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:04,956: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:05,984: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:07,011: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:08,037: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:09,064: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:10,091: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:11,118: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:12,145: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:13,172: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:14,200: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:15,227: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:16,254: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:17,281: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:18,308: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:19,334: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:20,361: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:21,388: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:22,414: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:23,442: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:24,469: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:25,496: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:26,523: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:27,550: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:28,576: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:29,602: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:30,629: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:31,656: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:32,682: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:33,709: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:34,736: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:35,762: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:36,789: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:37,816: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:38,844: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:39,871: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:40,897: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:41,924: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:42,951: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:43,978: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:45,005: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:46,032: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:47,058: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:48,085: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:49,116: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:50,142: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:51,169: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:52,195: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:53,222: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:54,250: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:55,276: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:56,303: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:57,330: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:58,357: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:51:59,472: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:00,499: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:01,525: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:02,553: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:03,579: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:04,606: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:05,633: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:06,660: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:07,687: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:08,713: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:09,741: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:10,768: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:11,794: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:12,820: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:13,847: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:14,873: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:15,900: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:16,927: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:17,954: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:18,981: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:20,008: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:21,034: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:22,083: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:23,110: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:24,137: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:25,163: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:26,190: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:27,218: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:28,244: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:29,272: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:30,298: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:31,325: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:32,352: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:33,378: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:34,407: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:35,434: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:36,461: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:37,488: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:38,516: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:39,544: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:40,570: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:41,569: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': u'/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': u'AGENT_STAGING_OUTPUT_PENDING', 'stderr': None, 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000/'}>
+2018-01-24 11:52:41,569: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_STAGING_OUTPUT_PENDING.
+2018-01-24 11:52:41,569: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:52:41,600: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:42,627: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:43,629: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': u'', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': u'/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': 0, 'state': 'AGENT_STAGING_OUTPUT', 'stderr': u'stress-ng: info:  [99632] dispatching hogs: 1 cpu\nstress-ng: info:  [99632] successful run completed in 240.07s (4 mins, 0.07 secs)\n', 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000/'}>
+2018-01-24 11:52:43,629: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_STAGING_OUTPUT.
+2018-01-24 11:52:43,629: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:52:43,636: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': u'', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': u'/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': 0, 'state': u'UMGR_STAGING_OUTPUT_PENDING', 'stderr': u'stress-ng: info:  [99632] dispatching hogs: 1 cpu\nstress-ng: info:  [99632] successful run completed in 240.07s (4 mins, 0.07 secs)\n', 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000/'}>
+2018-01-24 11:52:43,636: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_STAGING_OUTPUT_PENDING.
+2018-01-24 11:52:43,636: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:52:43,715: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    1 [u'unit.000000']
+2018-01-24 11:52:43,716: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk size: 1 [True, True]
+2018-01-24 11:52:43,716: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : put bulk UMGR_STAGING_OUTPUT_PENDING: 1
+2018-01-24 11:52:43,719: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-01-24 11:52:43,719: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': u'', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': u'/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': 0, 'state': 'UMGR_STAGING_OUTPUT', 'stderr': u'stress-ng: info:  [99632] dispatching hogs: 1 cpu\nstress-ng: info:  [99632] successful run completed in 240.07s (4 mins, 0.07 secs)\n', 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000/'}>
+2018-01-24 11:52:43,720: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_STAGING_OUTPUT.
+2018-01-24 11:52:43,720: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:52:43,739: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-01-24 11:52:43,739: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-01-24 11:52:43,739: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': '', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'client_sandbox': '/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng', 'name': 'radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041', 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': ['export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH'], 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': ['-c', '1', '-t', '240'], 'stderr': None, 'cores': 1, 'post_exec': [], 'input_staging': [], 'pilot': None}, 'exit_code': 0, 'state': 'DONE', 'stderr': 'stress-ng: info:  [99632] dispatching hogs: 1 cpu\nstress-ng: info:  [99632] successful run completed in 240.07s (4 mins, 0.07 secs)\n', 'pilot': 'pilot.0000', 'type': 'unit', 'unit_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000//unit.000000/', 'pilot_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017555.0044/pilot.0000/'}>
+2018-01-24 11:52:43,740: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: DONE.
+2018-01-24 11:52:43,740: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr.0000 calls state cb unit_state_cb for unit.000000
+2018-01-24 11:52:44,744: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:45,771: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:46,799: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:47,827: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:48,855: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:49,883: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:50,911: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:51,938: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:52,966: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:53,994: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:55,022: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:56,049: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:57,077: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:58,105: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:52:59,132: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-01-24 11:53:00,160: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0

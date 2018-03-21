@@ -1,0 +1,17 @@
+#time,event,comp,thread,uid,state,msg
+1516829155.2982,sync_abs,pmgr.0000,MainThread,,,js-169-212.jetstream-cloud.org:172.29.241.4:1516829155.26:1516829155.43:ntp
+1516829155.6510,component_init,pmgr.0000,MainThread,,,
+1516829155.7129,setup_done,pmgr.0000,MainThread,pmgr.0000,,
+1516829159.7646,advance,pmgr.0000,MainThread,pilot.0000,NEW,
+1516829159.7914,advance,pmgr.0000,MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,
+1516829159.7917,publish,pmgr.0000,MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,
+1516829159.7920,put,pmgr.0000,MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,pmgr.launching.queue.input.0000
+1516829160.0588,advance,pmgr.0000,pmgr.0000.subscriber._state_sub_cb,pilot.0000,PMGR_LAUNCHING,
+1516829174.6388,advance,pmgr.0000,pmgr.0000.subscriber._state_sub_cb,pilot.0000,PMGR_ACTIVE_PENDING,
+1516834417.7471,advance,pmgr.0000,pmgr.0000.idler._state_pull_cb,pilot.0000,PMGR_ACTIVE,
+1516834417.7476,publish,pmgr.0000,pmgr.0000.idler._state_pull_cb,pilot.0000,PMGR_ACTIVE,
+1516836404.2591,advance,pmgr.0000,pmgr.0000.idler._state_pull_cb,pilot.0000,CANCELED,
+1516836404.2601,publish,pmgr.0000,pmgr.0000.idler._state_pull_cb,pilot.0000,CANCELED,
+1516836404.4015,flush,pmgr.0000,MainThread,,,
+1516836414.1774,component_final,pmgr.0000,MainThread,,,
+1516836414.1774,END,pmgr.0000,MainThread,,,

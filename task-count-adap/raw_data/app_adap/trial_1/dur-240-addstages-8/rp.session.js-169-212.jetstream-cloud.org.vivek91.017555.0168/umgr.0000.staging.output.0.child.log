@@ -1,0 +1,158 @@
+2018-01-24 17:53:44,941: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : python.interpreter   version: 2.7.6 (default, Jun 22 2015, 17:58:13) [GCC 4.8.2]
+2018-01-24 17:53:44,941: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    :                      pid: 24249
+2018-01-24 17:53:44,941: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    :                      tid: MainThread
+2018-01-24 17:53:44,942: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2018-01-24 17:53:46,096: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : initialize umgr.0000.staging.output.0.child
+2018-01-24 17:53:46,098: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : cfg: {'agents': {},
+ u'bridges': {u'control_pubsub': {'addr_in': 'tcp://172.29.241.4:56388',
+                                  'addr_out': 'tcp://172.29.241.4:59394',
+                                  u'bulk_size': 0,
+                                  u'log_level': u'debug',
+                                  u'stall_hwm': 1},
+              u'log_pubsub': {'addr_in': 'tcp://172.29.241.4:47935',
+                              'addr_out': 'tcp://172.29.241.4:55068',
+                              u'bulk_size': 0,
+                              u'log_level': u'debug',
+                              u'stall_hwm': 1},
+              u'state_pubsub': {'addr_in': 'tcp://172.29.241.4:48985',
+                                'addr_out': 'tcp://172.29.241.4:37842',
+                                u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1},
+              u'umgr_reschedule_pubsub': {'addr_in': 'tcp://172.29.241.4:54447',
+                                          'addr_out': 'tcp://172.29.241.4:56669',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1},
+              u'umgr_scheduling_queue': {'addr_in': 'tcp://172.29.241.4:55637',
+                                         'addr_out': 'tcp://172.29.241.4:48027',
+                                         u'bulk_size': 0,
+                                         u'log_level': u'debug',
+                                         u'stall_hwm': 1},
+              u'umgr_staging_input_queue': {'addr_in': 'tcp://172.29.241.4:39109',
+                                            'addr_out': 'tcp://172.29.241.4:41849',
+                                            u'bulk_size': 0,
+                                            u'log_level': u'debug',
+                                            u'stall_hwm': 1},
+              u'umgr_staging_output_queue': {'addr_in': 'tcp://172.29.241.4:40899',
+                                             'addr_out': 'tcp://172.29.241.4:56473',
+                                             u'bulk_size': 0,
+                                             u'log_level': u'debug',
+                                             u'stall_hwm': 1},
+              u'umgr_unschedule_pubsub': {'addr_in': 'tcp://172.29.241.4:50061',
+                                          'addr_out': 'tcp://172.29.241.4:46175',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1}},
+ u'bulk_collection_size': 100,
+ u'bulk_collection_time': 1.0,
+ 'cname': u'UMGRStagingOutputComponent',
+ u'components': {},
+ u'count': 1,
+ u'db_poll_sleeptime': 1.0,
+ 'number': 0,
+ 'owner': 'umgr.0000',
+ u'scheduler': u'round_robin',
+ 'uid': 'umgr.0000'}
+2018-01-24 17:53:46,098: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : start components: {}
+2018-01-24 17:53:46,098: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : alive check in term
+2018-01-24 17:53:46,098: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : START: umgr.0000.staging.output.0.child register publisher log_pubsub
+2018-01-24 17:53:46,098: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : using addr tcp://172.29.241.4:47935 for pubsub log_pubsub
+2018-01-24 17:53:46,100: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0004
+2018-01-24 17:53:46,100: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : alive check in term
+2018-01-24 17:53:46,100: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : START: umgr.0000.staging.output.0.child register publisher state_pubsub
+2018-01-24 17:53:46,101: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : using addr tcp://172.29.241.4:48985 for pubsub state_pubsub
+2018-01-24 17:53:46,102: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0004
+2018-01-24 17:53:46,102: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : alive check in term
+2018-01-24 17:53:46,102: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : START: umgr.0000.staging.output.0.child register publisher control_pubsub
+2018-01-24 17:53:46,102: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : using addr tcp://172.29.241.4:56388 for pubsub control_pubsub
+2018-01-24 17:53:46,103: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0004
+2018-01-24 17:53:46,103: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : alive check in term
+2018-01-24 17:53:46,103: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : START: umgr.0000.staging.output.0.child register subscriber umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb
+2018-01-24 17:53:46,103: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : using addr tcp://172.29.241.4:59394 for pubsub control_pubsub
+2018-01-24 17:53:46,105: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : parent name: umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb
+2018-01-24 17:53:46,105: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : start thread
+2018-01-24 17:53:46,105: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb.thread
+2018-01-24 17:53:46,105: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2018-01-24 17:53:46,105: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-01-24 17:53:46,106: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-01-24 17:53:46,106: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2018-01-24 17:53:46,106: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb.thread] alive
+2018-01-24 17:53:46,106: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : get msg: alive
+2018-01-24 17:53:46,106: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-01-24 17:53:46,106: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-01-24 17:53:46,106: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : child thread umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb started
+2018-01-24 17:53:46,106: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : umgr.0000.staging.output.0.child registered control_pubsub subscriber umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb
+2018-01-24 17:53:46,107: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : alive check in term
+2018-01-24 17:53:46,107: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : using addr tcp://172.29.241.4:56473 for input umgr_staging_output_queue
+2018-01-24 17:53:46,108: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : registered input umgr.0000.staging.output.0.child.work.UMGR_STAGING_OUTPUT_PENDING
+2018-01-24 17:53:46,108: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : START: umgr.0000.staging.output.0.child register input UMGR_STAGING_OUTPUT_PENDING: umgr.0000.staging.output.0.child.work.UMGR_STAGING_OUTPUT_PENDING
+2018-01-24 17:53:46,108: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : registered worker work [UMGR_STAGING_OUTPUT_PENDING]
+2018-01-24 17:53:46,108: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : child (me) initializing
+2018-01-24 17:53:46,108: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : parent name: umgr.0000.staging.output.0.child.watch
+2018-01-24 17:53:46,108: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : start thread
+2018-01-24 17:53:46,108: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: DEBUG   : child name: umgr.0000.staging.output.0.child.watch.thread
+2018-01-24 17:53:46,109: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : child (me) initializing
+2018-01-24 17:53:46,109: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-01-24 17:53:46,109: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-01-24 17:53:46,109: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : send alive
+2018-01-24 17:53:46,109: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : put message: [umgr.0000.staging.output.0.child.watch.thread] alive
+2018-01-24 17:53:46,110: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : get msg: alive
+2018-01-24 17:53:46,110: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-01-24 17:53:46,110: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-01-24 17:53:46,110: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : child thread umgr.0000.staging.output.0.child.watch started
+2018-01-24 17:53:46,110: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : child (me) is alive
+2018-01-24 17:53:46,110: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : send alive
+2018-01-24 17:53:46,110: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : send message: [umgr.0000.staging.output.0.child] alive
+2018-01-24 17:53:46,668: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : command ignored: add_pilots
+2018-01-24 17:57:51,221: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000000)
+2018-01-24 17:57:51,221: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-24 17:57:51,222: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-24 17:57:51,222: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000000 [DONE]
+2018-01-24 18:01:54,756: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000001)
+2018-01-24 18:01:54,757: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-24 18:01:54,757: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-24 18:01:54,757: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000001 [DONE]
+2018-01-24 18:05:58,441: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000002)
+2018-01-24 18:05:58,441: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-24 18:05:58,442: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-24 18:05:58,442: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000002 [DONE]
+2018-01-24 18:10:02,999: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000003)
+2018-01-24 18:10:02,999: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-24 18:10:03,000: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-24 18:10:03,000: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000003 [DONE]
+2018-01-24 18:14:07,556: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000004)
+2018-01-24 18:14:07,556: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-24 18:14:07,556: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-24 18:14:07,556: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000004 [DONE]
+2018-01-24 18:18:12,154: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000005)
+2018-01-24 18:18:12,154: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-24 18:18:12,154: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-24 18:18:12,155: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000005 [DONE]
+2018-01-24 18:22:16,715: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000006)
+2018-01-24 18:22:16,715: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-24 18:22:16,715: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-24 18:22:16,715: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000006 [DONE]
+2018-01-24 18:26:20,878: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : got unit (unit.000007)
+2018-01-24 18:26:20,878: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-24 18:26:20,878: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-24 18:26:20,878: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : final unit.000007 [DONE]
+2018-01-24 18:26:37,896: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_finalize_common()
+2018-01-24 18:26:37,897: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : TERM : umgr.0000.staging.output.0.child unregister publisher log_pubsub
+2018-01-24 18:26:37,900: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : unregistered publisher log_pubsub
+2018-01-24 18:26:37,901: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : TERM : umgr.0000.staging.output.0.child unregister publisher state_pubsub
+2018-01-24 18:26:37,902: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : unregistered publisher state_pubsub
+2018-01-24 18:26:37,902: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : TERM : umgr.0000.staging.output.0.child unregister publisher control_pubsub
+2018-01-24 18:26:37,903: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : unregistered publisher control_pubsub
+2018-01-24 18:26:37,903: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : umgr.0000.staging.output.0.child close prof
+2018-01-24 18:26:37,920: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : send message: [umgr.0000.staging.output.0.child] terminating
+2018-01-24 18:26:37,921: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : WARNING : send failed ([Errno 32] Broken pipe) - terminate
+2018-01-24 18:26:37,924: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : watcher closes
+2018-01-24 18:26:37,925: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : put message: [umgr.0000.staging.output.0.child.watch.thread] work finished
+2018-01-24 18:26:37,925: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-01-24 18:26:37,925: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-01-24 18:26:37,925: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.watch: INFO    : put message: [umgr.0000.staging.output.0.child.watch.thread] terminating
+2018-01-24 18:26:37,928: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : INFO    : parent stops child
+2018-01-24 18:26:37,929: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-01-24 18:26:37,929: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-01-24 18:26:37,929: umgr.0000.staging.output.0.child: umgr.0000.staging.output.0      : umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.0000.staging.output.0.child.subscriber._cancel_monitor_cb.thread] terminating

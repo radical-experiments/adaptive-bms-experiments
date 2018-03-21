@@ -1,0 +1,460 @@
+2018-03-01 11:43:26,387: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2018-03-01 11:43:26,390: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    :                      pid: 113628
+2018-03-01 11:43:26,390: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    :                      tid: MainThread
+2018-03-01 11:43:26,391: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2018-03-01 11:43:26,495: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    : initialize agent_0.staging.input.0.child
+2018-03-01 11:43:26,502: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    : cfg: {'agent_launch_method': 'SSH',
+ 'agent_name': 'agent_0',
+ 'agents': {},
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.11:36913',
+                                       'addr_out': 'tcp://204.90.41.11:33426',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.11:41568',
+                                         'addr_out': 'tcp://204.90.41.11:33907',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.11:41052',
+                                        'addr_out': 'tcp://204.90.41.11:44413',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.11:39983',
+                                           'addr_out': 'tcp://204.90.41.11:39149',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.11:37232',
+                                            'addr_out': 'tcp://204.90.41.11:46002',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.11:33755',
+                                         'addr_out': 'tcp://204.90.41.11:42243',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://204.90.41.11:36173',
+                                'addr_out': 'tcp://204.90.41.11:36307',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://204.90.41.11:37384',
+                            'addr_out': 'tcp://204.90.41.11:43753',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://204.90.41.11:33839',
+                              'addr_out': 'tcp://204.90.41.11:44135',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'cname': 'AgentStagingInputComponent',
+ 'components': {},
+ 'cores': 40,
+ 'cores_per_node': 20,
+ 'count': 1,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': None,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://entk:entk@ds125126.mlab.com:25126/adbms-1',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'logdir': '.',
+ 'lrms': 'TORQUE',
+ 'lrms_info': {'agent_nodes': {},
+               'cores_per_node': 20,
+               'lm_info': {},
+               'name': 'Torque',
+               'node_list': ['smic011', 'smic024']},
+ 'max_io_loglength': 1024,
+ 'mode': 'shared',
+ 'mpi_launch_method': 'MPIEXEC',
+ 'number': 0,
+ 'owner': 'agent_0',
+ 'pilot_id': 'pilot.0000',
+ 'pilot_sandbox': '/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0042/pilot.0000/',
+ 'resource_cfg': {'agent_launch_method': 'SSH',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': '20',
+                  'default_queue': 'workq',
+                  'default_remote_workdir': '/work/$USER',
+                  'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)",
+                  'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                             'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'},
+                  'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/',
+                  'label': 'xsede.supermic_ssh',
+                  'lrms': 'TORQUE',
+                  'mpi_launch_method': 'MPIEXEC',
+                  'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.',
+                  'pre_bootstrap_1': ['module load python/2.7.7-anaconda'],
+                  'python_dist': 'default',
+                  'rp_version': 'local',
+                  'schemas': ['gsissh', 'ssh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/',
+                          'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'},
+                  'task_launch_method': 'SSH',
+                  'valid_roots': ['/work'],
+                  'virtenv_mode': 'create'},
+ 'resource_sandbox': '/work/vivek91/radical.pilot.sandbox',
+ 'runtime': 3920,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.two.vivek.017591.0042',
+ 'session_sandbox': '/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0042',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'target': 'local',
+ 'task_launch_method': 'SSH',
+ 'uid': 'agent_0',
+ 'workdir': '/worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0042/pilot.0000'}
+2018-03-01 11:43:26,502: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : start components: {}
+2018-03-01 11:43:26,502: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : alive check in term
+2018-03-01 11:43:26,502: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : START: agent_0.staging.input.0.child register publisher log_pubsub
+2018-03-01 11:43:26,502: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : using addr tcp://204.90.41.11:37384 for pubsub log_pubsub
+2018-03-01 11:43:26,508: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0002
+2018-03-01 11:43:26,509: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : alive check in term
+2018-03-01 11:43:26,509: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : START: agent_0.staging.input.0.child register publisher state_pubsub
+2018-03-01 11:43:26,509: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : using addr tcp://204.90.41.11:33839 for pubsub state_pubsub
+2018-03-01 11:43:26,514: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0002
+2018-03-01 11:43:26,515: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : alive check in term
+2018-03-01 11:43:26,515: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : START: agent_0.staging.input.0.child register publisher control_pubsub
+2018-03-01 11:43:26,515: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : using addr tcp://204.90.41.11:36173 for pubsub control_pubsub
+2018-03-01 11:43:26,521: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0002
+2018-03-01 11:43:26,522: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : alive check in term
+2018-03-01 11:43:26,522: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : START: agent_0.staging.input.0.child register subscriber agent_0.staging.input.0.child.subscriber._cancel_monitor_cb
+2018-03-01 11:43:26,523: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : using addr tcp://204.90.41.11:36307 for pubsub control_pubsub
+2018-03-01 11:43:26,527: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : parent name: agent_0.staging.input.0.child.subscriber._cancel_monitor_cb
+2018-03-01 11:43:26,527: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : start thread
+2018-03-01 11:43:26,528: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: agent_0.staging.input.0.child.subscriber._cancel_monitor_cb.thread
+2018-03-01 11:43:26,528: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2018-03-01 11:43:26,528: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 11:43:26,528: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-03-01 11:43:26,528: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2018-03-01 11:43:26,528: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [agent_0.staging.input.0.child.subscriber._cancel_monitor_cb.thread] alive
+2018-03-01 11:43:26,529: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    : get msg: alive
+2018-03-01 11:43:26,529: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 11:43:26,529: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-01 11:43:26,529: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : child thread agent_0.staging.input.0.child.subscriber._cancel_monitor_cb started
+2018-03-01 11:43:26,529: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : agent_0.staging.input.0.child registered control_pubsub subscriber agent_0.staging.input.0.child.subscriber._cancel_monitor_cb
+2018-03-01 11:43:26,529: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : alive check in term
+2018-03-01 11:43:26,529: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : using addr tcp://204.90.41.11:39149 for input agent_staging_input_queue
+2018-03-01 11:43:26,536: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : registered input agent_0.staging.input.0.child.work.AGENT_STAGING_INPUT_PENDING
+2018-03-01 11:43:26,536: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : START: agent_0.staging.input.0.child register input AGENT_STAGING_INPUT_PENDING: agent_0.staging.input.0.child.work.AGENT_STAGING_INPUT_PENDING
+2018-03-01 11:43:26,536: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : registered worker work [AGENT_STAGING_INPUT_PENDING]
+2018-03-01 11:43:26,536: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : alive check in term
+2018-03-01 11:43:26,536: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : START: agent_0.staging.input.0.child register output AGENT_SCHEDULING_PENDING
+2018-03-01 11:43:26,536: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : using addr tcp://204.90.41.11:41052 for output agent_scheduling_queue
+2018-03-01 11:43:26,542: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : registered output    : AGENT_SCHEDULING_PENDING : agent_scheduling_queue : agent.scheduling.queue.input.0000
+2018-03-01 11:43:26,542: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    : child (me) initializing
+2018-03-01 11:43:26,542: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : parent name: agent_0.staging.input.0.child.watch
+2018-03-01 11:43:26,542: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : start thread
+2018-03-01 11:43:26,542: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: DEBUG   : child name: agent_0.staging.input.0.child.watch.thread
+2018-03-01 11:43:26,542: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: INFO    : child (me) initializing
+2018-03-01 11:43:26,542: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 11:43:26,542: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-03-01 11:43:26,542: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: INFO    : send alive
+2018-03-01 11:43:26,543: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: INFO    : put message: [agent_0.staging.input.0.child.watch.thread] alive
+2018-03-01 11:43:26,543: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    : get msg: alive
+2018-03-01 11:43:26,543: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 11:43:26,543: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-01 11:43:26,544: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : child thread agent_0.staging.input.0.child.watch started
+2018-03-01 11:43:26,544: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    : child (me) is alive
+2018-03-01 11:43:26,544: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    : send alive
+2018-03-01 11:43:26,544: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    : send message: [agent_0.staging.input.0.child] alive
+2018-03-01 11:43:32,611: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000000)
+2018-03-01 11:43:32,612: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:43:32,612: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:43:32,612: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:44:37,862: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000001)
+2018-03-01 11:44:37,863: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:44:37,863: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:44:37,863: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:45:44,148: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000002)
+2018-03-01 11:45:44,148: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:45:44,148: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:45:44,148: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:46:50,440: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000003)
+2018-03-01 11:46:50,440: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:46:50,441: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:46:50,441: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:47:55,693: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000004)
+2018-03-01 11:47:55,693: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:47:55,693: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:47:55,693: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:49:00,942: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000005)
+2018-03-01 11:49:00,942: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:49:00,942: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:49:00,942: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:50:06,202: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000006)
+2018-03-01 11:50:06,202: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:50:06,203: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:50:06,203: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:51:11,453: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000007)
+2018-03-01 11:51:11,453: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:51:11,453: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:51:11,453: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:52:15,669: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000008)
+2018-03-01 11:52:15,669: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:52:15,669: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:52:15,669: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:53:20,921: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000009)
+2018-03-01 11:53:20,921: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:53:20,922: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:53:20,922: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:54:25,140: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000010)
+2018-03-01 11:54:25,140: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:54:25,140: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:54:25,140: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:55:30,389: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000011)
+2018-03-01 11:55:30,389: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:55:30,390: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:55:30,390: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:56:36,690: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000012)
+2018-03-01 11:56:36,690: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:56:36,691: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:56:36,691: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:57:42,974: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000013)
+2018-03-01 11:57:42,974: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:57:42,975: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:57:42,975: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:58:49,266: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000014)
+2018-03-01 11:58:49,266: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:58:49,267: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:58:49,267: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 11:59:54,518: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000015)
+2018-03-01 11:59:54,518: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 11:59:54,519: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 11:59:54,519: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:00:58,734: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000016)
+2018-03-01 12:00:58,734: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:00:58,735: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:00:58,735: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:02:02,959: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000017)
+2018-03-01 12:02:02,959: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:02:02,959: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:02:02,960: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:03:08,210: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000018)
+2018-03-01 12:03:08,211: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:03:08,211: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:03:08,211: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:04:13,461: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000019)
+2018-03-01 12:04:13,461: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:04:13,462: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:04:13,462: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:05:18,717: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000020)
+2018-03-01 12:05:18,718: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:05:18,718: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:05:18,718: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:06:23,975: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000021)
+2018-03-01 12:06:23,975: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:06:23,975: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:06:23,975: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:07:29,232: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000022)
+2018-03-01 12:07:29,233: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:07:29,233: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:07:29,233: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:08:35,524: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000023)
+2018-03-01 12:08:35,524: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:08:35,524: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:08:35,524: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:09:40,776: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000024)
+2018-03-01 12:09:40,776: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:09:40,777: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:09:40,777: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:10:46,035: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000025)
+2018-03-01 12:10:46,035: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:10:46,035: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:10:46,035: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:11:51,289: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000026)
+2018-03-01 12:11:51,289: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:11:51,289: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:11:51,289: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:12:55,742: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000027)
+2018-03-01 12:12:55,742: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:12:55,742: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:12:55,743: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:13:59,964: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000028)
+2018-03-01 12:13:59,964: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:13:59,964: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:13:59,964: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:15:05,218: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000029)
+2018-03-01 12:15:05,218: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:15:05,219: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:15:05,219: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:16:11,512: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000030)
+2018-03-01 12:16:11,512: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:16:11,512: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:16:11,512: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:17:16,764: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000031)
+2018-03-01 12:17:16,765: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:17:16,765: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:17:16,765: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:18:23,065: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000032)
+2018-03-01 12:18:23,065: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:18:23,065: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:18:23,065: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:19:28,318: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000033)
+2018-03-01 12:19:28,319: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:19:28,319: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:19:28,319: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:20:34,616: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000034)
+2018-03-01 12:20:34,616: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:20:34,616: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:20:34,616: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:21:40,905: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000035)
+2018-03-01 12:21:40,905: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:21:40,905: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:21:40,905: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:22:47,196: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000036)
+2018-03-01 12:22:47,197: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:22:47,197: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:22:47,197: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:23:53,486: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000037)
+2018-03-01 12:23:53,486: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:23:53,486: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:23:53,487: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:24:59,776: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000038)
+2018-03-01 12:24:59,777: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:24:59,777: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:24:59,777: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:26:05,042: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000039)
+2018-03-01 12:26:05,042: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:26:05,043: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:26:05,043: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:27:09,517: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000040)
+2018-03-01 12:27:09,518: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:27:09,518: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:27:09,518: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:28:13,739: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000041)
+2018-03-01 12:28:13,739: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:28:13,740: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:28:13,740: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:29:17,970: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000042)
+2018-03-01 12:29:17,970: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:29:17,970: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:29:17,971: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:30:22,194: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000043)
+2018-03-01 12:30:22,194: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:30:22,194: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:30:22,194: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:31:27,453: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000044)
+2018-03-01 12:31:27,453: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:31:27,453: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:31:27,454: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:32:33,743: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000045)
+2018-03-01 12:32:33,743: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:32:33,743: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:32:33,743: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:33:38,999: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000046)
+2018-03-01 12:33:38,999: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:33:38,999: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:33:38,999: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:34:44,255: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000047)
+2018-03-01 12:34:44,255: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:34:44,255: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:34:44,255: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:35:49,518: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000048)
+2018-03-01 12:35:49,518: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:35:49,519: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:35:49,519: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:36:54,773: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000049)
+2018-03-01 12:36:54,773: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:36:54,774: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:36:54,774: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:38:00,029: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000050)
+2018-03-01 12:38:00,029: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:38:00,029: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:38:00,030: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:39:05,285: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000051)
+2018-03-01 12:39:05,285: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:39:05,286: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:39:05,286: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:40:09,508: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000052)
+2018-03-01 12:40:09,508: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:40:09,509: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:40:09,509: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:41:14,763: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000053)
+2018-03-01 12:41:14,763: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:41:14,763: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:41:14,763: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:42:21,059: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000054)
+2018-03-01 12:42:21,059: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:42:21,059: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:42:21,059: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:43:27,349: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000055)
+2018-03-01 12:43:27,349: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:43:27,349: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:43:27,350: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:44:32,604: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000056)
+2018-03-01 12:44:32,604: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:44:32,604: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:44:32,605: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:45:37,859: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000057)
+2018-03-01 12:45:37,859: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:45:37,860: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:45:37,860: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:46:42,082: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000058)
+2018-03-01 12:46:42,082: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:46:42,082: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:46:42,082: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:47:47,345: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000059)
+2018-03-01 12:47:47,345: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:47:47,345: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:47:47,345: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:48:51,631: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000060)
+2018-03-01 12:48:51,631: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:48:51,631: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:48:51,631: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:49:55,865: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000061)
+2018-03-01 12:49:55,865: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:49:55,866: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:49:55,866: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:51:00,094: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000062)
+2018-03-01 12:51:00,094: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:51:00,094: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:51:00,095: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:52:04,321: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : got unit (unit.000063)
+2018-03-01 12:52:04,321: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 12:52:04,322: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 12:52:04,322: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : put bulk AGENT_SCHEDULING_PENDING: 1
+2018-03-01 12:53:26,107: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : got termination command
+2018-03-01 12:53:26,280: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : stop agent_0.staging.input.0.child (113628 : 113628 : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb) [radical.pilot.utils.component.Default._cancel_monitor_cb]
+2018-03-01 12:53:26,286: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : parent stops child  113628 -> 113628 [agent_0.staging.input.0.child]
+2018-03-01 12:53:26,286: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : send message: [agent_0.staging.input.0.child] STOP
+2018-03-01 12:53:26,286: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_common()
+2018-03-01 12:53:26,286: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.staging.input.0.child unregister publisher log_pubsub
+2018-03-01 12:53:26,287: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher log_pubsub
+2018-03-01 12:53:26,287: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.staging.input.0.child unregister publisher state_pubsub
+2018-03-01 12:53:26,287: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: INFO    : recv message: 
+2018-03-01 12:53:26,288: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: INFO    : message received: 
+2018-03-01 12:53:26,288: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: WARNING : received empty string, parent closed ep
+2018-03-01 12:53:26,288: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher state_pubsub
+2018-03-01 12:53:26,288: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: INFO    : watcher closes
+2018-03-01 12:53:26,288: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.staging.input.0.child unregister publisher control_pubsub
+2018-03-01 12:53:26,288: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: INFO    : put message: [agent_0.staging.input.0.child.watch.thread] work finished
+2018-03-01 12:53:26,289: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-03-01 12:53:26,289: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-03-01 12:53:26,289: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.watch: INFO    : put message: [agent_0.staging.input.0.child.watch.thread] terminating
+2018-03-01 12:53:26,289: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher control_pubsub
+2018-03-01 12:53:26,289: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : agent_0.staging.input.0.child close prof
+2018-03-01 12:53:26,296: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.staging.input.0.child.subscriber._cancel_monitor_cb - do not join
+2018-03-01 12:53:26,296: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : child calls stop()
+2018-03-01 12:53:26,296: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-03-01 12:53:26,296: agent_0.staging.input.0.child: agent_0.staging.input.0         : agent_0.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [agent_0.staging.input.0.child.subscriber._cancel_monitor_cb.thread] terminating
+2018-03-01 12:53:26,484: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : ru_finalize_common()
+2018-03-01 12:53:26,484: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : WARNING : publisher log_pubsub is not registered
+2018-03-01 12:53:26,484: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : WARNING : publisher state_pubsub is not registered
+2018-03-01 12:53:26,484: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : WARNING : publisher control_pubsub is not registered
+2018-03-01 12:53:26,484: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : agent_0.staging.input.0.child close prof
+2018-03-01 12:53:26,485: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    : send message: [agent_0.staging.input.0.child] terminating
+2018-03-01 12:53:26,485: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2018-03-01 12:53:26,485: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : INFO    : parent stops child
+2018-03-01 12:53:26,485: agent_0.staging.input.0.child: agent_0.staging.input.0         : MainThread     : DEBUG   : ru_finalize_parent (NOOP)

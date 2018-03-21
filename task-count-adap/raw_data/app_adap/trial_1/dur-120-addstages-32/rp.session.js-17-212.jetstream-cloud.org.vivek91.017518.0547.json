@@ -1,0 +1,2774 @@
+{
+    "pilot": [
+        {
+            "_id": "pilot.0000", 
+            "cfg": {
+                "agent_launch_method": "SSH", 
+                "bridges": {
+                    "agent_executing_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_reschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_scheduling_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_input_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_output_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_unschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "control_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 1.0, 
+                "components": {
+                    "AgentExecutingComponent": {
+                        "count": 1
+                    }, 
+                    "AgentSchedulingComponent": {
+                        "count": 1
+                    }, 
+                    "AgentStagingInputComponent": {
+                        "count": 1
+                    }, 
+                    "AgentStagingOutputComponent": {
+                        "count": 1
+                    }, 
+                    "UpdateWorker": {
+                        "count": 1
+                    }
+                }, 
+                "cores": 40, 
+                "cores_per_node": 20, 
+                "cu_post_exec": null, 
+                "cu_pre_exec": null, 
+                "cu_tmp": null, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://entk:entk@ds141406.mlab.com:41406/adap-task-count", 
+                "debug": 10, 
+                "export_to_cu": null, 
+                "logdir": ".", 
+                "lrms": "TORQUE", 
+                "max_io_loglength": 1024, 
+                "mode": "shared", 
+                "mpi_launch_method": "MPIEXEC", 
+                "owner": "agent_0", 
+                "pilot_id": "pilot.0000", 
+                "pilot_sandbox": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+                "resource_cfg": {
+                    "agent_launch_method": "SSH", 
+                    "agent_scheduler": "CONTINUOUS", 
+                    "agent_spawner": "POPEN", 
+                    "cores_per_node": "20", 
+                    "default_queue": "workq", 
+                    "default_remote_workdir": "/work/$USER", 
+                    "description": "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)", 
+                    "filesystem_endpoint": "gsisftp://supermic.cct-lsu.xsede.org:2222/", 
+                    "gsissh": {
+                        "filesystem_endpoint": "gsisftp://supermic.cct-lsu.xsede.org:2222/", 
+                        "job_manager_endpoint": "torque+gsissh://supermic.cct-lsu.xsede.org:2222/"
+                    }, 
+                    "job_manager_endpoint": "torque+gsissh://supermic.cct-lsu.xsede.org:2222/", 
+                    "label": "xsede.supermic_ssh", 
+                    "lrms": "TORQUE", 
+                    "mpi_launch_method": "MPIEXEC", 
+                    "notes": "Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.", 
+                    "pre_bootstrap_1": [
+                        "module load python/2.7.7-anaconda"
+                    ], 
+                    "python_dist": "default", 
+                    "rp_version": "local", 
+                    "schemas": [
+                        "gsissh", 
+                        "ssh"
+                    ], 
+                    "ssh": {
+                        "filesystem_endpoint": "sftp://supermic.cct-lsu.xsede.org/", 
+                        "job_manager_endpoint": "torque+ssh://supermic.cct-lsu.xsede.org/"
+                    }, 
+                    "task_launch_method": "SSH", 
+                    "valid_roots": [
+                        "/work"
+                    ], 
+                    "virtenv_mode": "create"
+                }, 
+                "resource_sandbox": "/work/vivek91/radical.pilot.sandbox", 
+                "runtime": 138, 
+                "scheduler": "CONTINUOUS", 
+                "session_id": "rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547", 
+                "session_sandbox": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547", 
+                "spawner": "POPEN", 
+                "staging_area": "staging_area", 
+                "staging_schema": "staging", 
+                "target": "local", 
+                "task_launch_method": "SSH"
+            }, 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [
+                {
+                    "arg": [], 
+                    "cmd": "cancel_pilot"
+                }, 
+                {
+                    "arg": [], 
+                    "cmd": "cancel_pilot"
+                }
+            ], 
+            "control": "pmgr", 
+            "description": {
+                "access_schema": "gsissh", 
+                "candidate_hosts": null, 
+                "cleanup": null, 
+                "cores": 21, 
+                "exit_on_error": false, 
+                "memory": null, 
+                "project": "TG-MCB090174", 
+                "queue": null, 
+                "resource": "xsede.supermic", 
+                "runtime": 138, 
+                "sandbox": null
+            }, 
+            "finished": 1513628232.513803, 
+            "js_hop": "torque+gsissh://supermic.cct-lsu.xsede.org:2222/", 
+            "js_url": "torque+gsissh://supermic.cct-lsu.xsede.org:2222/", 
+            "log": null, 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "pmgr": "pmgr.0000", 
+            "resource": "xsede.supermic", 
+            "resource_details": {
+                "lm_detail": null, 
+                "lm_info": null
+            }, 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "session": "rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547", 
+            "state": "CANCELED", 
+            "states": [
+                "NEW", 
+                "PMGR_LAUNCHING_PENDING", 
+                "PMGR_LAUNCHING", 
+                "PMGR_ACTIVE_PENDING", 
+                "PMGR_ACTIVE", 
+                "PMGR_ACTIVE", 
+                "CANCELED", 
+                "CANCELED"
+            ], 
+            "stderr": null, 
+            "stdout": null, 
+            "type": "pilot", 
+            "uid": "pilot.0000", 
+            "unit_ids": [
+                "unit.000000", 
+                "unit.000001", 
+                "unit.000002", 
+                "unit.000003", 
+                "unit.000004", 
+                "unit.000005", 
+                "unit.000006", 
+                "unit.000007", 
+                "unit.000008", 
+                "unit.000009", 
+                "unit.000010", 
+                "unit.000011", 
+                "unit.000012", 
+                "unit.000013", 
+                "unit.000014", 
+                "unit.000015", 
+                "unit.000016", 
+                "unit.000017", 
+                "unit.000018", 
+                "unit.000019", 
+                "unit.000020", 
+                "unit.000021", 
+                "unit.000022", 
+                "unit.000023", 
+                "unit.000024", 
+                "unit.000025", 
+                "unit.000026", 
+                "unit.000027", 
+                "unit.000028", 
+                "unit.000029", 
+                "unit.000030", 
+                "unit.000031", 
+                "unit.000032"
+            ]
+        }
+    ], 
+    "pmgr": [
+        {
+            "_id": "pmgr.0000", 
+            "cfg": {
+                "bridges": {
+                    "control_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:37913", 
+                        "addr_out": "tcp://172.30.238.6:39020", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:39194", 
+                        "addr_out": "tcp://172.30.238.6:36105", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "pmgr_launching_queue": {
+                        "addr_in": "tcp://172.30.238.6:36537", 
+                        "addr_out": "tcp://172.30.238.6:35645", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:41393", 
+                        "addr_out": "tcp://172.30.238.6:46695", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "components": {
+                    "PMGRLaunchingComponent": {
+                        "count": 1
+                    }
+                }, 
+                "db_poll_sleeptime": 1.0, 
+                "owner": "pmgr.0000", 
+                "uid": "pmgr.0000"
+            }, 
+            "type": "pmgr", 
+            "uid": "pmgr.0000"
+        }
+    ], 
+    "session": {
+        "_id": "rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547", 
+        "cfg": {
+            "bridges": {
+                "control_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "log_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "state_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }
+            }, 
+            "components": {
+                "UpdateWorker": {
+                    "count": 1
+                }
+            }, 
+            "dburl": "mongodb://entk:entk@ds141406.mlab.com:41406/adap-task-count", 
+            "debug": "DEBUG", 
+            "default_dburl": "mongodb://rp:rp@ds015335.mlab.com:15335/rp", 
+            "logdir": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547", 
+            "owner": "rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547", 
+            "session_id": "rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547"
+        }, 
+        "connected": 1513624010.842295, 
+        "created": 1513624010.52752, 
+        "type": "session", 
+        "uid": "rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547"
+    }, 
+    "umgr": [
+        {
+            "_id": "umgr.0000", 
+            "cfg": {
+                "bridges": {
+                    "control_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:37913", 
+                        "addr_out": "tcp://172.30.238.6:39020", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:39194", 
+                        "addr_out": "tcp://172.30.238.6:36105", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:41393", 
+                        "addr_out": "tcp://172.30.238.6:46695", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_reschedule_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:41866", 
+                        "addr_out": "tcp://172.30.238.6:43437", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_scheduling_queue": {
+                        "addr_in": "tcp://172.30.238.6:38247", 
+                        "addr_out": "tcp://172.30.238.6:35306", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_staging_input_queue": {
+                        "addr_in": "tcp://172.30.238.6:41643", 
+                        "addr_out": "tcp://172.30.238.6:42004", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_staging_output_queue": {
+                        "addr_in": "tcp://172.30.238.6:33173", 
+                        "addr_out": "tcp://172.30.238.6:38633", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_unschedule_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:41081", 
+                        "addr_out": "tcp://172.30.238.6:34769", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 1.0, 
+                "components": {
+                    "UMGRSchedulingComponent": {
+                        "count": 1
+                    }, 
+                    "UMGRStagingInputComponent": {
+                        "count": 1
+                    }, 
+                    "UMGRStagingOutputComponent": {
+                        "count": 1
+                    }
+                }, 
+                "db_poll_sleeptime": 1.0, 
+                "owner": "umgr.0000", 
+                "scheduler": "round_robin", 
+                "uid": "umgr.0000"
+            }, 
+            "type": "umgr", 
+            "uid": "umgr.0000"
+        }
+    ], 
+    "unit": [
+        {
+            "_id": "unit.000000", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0546,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0545,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0546,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0545,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [80680] dispatching hogs: 1 cpu\nstress-ng: info:  [80680] successful run completed in 120.03s (2 mins, 0.03 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000000/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000000/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000000", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000000/"
+        }, 
+        {
+            "_id": "unit.000001", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0564,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0563,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0564,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0563,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [80806] dispatching hogs: 1 cpu\nstress-ng: info:  [80806] successful run completed in 120.01s (2 mins, 0.01 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000001/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000001/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000001", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000001/"
+        }, 
+        {
+            "_id": "unit.000002", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0580,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0579,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0580,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0579,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [81050] dispatching hogs: 1 cpu\nstress-ng: info:  [81050] successful run completed in 120.03s (2 mins, 0.03 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000002/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000002/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000002", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000002/"
+        }, 
+        {
+            "_id": "unit.000003", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0596,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0595,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0596,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0595,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [81171] dispatching hogs: 1 cpu\nstress-ng: info:  [81171] successful run completed in 120.00s (2 mins, 0.00 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000003/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000003/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000003", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000003/"
+        }, 
+        {
+            "_id": "unit.000004", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0612,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0611,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0612,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0611,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [81290] dispatching hogs: 1 cpu\nstress-ng: info:  [81290] successful run completed in 120.03s (2 mins, 0.03 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000004/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000004/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000004", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000004/"
+        }, 
+        {
+            "_id": "unit.000005", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0628,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0627,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0628,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0627,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [81409] dispatching hogs: 1 cpu\nstress-ng: info:  [81409] successful run completed in 120.00s (2 mins, 0.00 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000005/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000005/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000005", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000005/"
+        }, 
+        {
+            "_id": "unit.000006", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0644,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0643,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0644,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0643,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [81536] dispatching hogs: 1 cpu\nstress-ng: info:  [81536] successful run completed in 120.03s (2 mins, 0.03 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000006/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000006/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000006", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000006/"
+        }, 
+        {
+            "_id": "unit.000007", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0660,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0659,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0660,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0659,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [81655] dispatching hogs: 1 cpu\nstress-ng: info:  [81655] successful run completed in 120.00s (2 mins, 0.00 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000007/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000007/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000007", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000007/"
+        }, 
+        {
+            "_id": "unit.000008", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0676,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0675,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0676,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0675,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [81775] dispatching hogs: 1 cpu\nstress-ng: info:  [81775] successful run completed in 120.00s (2 mins, 0.00 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000008/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000008/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000008", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000008/"
+        }, 
+        {
+            "_id": "unit.000009", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0692,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0691,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0692,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0691,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [81895] dispatching hogs: 1 cpu\nstress-ng: info:  [81895] successful run completed in 120.03s (2 mins, 0.03 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000009/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000009/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000009", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000009/"
+        }, 
+        {
+            "_id": "unit.000010", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0708,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0707,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0708,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0707,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [82015] dispatching hogs: 1 cpu\nstress-ng: info:  [82015] successful run completed in 120.03s (2 mins, 0.03 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000010/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000010/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000010", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000010/"
+        }, 
+        {
+            "_id": "unit.000011", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0724,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0723,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0724,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0723,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [82140] dispatching hogs: 1 cpu\nstress-ng: info:  [82140] successful run completed in 120.03s (2 mins, 0.03 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000011/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000011/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000011", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000011/"
+        }, 
+        {
+            "_id": "unit.000012", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0740,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0739,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0740,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0739,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [82261] dispatching hogs: 1 cpu\nstress-ng: info:  [82261] successful run completed in 120.06s (2 mins, 0.06 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000012/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000012/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000012", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000012/"
+        }, 
+        {
+            "_id": "unit.000013", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0756,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0755,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0756,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0755,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [82380] dispatching hogs: 1 cpu\nstress-ng: info:  [82380] successful run completed in 120.02s (2 mins, 0.02 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000013/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000013/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000013", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000013/"
+        }, 
+        {
+            "_id": "unit.000014", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0772,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0771,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0772,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0771,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [82500] dispatching hogs: 1 cpu\nstress-ng: info:  [82500] successful run completed in 120.04s (2 mins, 0.04 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000014/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000014/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000014", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000014/"
+        }, 
+        {
+            "_id": "unit.000015", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0788,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0787,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0788,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0787,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [82621] dispatching hogs: 1 cpu\nstress-ng: info:  [82621] successful run completed in 120.00s (2 mins, 0.00 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000015/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000015/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000015", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000015/"
+        }, 
+        {
+            "_id": "unit.000016", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0804,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0803,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0804,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0803,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [82747] dispatching hogs: 1 cpu\nstress-ng: info:  [82747] successful run completed in 120.03s (2 mins, 0.03 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000016/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000016/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000016", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000016/"
+        }, 
+        {
+            "_id": "unit.000017", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0820,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0819,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0820,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0819,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [82867] dispatching hogs: 1 cpu\nstress-ng: info:  [82867] successful run completed in 120.02s (2 mins, 0.02 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000017/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000017/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000017", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000017/"
+        }, 
+        {
+            "_id": "unit.000018", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0836,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0835,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0836,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0835,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [82988] dispatching hogs: 1 cpu\nstress-ng: info:  [82988] successful run completed in 120.03s (2 mins, 0.03 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000018/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000018/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000018", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000018/"
+        }, 
+        {
+            "_id": "unit.000019", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0852,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0851,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0852,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0851,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [83108] dispatching hogs: 1 cpu\nstress-ng: info:  [83108] successful run completed in 120.02s (2 mins, 0.02 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000019/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000019/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000019", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000019/"
+        }, 
+        {
+            "_id": "unit.000020", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0868,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0867,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0868,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0867,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [83227] dispatching hogs: 1 cpu\nstress-ng: info:  [83227] successful run completed in 120.02s (2 mins, 0.02 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000020/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000020/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000020", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000020/"
+        }, 
+        {
+            "_id": "unit.000021", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0884,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0883,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0884,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0883,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [83354] dispatching hogs: 1 cpu\nstress-ng: info:  [83354] successful run completed in 120.03s (2 mins, 0.03 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000021/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000021/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000021", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000021/"
+        }, 
+        {
+            "_id": "unit.000022", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0900,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0899,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0900,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0899,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [83473] dispatching hogs: 1 cpu\nstress-ng: info:  [83473] successful run completed in 120.00s (2 mins, 0.00 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000022/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000022/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000022", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000022/"
+        }, 
+        {
+            "_id": "unit.000023", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0916,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0915,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0916,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0915,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [83593] dispatching hogs: 1 cpu\nstress-ng: info:  [83593] successful run completed in 120.02s (2 mins, 0.02 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000023/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000023/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000023", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000023/"
+        }, 
+        {
+            "_id": "unit.000024", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0932,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0931,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0932,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0931,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [83714] dispatching hogs: 1 cpu\nstress-ng: info:  [83714] successful run completed in 120.02s (2 mins, 0.02 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000024/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000024/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000024", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000024/"
+        }, 
+        {
+            "_id": "unit.000025", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0948,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0947,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0948,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0947,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [83839] dispatching hogs: 1 cpu\nstress-ng: info:  [83839] successful run completed in 120.03s (2 mins, 0.03 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000025/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000025/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000025", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000025/"
+        }, 
+        {
+            "_id": "unit.000026", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0964,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0963,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0964,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0963,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [83988] dispatching hogs: 1 cpu\nstress-ng: info:  [83988] successful run completed in 120.00s (2 mins, 0.00 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000026/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000026/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000026", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000026/"
+        }, 
+        {
+            "_id": "unit.000027", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0980,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0979,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0980,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0979,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [84711] dispatching hogs: 1 cpu\nstress-ng: info:  [84711] successful run completed in 120.02s (2 mins, 0.02 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000027/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000027/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000027", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000027/"
+        }, 
+        {
+            "_id": "unit.000028", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0996,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0995,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.0996,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.0995,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [84830] dispatching hogs: 1 cpu\nstress-ng: info:  [84830] successful run completed in 120.04s (2 mins, 0.04 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000028/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000028/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000028", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000028/"
+        }, 
+        {
+            "_id": "unit.000029", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.1012,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.1011,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.1012,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.1011,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [84950] dispatching hogs: 1 cpu\nstress-ng: info:  [84950] successful run completed in 120.04s (2 mins, 0.04 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000029/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000029/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000029", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000029/"
+        }, 
+        {
+            "_id": "unit.000030", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.1028,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.1027,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.1028,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.1027,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [85201] dispatching hogs: 1 cpu\nstress-ng: info:  [85201] successful run completed in 120.01s (2 mins, 0.01 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000030/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000030/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000030", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000030/"
+        }, 
+        {
+            "_id": "unit.000031", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.1044,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.1043,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.1044,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.1043,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [85321] dispatching hogs: 1 cpu\nstress-ng: info:  [85321] successful run completed in 120.00s (2 mins, 0.00 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000031/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000031/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000031", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000031/"
+        }, 
+        {
+            "_id": "unit.000032", 
+            "client_sandbox": "/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-c", 
+                    "1", 
+                    "-t", 
+                    "120"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "stress-ng", 
+                "input_staging": [], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.1060,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.1059,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "export PATH=/home/vivek91/tools/stress-ng-0.09.04:$PATH"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.js-17-212.jetstream-cloud.org.vivek91.017518.1060,radical.entk.stage.js-17-212.jetstream-cloud.org.vivek91.017518.1059,radical.entk.pipeline.js-17-212.jetstream-cloud.org.vivek91.017518.0544", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic044:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "stress-ng: info:  [85440] dispatching hogs: 1 cpu\nstress-ng: info:  [85440] successful run completed in 120.00s (2 mins, 0.00 secs)\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000032/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000/unit.000032/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000032", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017518.0547/pilot.0000//unit.000032/"
+        }
+    ]
+}

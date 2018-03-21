@@ -1,0 +1,133 @@
+2017-12-15 10:35:31,690: pmgr.0000           : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 20 2017, 18:23:56) [GCC 5.4.0 20160609]
+2017-12-15 10:35:31,691: pmgr.0000           : MainProcess                     : MainThread     : INFO    :                      pid: 3098
+2017-12-15 10:35:31,691: pmgr.0000           : MainProcess                     : MainThread     : INFO    :                      tid: MainThread
+2017-12-15 10:35:31,691: pmgr.0000           : MainProcess                     : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2017-12-15 10:35:32,733: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : alive check in term
+2017-12-15 10:35:32,733: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : start process
+2017-12-15 10:35:32,733: pmgr.0000           : MainProcess                     : MainThread     : INFO    : initialize pmgr.0000
+2017-12-15 10:35:32,734: pmgr.0000           : MainProcess                     : MainThread     : INFO    : cfg: {u'bridges': {u'pmgr_launching_queue': {u'bulk_size': 0,
+                                        u'log_level': u'debug',
+                                        u'stall_hwm': 1}},
+ u'components': {u'PMGRLaunchingComponent': {u'count': 1}},
+ u'db_poll_sleeptime': 1.0,
+ 'owner': 'pmgr.0000'}
+2017-12-15 10:35:32,734: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : start bridges   : {u'pmgr_launching_queue': {u'bulk_size': 0,
+                           u'log_level': u'debug',
+                           u'stall_hwm': 1}}
+2017-12-15 10:35:32,734: pmgr.0000           : MainProcess                     : MainThread     : INFO    : create bridge pmgr_launching_queue
+2017-12-15 10:35:32,758: pmgr.0000           : MainProcess                     : MainThread     : INFO    : created bridge pmgr_launching_queue (pmgr.launching.queue.bridge.0000)
+2017-12-15 10:35:32,759: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : start components: {u'PMGRLaunchingComponent': {u'count': 1}}
+2017-12-15 10:35:32,759: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : start 1 component(s) PMGRLaunchingComponent
+2017-12-15 10:35:34,971: pmgr.0000           : MainProcess                     : MainThread     : INFO    : pmgr.0000                      starts pmgr.0000.launching.0
+2017-12-15 10:35:34,971: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : alive check in term
+2017-12-15 10:35:34,971: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: pmgr.0000 register publisher log_pubsub
+2017-12-15 10:35:34,971: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : using addr tcp://172.30.238.6:37565 for pubsub log_pubsub
+2017-12-15 10:35:34,973: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0002
+2017-12-15 10:35:34,973: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : alive check in term
+2017-12-15 10:35:34,973: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: pmgr.0000 register publisher state_pubsub
+2017-12-15 10:35:34,973: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : using addr tcp://172.30.238.6:43325 for pubsub state_pubsub
+2017-12-15 10:35:34,991: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0002
+2017-12-15 10:35:34,991: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : alive check in term
+2017-12-15 10:35:34,991: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: pmgr.0000 register publisher control_pubsub
+2017-12-15 10:35:34,991: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : using addr tcp://172.30.238.6:43224 for pubsub control_pubsub
+2017-12-15 10:35:34,994: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0002
+2017-12-15 10:35:34,994: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : process class started (no child)
+2017-12-15 10:35:34,994: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: pmgr.0000 register output PMGR_LAUNCHING_PENDING
+2017-12-15 10:35:34,994: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : using addr tcp://172.30.238.6:37734 for output pmgr_launching_queue
+2017-12-15 10:35:34,997: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : registered output    : PMGR_LAUNCHING_PENDING : pmgr_launching_queue : pmgr.launching.queue.input.0000
+2017-12-15 10:35:34,997: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: pmgr.0000 register subscriber pmgr.0000.subscriber._staging_ack_cb
+2017-12-15 10:35:34,997: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : using addr tcp://172.30.238.6:46470 for pubsub control_pubsub
+2017-12-15 10:35:35,000: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : parent name: pmgr.0000.subscriber._staging_ack_cb
+2017-12-15 10:35:35,000: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : start thread
+2017-12-15 10:35:35,000: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._staging_ack_cb: DEBUG   : child name: pmgr.0000.subscriber._staging_ack_cb.thread
+2017-12-15 10:35:35,001: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._staging_ack_cb: INFO    : child (me) initializing
+2017-12-15 10:35:35,001: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._staging_ack_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-12-15 10:35:35,001: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._staging_ack_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-12-15 10:35:35,001: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._staging_ack_cb: INFO    : send alive
+2017-12-15 10:35:35,001: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._staging_ack_cb: INFO    : put message: [pmgr.0000.subscriber._staging_ack_cb.thread] alive
+2017-12-15 10:35:35,002: pmgr.0000           : MainProcess                     : MainThread     : INFO    : get msg: alive
+2017-12-15 10:35:35,002: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-12-15 10:35:35,002: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-12-15 10:35:35,002: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : child thread pmgr.0000.subscriber._staging_ack_cb started
+2017-12-15 10:35:35,002: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : pmgr.0000 registered control_pubsub subscriber pmgr.0000.subscriber._staging_ack_cb
+2017-12-15 10:35:35,002: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: pmgr.0000 register idler pmgr.0000.idler._state_pull_cb
+2017-12-15 10:35:35,003: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : parent name: pmgr.0000.idler._state_pull_cb
+2017-12-15 10:35:35,003: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : start thread
+2017-12-15 10:35:35,003: pmgr.0000           : MainProcess                     : pmgr.0000.idler._state_pull_cb: DEBUG   : child name: pmgr.0000.idler._state_pull_cb.thread
+2017-12-15 10:35:35,003: pmgr.0000           : MainProcess                     : pmgr.0000.idler._state_pull_cb: INFO    : child (me) initializing
+2017-12-15 10:35:35,004: pmgr.0000           : MainProcess                     : pmgr.0000.idler._state_pull_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-12-15 10:35:35,004: pmgr.0000           : MainProcess                     : pmgr.0000.idler._state_pull_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-12-15 10:35:35,004: pmgr.0000           : MainProcess                     : pmgr.0000.idler._state_pull_cb: INFO    : send alive
+2017-12-15 10:35:35,004: pmgr.0000           : MainProcess                     : pmgr.0000.idler._state_pull_cb: INFO    : put message: [pmgr.0000.idler._state_pull_cb.thread] alive
+2017-12-15 10:35:35,005: pmgr.0000           : MainProcess                     : MainThread     : INFO    : get msg: alive
+2017-12-15 10:35:35,005: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-12-15 10:35:35,005: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-12-15 10:35:35,005: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : child thread pmgr.0000.idler._state_pull_cb started
+2017-12-15 10:35:35,005: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : pmgr.0000 registered idler pmgr.0000.idler._state_pull_cb
+2017-12-15 10:35:35,006: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: pmgr.0000 register subscriber pmgr.0000.subscriber._state_sub_cb
+2017-12-15 10:35:35,007: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : using addr tcp://172.30.238.6:41227 for pubsub state_pubsub
+2017-12-15 10:35:35,010: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : parent name: pmgr.0000.subscriber._state_sub_cb
+2017-12-15 10:35:35,010: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : start thread
+2017-12-15 10:35:35,010: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: DEBUG   : child name: pmgr.0000.subscriber._state_sub_cb.thread
+2017-12-15 10:35:35,010: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: INFO    : child (me) initializing
+2017-12-15 10:35:35,010: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-12-15 10:35:35,010: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-12-15 10:35:35,010: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: INFO    : send alive
+2017-12-15 10:35:35,010: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: INFO    : put message: [pmgr.0000.subscriber._state_sub_cb.thread] alive
+2017-12-15 10:35:35,011: pmgr.0000           : MainProcess                     : MainThread     : INFO    : get msg: alive
+2017-12-15 10:35:35,012: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-12-15 10:35:35,012: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-12-15 10:35:35,012: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : child thread pmgr.0000.subscriber._state_sub_cb started
+2017-12-15 10:35:35,055: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : pmgr.0000 registered state_pubsub subscriber pmgr.0000.subscriber._state_sub_cb
+2017-12-15 10:35:35,107: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   :  ===== 1:  [<class 'radical.utils.url.Url'>]
+2017-12-15 10:35:35,108: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   :  ===== 2:  [<type 'str'>]
+2017-12-15 10:35:45,323: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   :  ===== 3: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017515.0055/pilot.0000/ [<class 'saga.url.Url'>]
+2017-12-15 10:35:45,324: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-12-15 10:35:45,374: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : pilot.0000 calls cb <bound method ComputePilot._default_state_cb of ['pilot.0000', 'xsede.supermic', 'PMGR_LAUNCHING_PENDING']>
+2017-12-15 10:35:45,374: pmgr.0000           : MainProcess                     : MainThread     : INFO    : [Callback]: pilot pilot.0000 state: PMGR_LAUNCHING_PENDING.
+2017-12-15 10:35:45,374: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : pmgr calls cb pilot.0000 for <function _pilot_state_cb at 0x7f62fa8b0d70>
+2017-12-15 10:35:45,375: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-12-15 10:35:45,375: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : put bulk PMGR_LAUNCHING_PENDING: 1
+2017-12-15 10:35:45,378: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: DEBUG   : state event: {'cmd': 'update', 'arg': [{'state': 'PMGR_LAUNCHING_PENDING', 'type': 'pilot', 'uid': 'pilot.0000'}]}
+2017-12-15 10:35:45,381: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: DEBUG   : state event: {'cmd': 'update', 'arg': [{'state': 'PMGR_LAUNCHING', 'type': 'pilot', 'uid': 'pilot.0000'}]}
+2017-12-15 10:35:45,381: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: DEBUG   : pilot.0000 calls cb <bound method ComputePilot._default_state_cb of ['pilot.0000', 'xsede.supermic', 'PMGR_LAUNCHING']>
+2017-12-15 10:35:45,381: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: pilot pilot.0000 state: PMGR_LAUNCHING.
+2017-12-15 10:35:45,382: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: DEBUG   : pmgr calls cb pilot.0000 for <function _pilot_state_cb at 0x7f62fa8b0d70>
+2017-12-15 10:35:45,382: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-12-15 10:36:12,886: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: DEBUG   : state event: {'cmd': 'update', 'arg': [{'resource_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox', 'control': 'pmgr', 'resource_details': None, 'resource': 'xsede.supermic', 'uid': 'pilot.0000', 'pmgr': 'pmgr.0000', 'stdout': None, 'cfg': {'export_to_cu': None, 'spawner': 'POPEN', 'cu_pre_exec': None, 'owner': 'agent_0', 'bridges': {'state_pubsub': {'bulk_size': 0, 'stall_hwm': 1, 'log_level': 'debug'}, 'agent_unschedule_pubsub': {'bulk_size': 0, 'stall_hwm': 1, 'log_level': 'debug'}, 'log_pubsub': {'bulk_size': 0, 'stall_hwm': 1, 'log_level': 'debug'}, 'agent_staging_output_queue': {'bulk_size': 0, 'stall_hwm': 1, 'log_level': 'debug'}, 'agent_scheduling_queue': {'bulk_size': 0, 'stall_hwm': 1, 'log_level': 'debug'}, 'control_pubsub': {'bulk_size': 0, 'stall_hwm': 1, 'log_level': 'debug'}, 'agent_executing_queue': {'bulk_size': 0, 'stall_hwm': 1, 'log_level': 'debug'}, 'agent_reschedule_pubsub': {'bulk_size': 0, 'stall_hwm': 1, 'log_level': 'debug'}, 'agent_staging_input_queue': {'bulk_size': 0, 'stall_hwm': 1, 'log_level': 'debug'}}, 'logdir': '.', 'task_launch_method': 'SSH', 'pilot_sandbox': '/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017515.0055/pilot.0000/', 'cu_tmp': None, 'cu_post_exec': None, 'max_io_loglength': 1024, 'cores_per_node': 20, 'agent_launch_method': 'SSH', 'bulk_collection_time': 1.0, 'mpi_launch_method': 'MPIEXEC', 'scheduler': 'CONTINUOUS', 'session_sandbox': '/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017515.0055', 'lrms': 'TORQUE', 'pilot_id': 'pilot.0000', 'runtime': 16, 'dburl': 'mongodb://entk:entk@ds141406.mlab.com:41406/adap-task-count', 'target': 'local', 'staging_area': 'staging_area', 'bulk_collection_size': 100, 'staging_schema': 'staging', 'resource_sandbox': '/work/vivek91/radical.pilot.sandbox', 'session_id': 'rp.session.js-17-212.jetstream-cloud.org.vivek91.017515.0055', 'mode': 'shared', 'components': {'AgentStagingOutputComponent': {'count': 1}, 'AgentSchedulingComponent': {'count': 1}, 'AgentStagingInputComponent': {'count': 1}, 'UpdateWorker': {'count': 1}, 'AgentExecutingComponent': {'count': 1}}, 'debug': 10, 'cores': 40, 'resource_cfg': {'agent_scheduler': 'CONTINUOUS', 'default_remote_workdir': '/work/$USER', 'rp_version': 'local', 'pre_bootstrap_1': ['module load python/2.7.7-anaconda'], 'python_dist': 'default', 'agent_spawner': 'POPEN', 'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/', 'schemas': ['gsissh', 'ssh'], 'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/', 'label': 'xsede.supermic_ssh', 'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/', 'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'}, 'valid_roots': ['/work'], 'task_launch_method': 'SSH', 'virtenv_mode': 'create', 'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)", 'default_queue': 'workq', 'cores_per_node': '20', 'agent_launch_method': 'SSH', 'mpi_launch_method': 'MPIEXEC', 'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/', 'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'}, 'lrms': 'TORQUE', 'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.'}, 'db_poll_sleeptime': 1.0}, 'cmd': [], 'js_url': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/', '_id': 'pilot.0000', 'states': ['NEW'], 'state': 'FAILED', 'session': 'rp.session.js-17-212.jetstream-cloud.org.vivek91.017515.0055', 'log': None, 'stderr': None, 'js_hop': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/', 'client_sandbox': '/home/vivek91/repos/adaptive-bms-experiments/task-count-adap/bin', 'type': 'pilot', 'pilot_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017515.0055/pilot.0000/', 'description': {'queue': None, 'resource': 'xsede.supermic', 'exit_on_error': False, 'candidate_hosts': None, 'project': 'TG-MCB090174', 'sandbox': None, 'cleanup': None, 'access_schema': 'gsissh', 'memory': None, 'cores': 21, 'runtime': 16}}]}
+2017-12-15 10:36:12,887: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: DEBUG   : pilot.0000 calls cb <bound method ComputePilot._default_state_cb of ['pilot.0000', 'xsede.supermic', 'FAILED']>
+2017-12-15 10:36:12,887: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: pilot pilot.0000 state: FAILED.
+2017-12-15 10:36:12,887: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: DEBUG   : pmgr calls cb pilot.0000 for <function _pilot_state_cb at 0x7f62fa8b0d70>
+2017-12-15 10:36:12,888: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-12-15 10:36:12,932: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : in cancel_pilots: ['  File "task_dur.py", line 118, in <module>\n    appman.run()\n', '  File "/home/vivek91/ves/paper-adap/local/lib/python2.7/site-packages/radical/entk/appman/appmanager.py", line 465, in run\n    self._resource_manager._cancel_resource_request()\n', '  File "/home/vivek91/ves/paper-adap/local/lib/python2.7/site-packages/radical/entk/execman/resource_manager.py", line 384, in _cancel_resource_request\n    self._pilot.cancel()\n', '  File "/home/vivek91/ves/paper-adap/local/lib/python2.7/site-packages/radical/pilot/compute_pilot.py", line 538, in cancel\n    self._pmgr.cancel_pilots(self.uid)\n', '  File "/home/vivek91/ves/paper-adap/local/lib/python2.7/site-packages/radical/pilot/pilot_manager.py", line 718, in cancel_pilots\n    self._log.debug(\'in cancel_pilots: %s\', ru.get_stacktrace())\n']
+2017-12-15 10:36:12,934: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : in cancel_pilots: ['  File "task_dur.py", line 118, in <module>\n    appman.run()\n', '  File "/home/vivek91/ves/paper-adap/local/lib/python2.7/site-packages/radical/entk/appman/appmanager.py", line 465, in run\n    self._resource_manager._cancel_resource_request()\n', '  File "/home/vivek91/ves/paper-adap/local/lib/python2.7/site-packages/radical/entk/execman/resource_manager.py", line 385, in _cancel_resource_request\n    self._session.close(cleanup=False)\n', '  File "/home/vivek91/ves/paper-adap/local/lib/python2.7/site-packages/radical/pilot/session.py", line 462, in close\n    pmgr.close(terminate=terminate)\n', '  File "/home/vivek91/ves/paper-adap/local/lib/python2.7/site-packages/radical/pilot/pilot_manager.py", line 196, in close\n    self.cancel_pilots(_timeout=10)\n', '  File "/home/vivek91/ves/paper-adap/local/lib/python2.7/site-packages/radical/pilot/pilot_manager.py", line 718, in cancel_pilots\n    self._log.debug(\'in cancel_pilots: %s\', ru.get_stacktrace())\n']
+2017-12-15 10:36:12,994: pmgr.0000           : MainProcess                     : MainThread     : INFO    : stop pmgr.0000 (3098 : None : MainThread) [radical.pilot.pilot_manager.PilotManager.close]
+2017-12-15 10:36:13,007: pmgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child  3098 -> None [pmgr.0000]
+2017-12-15 10:36:13,888: pmgr.0000           : MainProcess                     : pmgr.0000.idler._state_pull_cb: INFO    : put message: [pmgr.0000.idler._state_pull_cb.thread] work finished
+2017-12-15 10:36:13,888: pmgr.0000           : MainProcess                     : pmgr.0000.idler._state_pull_cb: DEBUG   : ru_finalize_child (NOOP)
+2017-12-15 10:36:13,888: pmgr.0000           : MainProcess                     : pmgr.0000.idler._state_pull_cb: DEBUG   : ru_finalize_common (NOOP)
+2017-12-15 10:36:13,888: pmgr.0000           : MainProcess                     : pmgr.0000.idler._state_pull_cb: INFO    : put message: [pmgr.0000.idler._state_pull_cb.thread] terminating
+2017-12-15 10:36:14,415: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_finalize_common()
+2017-12-15 10:36:14,415: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : TERM : pmgr.0000 unregister publisher log_pubsub
+2017-12-15 10:36:14,416: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : unregistered publisher log_pubsub
+2017-12-15 10:36:14,416: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : TERM : pmgr.0000 unregister publisher state_pubsub
+2017-12-15 10:36:14,417: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : unregistered publisher state_pubsub
+2017-12-15 10:36:14,417: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : TERM : pmgr.0000 unregister publisher control_pubsub
+2017-12-15 10:36:14,419: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : unregistered publisher control_pubsub
+2017-12-15 10:36:14,419: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : pmgr.0000 close prof
+2017-12-15 10:36:14,431: pmgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child
+2017-12-15 10:36:14,432: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-12-15 10:36:14,432: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._staging_ack_cb: DEBUG   : ru_finalize_child (NOOP)
+2017-12-15 10:36:14,433: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._staging_ack_cb: INFO    : put message: [pmgr.0000.subscriber._staging_ack_cb.thread] terminating
+2017-12-15 10:36:14,434: pmgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child
+2017-12-15 10:36:14,434: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-12-15 10:36:14,434: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: DEBUG   : ru_finalize_child (NOOP)
+2017-12-15 10:36:14,435: pmgr.0000           : MainProcess                     : pmgr.0000.subscriber._state_sub_cb: INFO    : put message: [pmgr.0000.subscriber._state_sub_cb.thread] terminating
+2017-12-15 10:36:14,435: pmgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child
+2017-12-15 10:36:14,435: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-12-15 10:36:14,435: pmgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_finalize_common (NOOP)
+2017-12-15 10:36:14,435: pmgr.0000           : MainProcess                     : MainThread     : INFO    : Closed PilotManager pmgr.0000.
+2017-12-15 10:36:17,190: pmgr.0000           : MainProcess                     : MainThread     : INFO    : stop pmgr.0000 (3098 : None : MainThread) [radical.pilot.session.Session.close]
+2017-12-15 10:36:17,191: pmgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child
+2017-12-15 10:36:17,191: pmgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child
+2017-12-15 10:36:17,191: pmgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child

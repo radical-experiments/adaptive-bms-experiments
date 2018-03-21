@@ -1,0 +1,20 @@
+#time,event,comp,thread,uid,state,msg
+1516813708.4232,sync_abs,umgr.0000,MainThread,,,js-169-212.jetstream-cloud.org:172.29.241.4:1516813708.4:1516813708.39:ntp
+1516813713.1736,component_init,umgr.0000,MainThread,,,
+1516813713.4760,setup_done,umgr.0000,MainThread,umgr.0000,,
+1516813713.4930,advance,umgr.0000,MainThread,unit.000000,NEW,
+1516813713.5181,advance,umgr.0000,MainThread,unit.000000,UMGR_SCHEDULING_PENDING,
+1516813713.5183,publish,umgr.0000,MainThread,unit.000000,UMGR_SCHEDULING_PENDING,
+1516813713.5184,put,umgr.0000,MainThread,unit.000000,UMGR_SCHEDULING_PENDING,umgr.scheduling.queue.input.0000
+1516813959.1550,get,umgr.0000,umgr.0000.idler._unit_pull_cb,umgr.0000,,bulk size: 1
+1516813959.1551,get,umgr.0000,umgr.0000.idler._unit_pull_cb,unit.000000,,
+1516813959.1556,publish,umgr.0000,umgr.0000.idler._unit_pull_cb,unit.000000,UMGR_STAGING_OUTPUT_PENDING,
+1516813959.1558,put,umgr.0000,umgr.0000.idler._unit_pull_cb,unit.000000,UMGR_STAGING_OUTPUT_PENDING,umgr.staging.output.queue.input.0000
+1516813959.2453,advance,umgr.0000,MainThread,unit.000001,NEW,
+1516813959.2705,advance,umgr.0000,MainThread,unit.000001,UMGR_SCHEDULING_PENDING,
+1516813959.2709,publish,umgr.0000,MainThread,unit.000001,UMGR_SCHEDULING_PENDING,
+1516813959.2710,put,umgr.0000,MainThread,unit.000001,UMGR_SCHEDULING_PENDING,umgr.scheduling.queue.input.0000
+1516814203.7635,get,umgr.0000,umgr.0000.idler._unit_pull_cb,umgr.0000,,bulk size: 1
+1516814203.7636,get,umgr.0000,umgr.0000.idler._unit_pull_cb,unit.000001,,
+1516814203.7649,publish,umgr.0000,umgr.0000.idler._unit_pull_cb,unit.000001,UMGR_STAGING_OUTPUT_PENDING,
+1516814203.7652,put,umgr.0000,umgr.0000.idler._unit_pull_cb,unit.000001,UMGR_STAGING_OUTPUT_PENDING,umgr.staging.output.queue.input.0000

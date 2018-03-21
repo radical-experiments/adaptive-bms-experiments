@@ -1,0 +1,84 @@
+2018-01-31 23:33:39,701: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.6 (default, Jun 22 2015, 17:58:13) [GCC 4.8.2]
+2018-01-31 23:33:39,701: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    :                      pid: 12806
+2018-01-31 23:33:39,701: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    :                      tid: MainThread
+2018-01-31 23:33:39,701: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2018-01-31 23:33:39,782: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : alive check in term
+2018-01-31 23:33:39,782: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : start process
+2018-01-31 23:33:39,956: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    : recv message: alive
+2018-01-31 23:33:39,957: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    : initialize pmgr.0000.launching.0
+2018-01-31 23:33:39,960: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    : cfg: {'agents': {},
+ u'bridges': {u'control_pubsub': {'addr_in': 'tcp://172.29.241.4:50683',
+                                  'addr_out': 'tcp://172.29.241.4:33606',
+                                  u'bulk_size': 0,
+                                  u'log_level': u'debug',
+                                  u'stall_hwm': 1},
+              u'log_pubsub': {'addr_in': 'tcp://172.29.241.4:35222',
+                              'addr_out': 'tcp://172.29.241.4:47585',
+                              u'bulk_size': 0,
+                              u'log_level': u'debug',
+                              u'stall_hwm': 1},
+              u'pmgr_launching_queue': {'addr_in': 'tcp://172.29.241.4:53793',
+                                        'addr_out': 'tcp://172.29.241.4:47618',
+                                        u'bulk_size': 0,
+                                        u'log_level': u'debug',
+                                        u'stall_hwm': 1},
+              u'state_pubsub': {'addr_in': 'tcp://172.29.241.4:44575',
+                                'addr_out': 'tcp://172.29.241.4:37404',
+                                u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1}},
+ 'cname': u'PMGRLaunchingComponent',
+ u'components': {},
+ u'count': 1,
+ u'db_poll_sleeptime': 1.0,
+ 'number': 0,
+ 'owner': 'pmgr.0000',
+ 'uid': 'pmgr.0000'}
+2018-01-31 23:33:39,960: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : alive check in term
+2018-01-31 23:33:39,960: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : START: pmgr.0000.launching.0 register publisher log_pubsub
+2018-01-31 23:33:39,961: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : using addr tcp://172.29.241.4:35222 for pubsub log_pubsub
+2018-01-31 23:33:39,964: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0001
+2018-01-31 23:33:39,964: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : alive check in term
+2018-01-31 23:33:39,964: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : START: pmgr.0000.launching.0 register publisher state_pubsub
+2018-01-31 23:33:39,964: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : using addr tcp://172.29.241.4:44575 for pubsub state_pubsub
+2018-01-31 23:33:39,967: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0001
+2018-01-31 23:33:39,967: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : alive check in term
+2018-01-31 23:33:39,967: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : START: pmgr.0000.launching.0 register publisher control_pubsub
+2018-01-31 23:33:39,967: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : using addr tcp://172.29.241.4:50683 for pubsub control_pubsub
+2018-01-31 23:33:39,970: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0001
+2018-01-31 23:33:39,970: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : parent name: pmgr.0000.launching.0.watch
+2018-01-31 23:33:39,970: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : start thread
+2018-01-31 23:33:39,975: pmgr.0000.launching.0: MainProcess                     : pmgr.0000.launching.0.watch: DEBUG   : child name: pmgr.0000.launching.0.watch.thread
+2018-01-31 23:33:39,975: pmgr.0000.launching.0: MainProcess                     : pmgr.0000.launching.0.watch: INFO    : child (me) initializing
+2018-01-31 23:33:39,975: pmgr.0000.launching.0: MainProcess                     : pmgr.0000.launching.0.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-01-31 23:33:39,975: pmgr.0000.launching.0: MainProcess                     : pmgr.0000.launching.0.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-01-31 23:33:39,975: pmgr.0000.launching.0: MainProcess                     : pmgr.0000.launching.0.watch: INFO    : send alive
+2018-01-31 23:33:39,975: pmgr.0000.launching.0: MainProcess                     : pmgr.0000.launching.0.watch: INFO    : put message: [pmgr.0000.launching.0.watch.thread] alive
+2018-01-31 23:33:39,976: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    : get msg: alive
+2018-01-31 23:33:39,976: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-01-31 23:33:39,976: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-01-31 23:33:39,976: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : child thread pmgr.0000.launching.0.watch started
+2018-01-31 23:33:39,977: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    : child is alive
+2018-01-31 23:33:39,977: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : process class started child
+2018-02-01 00:58:07,862: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    : stop pmgr.0000.launching.0 (12806 : 12884 : MainThread) [radical.pilot.pilot_manager.PilotManager.finalize_parent]
+2018-02-01 00:58:07,912: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    : parent stops child  12806 -> 12884 [pmgr.0000.launching.0]
+2018-02-01 00:58:07,912: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    : send message: [pmgr.0000.launching.0] STOP
+2018-02-01 00:58:07,912: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : ru_finalize_common()
+2018-02-01 00:58:07,912: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : TERM : pmgr.0000.launching.0 unregister publisher log_pubsub
+2018-02-01 00:58:07,913: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : unregistered publisher log_pubsub
+2018-02-01 00:58:07,913: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : TERM : pmgr.0000.launching.0 unregister publisher state_pubsub
+2018-02-01 00:58:07,913: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : unregistered publisher state_pubsub
+2018-02-01 00:58:07,913: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : TERM : pmgr.0000.launching.0 unregister publisher control_pubsub
+2018-02-01 00:58:07,914: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : unregistered publisher control_pubsub
+2018-02-01 00:58:07,914: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : pmgr.0000.launching.0 close prof
+2018-02-01 00:58:07,928: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    : parent stops child
+2018-02-01 00:58:07,929: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-02-01 00:58:07,929: pmgr.0000.launching.0: MainProcess                     : MainThread     : DEBUG   : ru_finalize_common (NOOP)
+2018-02-01 00:58:07,965: pmgr.0000.launching.0: MainProcess                     : pmgr.0000.launching.0.watch: INFO    : watcher closes
+2018-02-01 00:58:07,965: pmgr.0000.launching.0: MainProcess                     : pmgr.0000.launching.0.watch: INFO    : put message: [pmgr.0000.launching.0.watch.thread] work finished
+2018-02-01 00:58:07,965: pmgr.0000.launching.0: MainProcess                     : pmgr.0000.launching.0.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-02-01 00:58:07,965: pmgr.0000.launching.0: MainProcess                     : pmgr.0000.launching.0.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-02-01 00:58:07,965: pmgr.0000.launching.0: MainProcess                     : pmgr.0000.launching.0.watch: INFO    : put message: [pmgr.0000.launching.0.watch.thread] terminating
+2018-02-01 00:58:09,992: pmgr.0000.launching.0: MainProcess                     : MainThread     : WARNING : failed to stop child - terminate: 12806 -> 12884 [pmgr.0000.launching.0]
+2018-02-01 00:58:10,150: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    : stop pmgr.0000.launching.0 (12806 : 12884 : MainThread) [radical.pilot.utils.component.PilotManager.ru_finalize_common]
+2018-02-01 00:58:13,141: pmgr.0000.launching.0: MainProcess                     : MainThread     : INFO    : stop pmgr.0000.launching.0 (12806 : 12884 : MainThread) [radical.pilot.session.Session.close]

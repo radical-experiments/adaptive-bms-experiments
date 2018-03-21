@@ -1,0 +1,42 @@
+#time,event,comp,thread,uid,state,msg
+1513661173.8260,sync_abs,agent_0.executing.0.child,MainThread,,,smic028:204.90.41.28:1513661173.81:1513661173.82:ntp
+1513661173.9096,component_init,agent_0.executing.0.child,MainThread,,,
+1513661187.5800,get,agent_0.executing.0.child,MainThread,unit.000000,AGENT_EXECUTING_PENDING,
+1513661187.5802,advance,agent_0.executing.0.child,MainThread,unit.000000,AGENT_EXECUTING,
+1513661187.5804,publish,agent_0.executing.0.child,MainThread,unit.000000,AGENT_EXECUTING,
+1513661187.5806,exec,agent_0.executing.0.child,MainThread,unit.000000,,unit launch
+1513661187.5806,exec_mkdir,agent_0.executing.0.child,MainThread,unit.000000,,
+1513661187.5814,exec_mkdir_done,agent_0.executing.0.child,MainThread,unit.000000,,
+1513661187.5850,exec_start,agent_0.executing.0.child,MainThread,unit.000000,,
+1513661187.5897,exec_ok,agent_0.executing.0.child,MainThread,unit.000000,,
+1513661308.4016,exec_stop,agent_0.executing.0.child,Watcher,unit.000000,,
+1513661308.4021,advance,agent_0.executing.0.child,Watcher,unit.000000,AGENT_STAGING_OUTPUT_PENDING,
+1513661308.4023,publish,agent_0.executing.0.child,Watcher,unit.000000,AGENT_STAGING_OUTPUT_PENDING,
+1513661308.4025,put,agent_0.executing.0.child,Watcher,unit.000000,AGENT_STAGING_OUTPUT_PENDING,agent.staging.output.queue.input.0000
+1513661312.9330,get,agent_0.executing.0.child,MainThread,unit.000001,AGENT_EXECUTING_PENDING,
+1513661312.9332,advance,agent_0.executing.0.child,MainThread,unit.000001,AGENT_EXECUTING,
+1513661312.9333,publish,agent_0.executing.0.child,MainThread,unit.000001,AGENT_EXECUTING,
+1513661312.9335,exec,agent_0.executing.0.child,MainThread,unit.000001,,unit launch
+1513661312.9336,exec_mkdir,agent_0.executing.0.child,MainThread,unit.000001,,
+1513661312.9343,exec_mkdir_done,agent_0.executing.0.child,MainThread,unit.000001,,
+1513661312.9377,exec_start,agent_0.executing.0.child,MainThread,unit.000001,,
+1513661312.9423,exec_ok,agent_0.executing.0.child,MainThread,unit.000001,,
+1513661433.4761,exec_stop,agent_0.executing.0.child,Watcher,unit.000001,,
+1513661433.4765,advance,agent_0.executing.0.child,Watcher,unit.000001,AGENT_STAGING_OUTPUT_PENDING,
+1513661433.4767,publish,agent_0.executing.0.child,Watcher,unit.000001,AGENT_STAGING_OUTPUT_PENDING,
+1513661433.4769,put,agent_0.executing.0.child,Watcher,unit.000001,AGENT_STAGING_OUTPUT_PENDING,agent.staging.output.queue.input.0000
+1513661438.2935,get,agent_0.executing.0.child,MainThread,unit.000002,AGENT_EXECUTING_PENDING,
+1513661438.2937,advance,agent_0.executing.0.child,MainThread,unit.000002,AGENT_EXECUTING,
+1513661438.2938,publish,agent_0.executing.0.child,MainThread,unit.000002,AGENT_EXECUTING,
+1513661438.2940,exec,agent_0.executing.0.child,MainThread,unit.000002,,unit launch
+1513661438.2940,exec_mkdir,agent_0.executing.0.child,MainThread,unit.000002,,
+1513661438.2948,exec_mkdir_done,agent_0.executing.0.child,MainThread,unit.000002,,
+1513661438.2980,exec_start,agent_0.executing.0.child,MainThread,unit.000002,,
+1513661438.3028,exec_ok,agent_0.executing.0.child,MainThread,unit.000002,,
+1513661558.8476,exec_stop,agent_0.executing.0.child,Watcher,unit.000002,,
+1513661558.8480,advance,agent_0.executing.0.child,Watcher,unit.000002,AGENT_STAGING_OUTPUT_PENDING,
+1513661558.8482,publish,agent_0.executing.0.child,Watcher,unit.000002,AGENT_STAGING_OUTPUT_PENDING,
+1513661558.8484,put,agent_0.executing.0.child,Watcher,unit.000002,AGENT_STAGING_OUTPUT_PENDING,agent.staging.output.queue.input.0000
+1513661577.9895,flush,agent_0.executing.0.child,agent_0.executing.0.child.subscriber._cancel_monitor_cb,,,
+1513661577.9986,component_final,agent_0.executing.0.child,agent_0.executing.0.child.subscriber._cancel_monitor_cb,,,
+1513661577.9986,END,agent_0.executing.0.child,agent_0.executing.0.child.subscriber._cancel_monitor_cb,,,

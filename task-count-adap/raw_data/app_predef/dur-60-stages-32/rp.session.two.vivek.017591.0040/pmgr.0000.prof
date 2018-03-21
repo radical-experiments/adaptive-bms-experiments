@@ -1,0 +1,17 @@
+#time,event,comp,thread,uid,state,msg
+1519923947.2793,sync_abs,pmgr.0000,MainThread,,,localhost.localdomain:138.201.86.166:1519923947.27:1519923947.27:ntp
+1519923947.6252,component_init,pmgr.0000,MainThread,,,
+1519923947.8719,setup_done,pmgr.0000,MainThread,pmgr.0000,,
+1519923952.1152,advance,pmgr.0000,MainThread,pilot.0000,NEW,
+1519923952.6941,advance,pmgr.0000,MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,
+1519923952.6943,publish,pmgr.0000,MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,
+1519923952.6945,put,pmgr.0000,MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,pmgr.launching.queue.input.0000
+1519923952.6975,advance,pmgr.0000,pmgr.0000.subscriber._state_sub_cb,pilot.0000,PMGR_LAUNCHING,
+1519923968.1663,advance,pmgr.0000,pmgr.0000.subscriber._state_sub_cb,pilot.0000,PMGR_ACTIVE_PENDING,
+1519924015.6296,advance,pmgr.0000,pmgr.0000.idler._state_pull_cb,pilot.0000,PMGR_ACTIVE,
+1519924015.6298,publish,pmgr.0000,pmgr.0000.idler._state_pull_cb,pilot.0000,PMGR_ACTIVE,
+1519926126.4531,advance,pmgr.0000,pmgr.0000.idler._state_pull_cb,pilot.0000,CANCELED,
+1519926126.4533,publish,pmgr.0000,pmgr.0000.idler._state_pull_cb,pilot.0000,CANCELED,
+1519926126.6454,flush,pmgr.0000,MainThread,,,
+1519926129.5435,component_final,pmgr.0000,MainThread,,,
+1519926129.5435,END,pmgr.0000,MainThread,,,

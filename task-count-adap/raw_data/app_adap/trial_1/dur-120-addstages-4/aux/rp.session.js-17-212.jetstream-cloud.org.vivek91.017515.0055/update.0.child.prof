@@ -1,0 +1,15 @@
+#time,event,comp,thread,uid,state,msg
+1513355731.2688,sync_abs,update.0.child,MainThread,,,js-17-212.jetstream-cloud.org:127.0.0.1:1513355731.27:1513355731.27:sys
+1513355731.6529,component_init,update.0.child,MainThread,,,
+1513355745.3765,update_request,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,PMGR_LAUNCHING_PENDING
+1513355745.4266,update_pushed,update.0.child,update.0.child.subscriber._state_cb,,,bulk size: 1
+1513355745.4266,update_pushed,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,PMGR_LAUNCHING_PENDING
+1513355745.4268,update_request,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,PMGR_LAUNCHING
+1513355746.7308,update_pushed,update.0.child,update.0.child.idler._idle_cb,,,bulk size: 1
+1513355746.7308,update_pushed,update.0.child,update.0.child.idler._idle_cb,pilot.0000,,PMGR_LAUNCHING
+1513355772.8667,update_request,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,FAILED
+1513355772.9162,update_pushed,update.0.child,update.0.child.subscriber._state_cb,,,bulk size: 1
+1513355772.9162,update_pushed,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,FAILED
+1513355774.6154,flush,update.0.child,MainThread,,,
+1513355774.6941,component_final,update.0.child,MainThread,,,
+1513355774.6941,END,update.0.child,MainThread,,,

@@ -1,0 +1,44 @@
+#time,event,comp,thread,uid,state,msg
+1516812516.8542,sync_abs,radical.entk.wfprocessor.0000-proc,MainThread,,,js-169-212.jetstream-cloud.org:172.29.241.4:1516812516.82:1516812517.16:ntp
+1516812516.8546,wfp process started,radical.entk.wfprocessor.0000-proc,MainThread,radical.entk.wfprocessor.0000,,
+1516812516.8550,creating dequeue-thread,radical.entk.wfprocessor.0000-proc,MainThread,radical.entk.wfprocessor.0000,,
+1516812516.8552,starting dequeue-thread,radical.entk.wfprocessor.0000-proc,MainThread,radical.entk.wfprocessor.0000,,
+1516812516.8555,dequeue-thread started,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.wfprocessor.0000,,
+1516812516.8557,creating enqueue-thread,radical.entk.wfprocessor.0000-proc,MainThread,radical.entk.wfprocessor.0000,,
+1516812516.8586,starting enqueue-thread,radical.entk.wfprocessor.0000-proc,MainThread,radical.entk.wfprocessor.0000,,
+1516812516.8588,enqueue-thread started,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.wfprocessor.0000,,
+1516812516.8766,transition,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041,SCHEDULING,
+1516812516.8808,publishing obj with state SCHEDULING for sync,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041,,
+1516812516.8870,obj with state SCHEDULING synchronized,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041,,
+1516812516.8882,transition,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,SCHEDULING,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041
+1516812516.8907,publishing obj with state SCHEDULING for sync,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041
+1516812516.8948,obj with state SCHEDULING synchronized,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041
+1516812516.8977,transition,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,SCHEDULING,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812516.8985,publishing obj with state SCHEDULING for sync,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812516.9032,obj with state SCHEDULING synchronized,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812516.9055,transition,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,SCHEDULED,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812516.9072,publishing obj with state SCHEDULED for sync,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812516.9116,obj with state SCHEDULED synchronized,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812516.9130,transition,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,SCHEDULED,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041
+1516812516.9153,publishing obj with state SCHEDULED for sync,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041
+1516812516.9181,obj with state SCHEDULED synchronized,radical.entk.wfprocessor.0000-proc,enqueue-thread,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041
+1516812763.7597,transition,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,DEQUEUEING,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812763.7603,publishing obj with state DEQUEUEING for sync,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812763.7627,obj with state DEQUEUEING synchronized,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812763.7636,transition,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,DEQUEUED,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812763.7645,publishing obj with state DEQUEUED for sync,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812763.7667,obj with state DEQUEUED synchronized,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812763.7674,transition,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,DONE,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812763.7680,publishing obj with state DONE for sync,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812763.7704,obj with state DONE synchronized,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.task.js-169-212.jetstream-cloud.org.vivek91.017555.0043,,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042
+1516812763.7711,transition,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,DONE,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041
+1516812763.7720,publishing obj with state DONE for sync,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041
+1516812763.7750,obj with state DONE synchronized,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.stage.js-169-212.jetstream-cloud.org.vivek91.017555.0042,,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041
+1516812763.7767,transition,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041,DONE,
+1516812763.7781,publishing obj with state DONE for sync,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041,,
+1516812763.7814,obj with state DONE synchronized,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.pipeline.js-169-212.jetstream-cloud.org.vivek91.017555.0041,,
+1516812763.7823,start termination,radical.entk.wfprocessor.0000-proc,MainThread,radical.entk.wfprocessor.0000,,
+1516812763.7918,terminating dequeue-thread,radical.entk.wfprocessor.0000-proc,dequeue-thread,radical.entk.wfprocessor.0000,,
+1516812763.7918,termination done,radical.entk.wfprocessor.0000-proc,MainThread,radical.entk.wfprocessor.0000,,
+1516812763.7919,terminating wfp process,radical.entk.wfprocessor.0000-proc,MainThread,radical.entk.wfprocessor.0000,,
+1516812763.7919,END,radical.entk.wfprocessor.0000-proc,MainThread,,,

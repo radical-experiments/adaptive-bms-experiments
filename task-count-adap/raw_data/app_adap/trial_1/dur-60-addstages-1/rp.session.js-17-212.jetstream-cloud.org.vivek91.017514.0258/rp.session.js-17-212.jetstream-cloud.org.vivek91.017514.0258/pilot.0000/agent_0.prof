@@ -1,0 +1,24 @@
+#time,event,comp,thread,uid,state,msg
+1513270889.3019,sync_abs,agent_0,MainThread,,,smic026:204.90.41.26:1513270889.25:1513270889.25:ntp
+1513270889.3027,config_parser_start,agent_0,MainThread,rp.session.js-17-212.jetstream-cloud.org.vivek91.017514.0258,,
+1513270889.4586,config_parser_stop,agent_0,MainThread,rp.session.js-17-212.jetstream-cloud.org.vivek91.017514.0258,,
+#time,event,comp,thread,uid,state,msg
+1513270890.0980,sync_abs,agent_0,MainThread,,,smic026:204.90.41.26:1513270890.08:1513270890.08:ntp
+1513270890.0985,sync_rel,agent_0,MainThread,pilot.0000,,agent_0 start
+1513270891.5452,advance,agent_0,MainThread,pilot.0000,PMGR_ACTIVE,
+1513270891.5455,publish,agent_0,MainThread,pilot.0000,PMGR_ACTIVE,
+1513270891.5755,hostname,agent_0,MainThread,pilot.0000,,smic026
+1513270891.5755,component_init,agent_0,MainThread,,,
+1513270906.1683,get,agent_0,agent_0.idler._check_units_cb,pilot.0000,,bulk size: 1
+1513270906.1683,get,agent_0,agent_0.idler._check_units_cb,unit.000000,,
+1513270906.1694,advance,agent_0,agent_0.idler._check_units_cb,unit.000000,AGENT_STAGING_INPUT_PENDING,
+1513270906.1697,put,agent_0,agent_0.idler._check_units_cb,unit.000000,AGENT_STAGING_INPUT_PENDING,agent.staging.input.queue.input.0000
+1513270970.4097,get,agent_0,agent_0.idler._check_units_cb,pilot.0000,,bulk size: 1
+1513270970.4098,get,agent_0,agent_0.idler._check_units_cb,unit.000001,,
+1513270970.4098,advance,agent_0,agent_0.idler._check_units_cb,unit.000001,AGENT_STAGING_INPUT_PENDING,
+1513270970.4101,put,agent_0,agent_0.idler._check_units_cb,unit.000001,AGENT_STAGING_INPUT_PENDING,agent.staging.input.queue.input.0000
+1513271050.0359,cmd,agent_0,agent_0.idler._agent_command_cb,pilot.0000,,cancel_pilot : []
+1513271050.2075,flush,agent_0,agent_0.idler._check_units_cb,,,
+1513271050.2145,flush,agent_0,agent_0.idler._check_units_cb,,,
+1513271050.2252,component_final,agent_0,agent_0.idler._check_units_cb,,,
+1513271050.2252,END,agent_0,agent_0.idler._check_units_cb,,,

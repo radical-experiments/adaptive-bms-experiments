@@ -1,0 +1,48 @@
+2018-03-01 11:06:50,362: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2018-03-01 11:06:50,366: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : INFO    :                      pid: 12815
+2018-03-01 11:06:50,366: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : INFO    :                      tid: MainThread
+2018-03-01 11:06:50,366: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2018-03-01 11:06:50,366: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : INFO    : create agent_scheduling_queue - bridge - tcp://*:*
+2018-03-01 11:06:50,366: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : start process
+2018-03-01 11:06:50,369: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000: MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 11:06:50,376: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: MainThread     : INFO    : child (me) initializing
+2018-03-01 11:06:50,376: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: MainThread     : DEBUG   : parent name: agent.scheduling.queue.bridge.0000.child.watch
+2018-03-01 11:06:50,376: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: MainThread     : DEBUG   : start thread
+2018-03-01 11:06:50,376: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: DEBUG   : child name: agent.scheduling.queue.bridge.0000.child.watch.thread
+2018-03-01 11:06:50,377: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: INFO    : child (me) initializing
+2018-03-01 11:06:50,377: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 11:06:50,377: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-03-01 11:06:50,377: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: INFO    : send alive
+2018-03-01 11:06:50,377: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: INFO    : put message: [agent.scheduling.queue.bridge.0000.child.watch.thread] alive
+2018-03-01 11:06:50,378: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: MainThread     : INFO    : get msg: alive
+2018-03-01 11:06:50,378: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 11:06:50,378: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-01 11:06:50,378: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: MainThread     : DEBUG   : child thread agent.scheduling.queue.bridge.0000.child.watch started
+2018-03-01 11:06:50,378: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: MainThread     : INFO    : child (me) is alive
+2018-03-01 11:06:50,378: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: MainThread     : INFO    : send alive
+2018-03-01 11:06:50,378: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: MainThread     : INFO    : send message: [agent.scheduling.queue.bridge.0000.child] alive
+2018-03-01 11:06:50,378: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : INFO    : recv message: alive
+2018-03-01 11:06:50,379: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 11:06:50,379: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-01 11:06:50,379: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : parent name: agent.scheduling.queue.bridge.0000.watch
+2018-03-01 11:06:50,379: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : start thread
+2018-03-01 11:06:50,379: agent.scheduling.queue.bridge.0000: MainProcess                     : agent.scheduling.queue.bridge.0000.watch: DEBUG   : child name: agent.scheduling.queue.bridge.0000.watch.thread
+2018-03-01 11:06:50,380: agent.scheduling.queue.bridge.0000: MainProcess                     : agent.scheduling.queue.bridge.0000.watch: INFO    : child (me) initializing
+2018-03-01 11:06:50,380: agent.scheduling.queue.bridge.0000: MainProcess                     : agent.scheduling.queue.bridge.0000.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 11:06:50,380: agent.scheduling.queue.bridge.0000: MainProcess                     : agent.scheduling.queue.bridge.0000.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-03-01 11:06:50,380: agent.scheduling.queue.bridge.0000: MainProcess                     : agent.scheduling.queue.bridge.0000.watch: INFO    : send alive
+2018-03-01 11:06:50,380: agent.scheduling.queue.bridge.0000: MainProcess                     : agent.scheduling.queue.bridge.0000.watch: INFO    : put message: [agent.scheduling.queue.bridge.0000.watch.thread] alive
+2018-03-01 11:06:50,381: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : INFO    : get msg: alive
+2018-03-01 11:06:50,381: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 11:06:50,381: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-01 11:06:50,381: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : child thread agent.scheduling.queue.bridge.0000.watch started
+2018-03-01 11:06:50,381: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : INFO    : child is alive
+2018-03-01 11:06:50,381: agent.scheduling.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : process class started child
+2018-03-01 11:42:04,430: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: INFO    : recv message: 
+2018-03-01 11:42:04,430: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: INFO    : message received: 
+2018-03-01 11:42:04,430: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: WARNING : received empty string, parent closed ep
+2018-03-01 11:42:04,430: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: INFO    : watcher closes
+2018-03-01 11:42:04,430: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: INFO    : put message: [agent.scheduling.queue.bridge.0000.child.watch.thread] work finished
+2018-03-01 11:42:04,430: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-03-01 11:42:04,430: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-03-01 11:42:04,430: agent.scheduling.queue.bridge.0000: agent.scheduling.queue.bridge.0000.child: agent.scheduling.queue.bridge.0000.child.watch: INFO    : put message: [agent.scheduling.queue.bridge.0000.child.watch.thread] terminating

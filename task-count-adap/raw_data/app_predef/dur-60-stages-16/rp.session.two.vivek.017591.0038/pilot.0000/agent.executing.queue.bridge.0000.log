@@ -1,0 +1,48 @@
+2018-03-01 10:34:08,203: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2018-03-01 10:34:08,206: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : INFO    :                      pid: 9910
+2018-03-01 10:34:08,206: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : INFO    :                      tid: MainThread
+2018-03-01 10:34:08,206: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2018-03-01 10:34:08,207: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : INFO    : create agent_executing_queue - bridge - tcp://*:*
+2018-03-01 10:34:08,207: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : start process
+2018-03-01 10:34:08,210: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000: MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 10:34:08,217: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: MainThread     : INFO    : child (me) initializing
+2018-03-01 10:34:08,217: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: MainThread     : DEBUG   : parent name: agent.executing.queue.bridge.0000.child.watch
+2018-03-01 10:34:08,218: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: MainThread     : DEBUG   : start thread
+2018-03-01 10:34:08,218: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: DEBUG   : child name: agent.executing.queue.bridge.0000.child.watch.thread
+2018-03-01 10:34:08,218: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: INFO    : child (me) initializing
+2018-03-01 10:34:08,218: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 10:34:08,218: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-03-01 10:34:08,218: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: INFO    : send alive
+2018-03-01 10:34:08,218: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: INFO    : put message: [agent.executing.queue.bridge.0000.child.watch.thread] alive
+2018-03-01 10:34:08,219: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: MainThread     : INFO    : get msg: alive
+2018-03-01 10:34:08,219: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 10:34:08,219: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-01 10:34:08,219: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: MainThread     : DEBUG   : child thread agent.executing.queue.bridge.0000.child.watch started
+2018-03-01 10:34:08,219: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: MainThread     : INFO    : child (me) is alive
+2018-03-01 10:34:08,219: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: MainThread     : INFO    : send alive
+2018-03-01 10:34:08,220: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: MainThread     : INFO    : send message: [agent.executing.queue.bridge.0000.child] alive
+2018-03-01 10:34:08,220: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : INFO    : recv message: alive
+2018-03-01 10:34:08,220: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 10:34:08,220: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-01 10:34:08,220: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : parent name: agent.executing.queue.bridge.0000.watch
+2018-03-01 10:34:08,220: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : start thread
+2018-03-01 10:34:08,221: agent.executing.queue.bridge.0000: MainProcess                     : agent.executing.queue.bridge.0000.watch: DEBUG   : child name: agent.executing.queue.bridge.0000.watch.thread
+2018-03-01 10:34:08,221: agent.executing.queue.bridge.0000: MainProcess                     : agent.executing.queue.bridge.0000.watch: INFO    : child (me) initializing
+2018-03-01 10:34:08,221: agent.executing.queue.bridge.0000: MainProcess                     : agent.executing.queue.bridge.0000.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 10:34:08,221: agent.executing.queue.bridge.0000: MainProcess                     : agent.executing.queue.bridge.0000.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-03-01 10:34:08,221: agent.executing.queue.bridge.0000: MainProcess                     : agent.executing.queue.bridge.0000.watch: INFO    : send alive
+2018-03-01 10:34:08,221: agent.executing.queue.bridge.0000: MainProcess                     : agent.executing.queue.bridge.0000.watch: INFO    : put message: [agent.executing.queue.bridge.0000.watch.thread] alive
+2018-03-01 10:34:08,222: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : INFO    : get msg: alive
+2018-03-01 10:34:08,222: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 10:34:08,222: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-01 10:34:08,222: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : child thread agent.executing.queue.bridge.0000.watch started
+2018-03-01 10:34:08,222: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : INFO    : child is alive
+2018-03-01 10:34:08,222: agent.executing.queue.bridge.0000: MainProcess                     : MainThread     : DEBUG   : process class started child
+2018-03-01 10:51:52,779: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: INFO    : recv message: 
+2018-03-01 10:51:52,779: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: INFO    : message received: 
+2018-03-01 10:51:52,779: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: WARNING : received empty string, parent closed ep
+2018-03-01 10:51:52,779: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: INFO    : watcher closes
+2018-03-01 10:51:52,780: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: INFO    : put message: [agent.executing.queue.bridge.0000.child.watch.thread] work finished
+2018-03-01 10:51:52,780: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-03-01 10:51:52,780: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-03-01 10:51:52,780: agent.executing.queue.bridge.0000: agent.executing.queue.bridge.0000.child: agent.executing.queue.bridge.0000.child.watch: INFO    : put message: [agent.executing.queue.bridge.0000.child.watch.thread] terminating

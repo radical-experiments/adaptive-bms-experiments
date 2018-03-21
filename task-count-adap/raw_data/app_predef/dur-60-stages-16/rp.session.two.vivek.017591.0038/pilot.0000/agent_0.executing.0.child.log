@@ -1,0 +1,341 @@
+2018-03-01 10:34:10,426: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2018-03-01 10:34:10,430: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    :                      pid: 10106
+2018-03-01 10:34:10,430: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    :                      tid: MainThread
+2018-03-01 10:34:10,430: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2018-03-01 10:34:11,479: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : initialize agent_0.executing.0.child
+2018-03-01 10:34:11,485: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : cfg: {'agent_launch_method': 'SSH',
+ 'agent_name': 'agent_0',
+ 'agents': {},
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.15:46255',
+                                       'addr_out': 'tcp://204.90.41.15:40882',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.15:42479',
+                                         'addr_out': 'tcp://204.90.41.15:41714',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.15:40649',
+                                        'addr_out': 'tcp://204.90.41.15:37840',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.15:43624',
+                                           'addr_out': 'tcp://204.90.41.15:43377',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.15:34091',
+                                            'addr_out': 'tcp://204.90.41.15:42169',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.15:36038',
+                                         'addr_out': 'tcp://204.90.41.15:38311',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://204.90.41.15:38341',
+                                'addr_out': 'tcp://204.90.41.15:32861',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://204.90.41.15:43445',
+                            'addr_out': 'tcp://204.90.41.15:42871',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://204.90.41.15:41249',
+                              'addr_out': 'tcp://204.90.41.15:34461',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'cname': 'AgentExecutingComponent',
+ 'components': {},
+ 'cores': 40,
+ 'cores_per_node': 20,
+ 'count': 1,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': None,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://entk:entk@ds125126.mlab.com:25126/adbms-1',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'logdir': '.',
+ 'lrms': 'TORQUE',
+ 'lrms_info': {'agent_nodes': {},
+               'cores_per_node': 20,
+               'lm_info': {},
+               'name': 'Torque',
+               'node_list': ['smic015', 'smic030']},
+ 'max_io_loglength': 1024,
+ 'mode': 'shared',
+ 'mpi_launch_method': 'MPIEXEC',
+ 'number': 0,
+ 'owner': 'agent_0',
+ 'pilot_id': 'pilot.0000',
+ 'pilot_sandbox': '/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/',
+ 'resource_cfg': {'agent_launch_method': 'SSH',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': '20',
+                  'default_queue': 'workq',
+                  'default_remote_workdir': '/work/$USER',
+                  'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)",
+                  'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                             'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'},
+                  'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/',
+                  'label': 'xsede.supermic_ssh',
+                  'lrms': 'TORQUE',
+                  'mpi_launch_method': 'MPIEXEC',
+                  'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.',
+                  'pre_bootstrap_1': ['module load python/2.7.7-anaconda'],
+                  'python_dist': 'default',
+                  'rp_version': 'local',
+                  'schemas': ['gsissh', 'ssh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/',
+                          'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'},
+                  'task_launch_method': 'SSH',
+                  'valid_roots': ['/work'],
+                  'virtenv_mode': 'create'},
+ 'resource_sandbox': '/work/vivek91/radical.pilot.sandbox',
+ 'runtime': 1040,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.two.vivek.017591.0038',
+ 'session_sandbox': '/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'target': 'local',
+ 'task_launch_method': 'SSH',
+ 'uid': 'agent_0',
+ 'workdir': '/worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000'}
+2018-03-01 10:34:11,485: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start components: {}
+2018-03-01 10:34:11,486: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-01 10:34:11,486: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher log_pubsub
+2018-03-01 10:34:11,486: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.15:43445 for pubsub log_pubsub
+2018-03-01 10:34:11,492: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0004
+2018-03-01 10:34:11,492: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-01 10:34:11,492: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher state_pubsub
+2018-03-01 10:34:11,493: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.15:41249 for pubsub state_pubsub
+2018-03-01 10:34:11,498: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0004
+2018-03-01 10:34:11,499: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-01 10:34:11,499: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher control_pubsub
+2018-03-01 10:34:11,499: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.15:38341 for pubsub control_pubsub
+2018-03-01 10:34:11,505: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0004
+2018-03-01 10:34:11,507: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-01 10:34:11,507: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register subscriber agent_0.executing.0.child.subscriber._cancel_monitor_cb
+2018-03-01 10:34:11,507: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.15:32861 for pubsub control_pubsub
+2018-03-01 10:34:11,512: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : parent name: agent_0.executing.0.child.subscriber._cancel_monitor_cb
+2018-03-01 10:34:11,513: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start thread
+2018-03-01 10:34:11,513: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: agent_0.executing.0.child.subscriber._cancel_monitor_cb.thread
+2018-03-01 10:34:11,513: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2018-03-01 10:34:11,513: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 10:34:11,513: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-03-01 10:34:11,513: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2018-03-01 10:34:11,513: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [agent_0.executing.0.child.subscriber._cancel_monitor_cb.thread] alive
+2018-03-01 10:34:11,514: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : get msg: alive
+2018-03-01 10:34:11,514: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 10:34:11,514: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-01 10:34:11,514: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : child thread agent_0.executing.0.child.subscriber._cancel_monitor_cb started
+2018-03-01 10:34:11,515: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : agent_0.executing.0.child registered control_pubsub subscriber agent_0.executing.0.child.subscriber._cancel_monitor_cb
+2018-03-01 10:34:11,515: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-01 10:34:11,515: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.15:40882 for input agent_executing_queue
+2018-03-01 10:34:11,521: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered input agent_0.executing.0.child.work.AGENT_EXECUTING_PENDING
+2018-03-01 10:34:11,522: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register input AGENT_EXECUTING_PENDING: agent_0.executing.0.child.work.AGENT_EXECUTING_PENDING
+2018-03-01 10:34:11,522: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered worker work [AGENT_EXECUTING_PENDING]
+2018-03-01 10:34:11,522: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-01 10:34:11,522: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register output AGENT_STAGING_OUTPUT_PENDING
+2018-03-01 10:34:11,522: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.15:34091 for output agent_staging_output_queue
+2018-03-01 10:34:11,527: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered output    : AGENT_STAGING_OUTPUT_PENDING : agent_staging_output_queue : agent.staging.output.queue.input.0000
+2018-03-01 10:34:11,527: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-01 10:34:11,527: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher agent_unschedule_pubsub
+2018-03-01 10:34:11,527: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.15:36038 for pubsub agent_unschedule_pubsub
+2018-03-01 10:34:11,535: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : agent_unschedule_pubsub : agent.unschedule.pubsub.pub.0000
+2018-03-01 10:34:11,535: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-01 10:34:11,535: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register subscriber agent_0.executing.0.child.subscriber.command_cb
+2018-03-01 10:34:11,535: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.15:32861 for pubsub control_pubsub
+2018-03-01 10:34:11,541: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : parent name: agent_0.executing.0.child.subscriber.command_cb
+2018-03-01 10:34:11,542: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start thread
+2018-03-01 10:34:11,542: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : child name: agent_0.executing.0.child.subscriber.command_cb.thread
+2018-03-01 10:34:11,542: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : child (me) initializing
+2018-03-01 10:34:11,542: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 10:34:11,542: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-03-01 10:34:11,542: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : send alive
+2018-03-01 10:34:11,542: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : put message: [agent_0.executing.0.child.subscriber.command_cb.thread] alive
+2018-03-01 10:34:11,543: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : get msg: alive
+2018-03-01 10:34:11,543: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 10:34:11,543: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-01 10:34:11,543: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : child thread agent_0.executing.0.child.subscriber.command_cb started
+2018-03-01 10:34:11,543: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : agent_0.executing.0.child registered control_pubsub subscriber agent_0.executing.0.child.subscriber.command_cb
+2018-03-01 10:34:11,564: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : child (me) initializing
+2018-03-01 10:34:11,564: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : parent name: agent_0.executing.0.child.watch
+2018-03-01 10:34:11,564: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start thread
+2018-03-01 10:34:11,565: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : child name: agent_0.executing.0.child.watch.thread
+2018-03-01 10:34:11,565: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : child (me) initializing
+2018-03-01 10:34:11,565: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 10:34:11,565: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-03-01 10:34:11,565: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : send alive
+2018-03-01 10:34:11,565: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : put message: [agent_0.executing.0.child.watch.thread] alive
+2018-03-01 10:34:11,566: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : get msg: alive
+2018-03-01 10:34:11,566: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-01 10:34:11,566: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-01 10:34:11,566: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : child thread agent_0.executing.0.child.watch started
+2018-03-01 10:34:11,566: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : child (me) is alive
+2018-03-01 10:34:11,566: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : send alive
+2018-03-01 10:34:11,566: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : send message: [agent_0.executing.0.child] alive
+2018-03-01 10:34:15,895: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000000)
+2018-03-01 10:34:15,896: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:34:15,896: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:34:15,900: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000000 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000000/unit.000000.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000000
+2018-03-01 10:35:16,746: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000000 has return code 0.
+2018-03-01 10:35:16,747: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:35:16,747: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:35:21,145: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000001)
+2018-03-01 10:35:21,145: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:35:21,145: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:35:21,150: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000001 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000001/unit.000001.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000001
+2018-03-01 10:36:21,747: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000001 has return code 0.
+2018-03-01 10:36:21,747: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:36:21,747: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:36:26,487: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000002)
+2018-03-01 10:36:26,487: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:36:26,487: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:36:26,491: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000002 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000002/unit.000002.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000002
+2018-03-01 10:37:27,044: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000002 has return code 0.
+2018-03-01 10:37:27,044: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:37:27,044: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:37:31,735: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000003)
+2018-03-01 10:37:31,735: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:37:31,736: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:37:31,740: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000003 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000003/unit.000003.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000003
+2018-03-01 10:38:32,337: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000003 has return code 0.
+2018-03-01 10:38:32,337: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:38:32,337: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:38:35,953: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000004)
+2018-03-01 10:38:35,953: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:38:35,953: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:38:35,958: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000004 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000004/unit.000004.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000004
+2018-03-01 10:39:36,628: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000004 has return code 0.
+2018-03-01 10:39:36,628: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:39:36,628: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:39:41,209: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000005)
+2018-03-01 10:39:41,209: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:39:41,209: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:39:41,214: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000005 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000005/unit.000005.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000005
+2018-03-01 10:40:41,721: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000005 has return code 0.
+2018-03-01 10:40:41,722: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:40:41,722: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:40:46,462: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000006)
+2018-03-01 10:40:46,462: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:40:46,462: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:40:46,466: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000006 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000006/unit.000006.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000006
+2018-03-01 10:41:47,012: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000006 has return code 0.
+2018-03-01 10:41:47,013: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:41:47,013: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:41:50,689: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000007)
+2018-03-01 10:41:50,689: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:41:50,689: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:41:50,693: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000007 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000007/unit.000007.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000007
+2018-03-01 10:42:51,200: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000007 has return code 0.
+2018-03-01 10:42:51,200: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:42:51,200: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:42:55,941: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000008)
+2018-03-01 10:42:55,941: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:42:55,941: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:42:55,945: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000008 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000008/unit.000008.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000008
+2018-03-01 10:43:56,489: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000008 has return code 0.
+2018-03-01 10:43:56,490: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:43:56,490: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:44:01,197: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000009)
+2018-03-01 10:44:01,197: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:44:01,198: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:44:01,201: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000009 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000009/unit.000009.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000009
+2018-03-01 10:45:01,779: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000009 has return code 0.
+2018-03-01 10:45:01,779: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:45:01,780: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:45:05,416: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000010)
+2018-03-01 10:45:05,416: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:45:05,416: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:45:05,421: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000010 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000010/unit.000010.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000010
+2018-03-01 10:46:05,968: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000010 has return code 0.
+2018-03-01 10:46:05,968: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:46:05,969: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:46:09,632: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000011)
+2018-03-01 10:46:09,632: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:46:09,632: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:46:09,637: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000011 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000011/unit.000011.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000011
+2018-03-01 10:47:10,158: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000011 has return code 0.
+2018-03-01 10:47:10,159: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:47:10,159: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:47:13,847: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000012)
+2018-03-01 10:47:13,847: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:47:13,848: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:47:13,852: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000012 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000012/unit.000012.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000012
+2018-03-01 10:48:14,350: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000012 has return code 0.
+2018-03-01 10:48:14,350: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:48:14,350: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:48:19,108: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000013)
+2018-03-01 10:48:19,108: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:48:19,108: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:48:19,112: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000013 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000013/unit.000013.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000013
+2018-03-01 10:49:19,643: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000013 has return code 0.
+2018-03-01 10:49:19,643: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:49:19,644: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:49:24,359: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000014)
+2018-03-01 10:49:24,359: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:49:24,359: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:49:24,364: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000014 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000014/unit.000014.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000014
+2018-03-01 10:50:24,938: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000014 has return code 0.
+2018-03-01 10:50:24,939: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:50:24,939: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:50:29,621: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000015)
+2018-03-01 10:50:29,621: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-01 10:50:29,621: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-03-01 10:50:29,625: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000015 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic015  /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000015/unit.000015.sh in /worka/work/vivek91/radical.pilot.sandbox/rp.session.two.vivek.017591.0038/pilot.0000/unit.000015
+2018-03-01 10:51:30,134: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000015 has return code 0.
+2018-03-01 10:51:30,135: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-01 10:51:30,135: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-01 10:51:49,423: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : command_cb [control_pubsub]: {'cmd': 'terminate', 'arg': None}
+2018-03-01 10:51:49,423: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : got termination command
+2018-03-01 10:51:49,592: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : stop agent_0.executing.0.child (10106 : 10106 : agent_0.executing.0.child.subscriber._cancel_monitor_cb) [radical.pilot.utils.component.Popen._cancel_monitor_cb]
+2018-03-01 10:51:49,614: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : parent stops child  10106 -> 10106 [agent_0.executing.0.child]
+2018-03-01 10:51:49,615: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : send message: [agent_0.executing.0.child] STOP
+2018-03-01 10:51:49,615: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_common()
+2018-03-01 10:51:49,615: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.executing.0.child unregister publisher log_pubsub
+2018-03-01 10:51:49,616: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher log_pubsub
+2018-03-01 10:51:49,616: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.executing.0.child unregister publisher state_pubsub
+2018-03-01 10:51:49,617: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher state_pubsub
+2018-03-01 10:51:49,618: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.executing.0.child unregister publisher control_pubsub
+2018-03-01 10:51:49,619: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher control_pubsub
+2018-03-01 10:51:49,619: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : agent_0.executing.0.child close prof
+2018-03-01 10:51:49,625: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.executing.0.child.subscriber._cancel_monitor_cb - do not join
+2018-03-01 10:51:49,625: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : child calls stop()
+2018-03-01 10:51:49,626: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.executing.0.child.subscriber._cancel_monitor_cb - do not join
+2018-03-01 10:51:49,626: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.executing.0.child.subscriber._cancel_monitor_cb - do not join
+2018-03-01 10:51:49,626: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-03-01 10:51:49,626: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [agent_0.executing.0.child.subscriber._cancel_monitor_cb.thread] terminating
+2018-03-01 10:51:49,646: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: WARNING : %s died
+2018-03-01 10:51:49,646: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : watcher closes
+2018-03-01 10:51:49,646: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : put message: [agent_0.executing.0.child.watch.thread] work finished
+2018-03-01 10:51:49,646: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-03-01 10:51:49,646: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-03-01 10:51:49,646: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : put message: [agent_0.executing.0.child.watch.thread] terminating
+2018-03-01 10:51:49,714: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_finalize_common()
+2018-03-01 10:51:49,714: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : publisher log_pubsub is not registered
+2018-03-01 10:51:49,715: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : publisher state_pubsub is not registered
+2018-03-01 10:51:49,715: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : publisher control_pubsub is not registered
+2018-03-01 10:51:49,715: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : agent_0.executing.0.child close prof
+2018-03-01 10:51:49,715: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : send message: [agent_0.executing.0.child] terminating
+2018-03-01 10:51:49,715: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2018-03-01 10:51:49,715: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : parent stops child
+2018-03-01 10:51:49,715: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-01 10:51:49,715: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : parent stops child
+2018-03-01 10:51:49,715: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-01 10:51:49,717: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-03-01 10:51:49,717: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : put message: [agent_0.executing.0.child.subscriber.command_cb.thread] terminating

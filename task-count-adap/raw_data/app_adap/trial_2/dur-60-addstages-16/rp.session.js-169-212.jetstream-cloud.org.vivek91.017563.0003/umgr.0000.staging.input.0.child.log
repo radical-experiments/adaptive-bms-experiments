@@ -1,0 +1,278 @@
+2018-01-31 20:56:49,991: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : python.interpreter   version: 2.7.6 (default, Jun 22 2015, 17:58:13) [GCC 4.8.2]
+2018-01-31 20:56:49,992: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    :                      pid: 15531
+2018-01-31 20:56:49,992: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    :                      tid: MainThread
+2018-01-31 20:56:49,992: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2018-01-31 20:56:50,130: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : initialize umgr.0000.staging.input.0.child
+2018-01-31 20:56:50,132: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : cfg: {'agents': {},
+ u'bridges': {u'control_pubsub': {'addr_in': 'tcp://172.29.241.4:38858',
+                                  'addr_out': 'tcp://172.29.241.4:60850',
+                                  u'bulk_size': 0,
+                                  u'log_level': u'debug',
+                                  u'stall_hwm': 1},
+              u'log_pubsub': {'addr_in': 'tcp://172.29.241.4:57094',
+                              'addr_out': 'tcp://172.29.241.4:46916',
+                              u'bulk_size': 0,
+                              u'log_level': u'debug',
+                              u'stall_hwm': 1},
+              u'state_pubsub': {'addr_in': 'tcp://172.29.241.4:45209',
+                                'addr_out': 'tcp://172.29.241.4:43938',
+                                u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1},
+              u'umgr_reschedule_pubsub': {'addr_in': 'tcp://172.29.241.4:37756',
+                                          'addr_out': 'tcp://172.29.241.4:60115',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1},
+              u'umgr_scheduling_queue': {'addr_in': 'tcp://172.29.241.4:35396',
+                                         'addr_out': 'tcp://172.29.241.4:51427',
+                                         u'bulk_size': 0,
+                                         u'log_level': u'debug',
+                                         u'stall_hwm': 1},
+              u'umgr_staging_input_queue': {'addr_in': 'tcp://172.29.241.4:60860',
+                                            'addr_out': 'tcp://172.29.241.4:33708',
+                                            u'bulk_size': 0,
+                                            u'log_level': u'debug',
+                                            u'stall_hwm': 1},
+              u'umgr_staging_output_queue': {'addr_in': 'tcp://172.29.241.4:40300',
+                                             'addr_out': 'tcp://172.29.241.4:56406',
+                                             u'bulk_size': 0,
+                                             u'log_level': u'debug',
+                                             u'stall_hwm': 1},
+              u'umgr_unschedule_pubsub': {'addr_in': 'tcp://172.29.241.4:60335',
+                                          'addr_out': 'tcp://172.29.241.4:41330',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1}},
+ u'bulk_collection_size': 100,
+ u'bulk_collection_time': 1.0,
+ 'cname': u'UMGRStagingInputComponent',
+ u'components': {},
+ u'count': 1,
+ u'db_poll_sleeptime': 1.0,
+ 'number': 0,
+ 'owner': 'umgr.0000',
+ u'scheduler': u'round_robin',
+ 'uid': 'umgr.0000'}
+2018-01-31 20:56:50,132: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : start components: {}
+2018-01-31 20:56:50,132: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-01-31 20:56:50,132: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register publisher log_pubsub
+2018-01-31 20:56:50,132: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://172.29.241.4:57094 for pubsub log_pubsub
+2018-01-31 20:56:50,134: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0003
+2018-01-31 20:56:50,134: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-01-31 20:56:50,134: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register publisher state_pubsub
+2018-01-31 20:56:50,134: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://172.29.241.4:45209 for pubsub state_pubsub
+2018-01-31 20:56:50,135: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0003
+2018-01-31 20:56:50,135: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-01-31 20:56:50,136: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register publisher control_pubsub
+2018-01-31 20:56:50,136: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://172.29.241.4:38858 for pubsub control_pubsub
+2018-01-31 20:56:50,137: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0003
+2018-01-31 20:56:50,137: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-01-31 20:56:50,137: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register subscriber umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb
+2018-01-31 20:56:50,137: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://172.29.241.4:60850 for pubsub control_pubsub
+2018-01-31 20:56:50,139: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : parent name: umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb
+2018-01-31 20:56:50,139: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : start thread
+2018-01-31 20:56:50,139: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb.thread
+2018-01-31 20:56:50,139: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2018-01-31 20:56:50,139: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-01-31 20:56:50,139: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-01-31 20:56:50,140: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2018-01-31 20:56:50,140: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb.thread] alive
+2018-01-31 20:56:50,140: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : get msg: alive
+2018-01-31 20:56:50,140: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-01-31 20:56:50,141: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-01-31 20:56:50,141: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : child thread umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb started
+2018-01-31 20:56:50,141: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : umgr.0000.staging.input.0.child registered control_pubsub subscriber umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb
+2018-01-31 20:56:50,141: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-01-31 20:56:50,141: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://172.29.241.4:33708 for input umgr_staging_input_queue
+2018-01-31 20:56:50,142: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered input umgr.0000.staging.input.0.child.work.UMGR_STAGING_INPUT_PENDING
+2018-01-31 20:56:50,142: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register input UMGR_STAGING_INPUT_PENDING: umgr.0000.staging.input.0.child.work.UMGR_STAGING_INPUT_PENDING
+2018-01-31 20:56:50,142: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered worker work [UMGR_STAGING_INPUT_PENDING]
+2018-01-31 20:56:50,142: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-01-31 20:56:50,142: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register output AGENT_STAGING_INPUT_PENDING
+2018-01-31 20:56:50,142: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-01-31 20:56:50,142: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-01-31 20:56:50,142: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://172.29.241.4:60850 for pubsub control_pubsub
+2018-01-31 20:56:50,144: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : parent name: umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-01-31 20:56:50,144: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : start thread
+2018-01-31 20:56:50,144: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   : child name: umgr.0000.staging.input.0.child.subscriber._base_command_cb.thread
+2018-01-31 20:56:50,145: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: INFO    : child (me) initializing
+2018-01-31 20:56:50,145: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-01-31 20:56:50,145: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-01-31 20:56:50,145: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: INFO    : send alive
+2018-01-31 20:56:50,146: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: INFO    : put message: [umgr.0000.staging.input.0.child.subscriber._base_command_cb.thread] alive
+2018-01-31 20:56:50,147: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : get msg: alive
+2018-01-31 20:56:50,147: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-01-31 20:56:50,147: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-01-31 20:56:50,147: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : child thread umgr.0000.staging.input.0.child.subscriber._base_command_cb started
+2018-01-31 20:56:50,147: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : umgr.0000.staging.input.0.child registered control_pubsub subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-01-31 20:56:50,147: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : child (me) initializing
+2018-01-31 20:56:50,147: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : parent name: umgr.0000.staging.input.0.child.watch
+2018-01-31 20:56:50,147: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : start thread
+2018-01-31 20:56:50,147: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : child name: umgr.0000.staging.input.0.child.watch.thread
+2018-01-31 20:56:50,148: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : child (me) initializing
+2018-01-31 20:56:50,148: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-01-31 20:56:50,148: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-01-31 20:56:50,148: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : send alive
+2018-01-31 20:56:50,148: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : put message: [umgr.0000.staging.input.0.child.watch.thread] alive
+2018-01-31 20:56:50,149: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : get msg: alive
+2018-01-31 20:56:50,149: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-01-31 20:56:50,149: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-01-31 20:56:50,149: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : child thread umgr.0000.staging.input.0.child.watch started
+2018-01-31 20:56:50,149: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : child (me) is alive
+2018-01-31 20:56:50,149: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : send alive
+2018-01-31 20:56:50,149: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : send message: [umgr.0000.staging.input.0.child] alive
+2018-01-31 20:56:52,820: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   :  === add pilot pilot.0000
+2018-01-31 20:56:52,821: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : command ignored: add_pilots
+2018-01-31 20:56:52,867: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000000)
+2018-01-31 20:56:52,867: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 20:56:52,868: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000000/']}
+2018-01-31 20:56:52,868: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 20:56:52,868: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 20:56:52,868: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 20:56:52,868: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 20:56:52,868: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000000 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 20:57:58,740: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000001)
+2018-01-31 20:57:58,742: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 20:57:58,745: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000001/']}
+2018-01-31 20:57:58,745: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 20:57:58,745: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 20:57:58,745: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 20:57:58,745: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 20:57:58,745: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000001 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 20:59:03,613: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000002)
+2018-01-31 20:59:03,613: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 20:59:03,614: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000002/']}
+2018-01-31 20:59:03,614: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 20:59:03,614: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 20:59:03,614: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 20:59:03,614: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 20:59:03,614: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000002 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:00:08,441: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000003)
+2018-01-31 21:00:08,442: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 21:00:08,442: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000003/']}
+2018-01-31 21:00:08,442: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 21:00:08,442: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 21:00:08,443: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 21:00:08,444: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 21:00:08,446: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000003 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:01:14,683: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000004)
+2018-01-31 21:01:14,684: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 21:01:14,684: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000004/']}
+2018-01-31 21:01:14,684: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 21:01:14,684: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 21:01:14,684: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 21:01:14,685: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 21:01:14,685: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000004 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:02:18,486: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000005)
+2018-01-31 21:02:18,486: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 21:02:18,486: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000005/']}
+2018-01-31 21:02:18,486: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 21:02:18,486: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 21:02:18,486: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 21:02:18,486: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 21:02:18,486: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000005 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:03:23,290: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000006)
+2018-01-31 21:03:23,291: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 21:03:23,291: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000006/']}
+2018-01-31 21:03:23,291: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 21:03:23,291: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 21:03:23,292: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 21:03:23,292: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 21:03:23,292: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000006 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:04:28,577: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000007)
+2018-01-31 21:04:28,577: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 21:04:28,578: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000007/']}
+2018-01-31 21:04:28,578: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 21:04:28,578: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 21:04:28,578: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 21:04:28,578: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 21:04:28,578: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000007 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:05:32,851: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000008)
+2018-01-31 21:05:32,851: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 21:05:32,851: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000008/']}
+2018-01-31 21:05:32,852: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 21:05:32,852: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 21:05:32,852: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 21:05:32,852: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 21:05:32,852: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000008 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:06:38,173: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000009)
+2018-01-31 21:06:38,173: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 21:06:38,174: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000009/']}
+2018-01-31 21:06:38,174: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 21:06:38,174: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 21:06:38,174: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 21:06:38,174: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 21:06:38,175: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000009 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:07:43,539: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000010)
+2018-01-31 21:07:43,539: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 21:07:43,540: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000010/']}
+2018-01-31 21:07:43,540: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 21:07:43,540: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 21:07:43,540: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 21:07:43,540: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 21:07:43,540: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000010 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:08:49,949: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000011)
+2018-01-31 21:08:49,949: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 21:08:49,949: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000011/']}
+2018-01-31 21:08:49,949: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 21:08:49,949: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 21:08:49,950: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 21:08:49,950: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 21:08:49,950: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000011 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:09:55,254: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000012)
+2018-01-31 21:09:55,254: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 21:09:55,257: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000012/']}
+2018-01-31 21:09:55,257: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 21:09:55,257: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 21:09:55,257: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 21:09:55,257: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 21:09:55,258: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000012 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:10:59,591: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000013)
+2018-01-31 21:10:59,591: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 21:10:59,592: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000013/']}
+2018-01-31 21:10:59,592: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 21:10:59,592: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 21:10:59,592: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 21:10:59,592: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 21:10:59,592: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000013 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:12:03,793: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000014)
+2018-01-31 21:12:03,794: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 21:12:03,795: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000014/']}
+2018-01-31 21:12:03,795: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 21:12:03,795: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 21:12:03,795: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 21:12:03,796: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 21:12:03,796: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000014 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:13:08,059: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000015)
+2018-01-31 21:13:08,059: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-01-31 21:13:08,060: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003/pilot.0000//unit.000015/']}
+2018-01-31 21:13:08,060: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-01-31 21:13:08,060: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-169-212.jetstream-cloud.org.vivek91.017563.0003 [<class 'saga.url.Url'>]
+2018-01-31 21:13:08,060: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 1 >= 128 ?
+2018-01-31 21:13:08,060: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-01-31 21:13:08,060: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000015 [AGENT_STAGING_INPUT_PENDING]
+2018-01-31 21:14:29,132: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-01-31 21:14:29,132: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : unregistered subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-01-31 21:14:29,132: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_common()
+2018-01-31 21:14:29,132: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister publisher log_pubsub
+2018-01-31 21:14:29,133: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : unregistered publisher log_pubsub
+2018-01-31 21:14:29,133: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister publisher state_pubsub
+2018-01-31 21:14:29,134: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : unregistered publisher state_pubsub
+2018-01-31 21:14:29,134: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister publisher control_pubsub
+2018-01-31 21:14:29,135: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : unregistered publisher control_pubsub
+2018-01-31 21:14:29,135: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : umgr.0000.staging.input.0.child close prof
+2018-01-31 21:14:29,153: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : send message: [umgr.0000.staging.input.0.child] terminating
+2018-01-31 21:14:29,272: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : watcher closes
+2018-01-31 21:14:29,272: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : put message: [umgr.0000.staging.input.0.child.watch.thread] work finished
+2018-01-31 21:14:29,272: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-01-31 21:14:29,272: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-01-31 21:14:29,272: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : put message: [umgr.0000.staging.input.0.child.watch.thread] terminating
+2018-01-31 21:14:29,317: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child
+2018-01-31 21:14:29,317: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-01-31 21:14:29,318: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-01-31 21:14:29,318: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: INFO    : put message: [umgr.0000.staging.input.0.child.subscriber._base_command_cb.thread] terminating
+2018-01-31 21:14:29,319: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child
+2018-01-31 21:14:29,319: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-01-31 21:14:29,320: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-01-31 21:14:29,320: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb.thread] terminating
