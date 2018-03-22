@@ -1,0 +1,62 @@
+2018-03-21 16:29:20,765: control.pubsub.bridge.0000: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 20 2017, 18:23:56) [GCC 5.4.0 20160609]
+2018-03-21 16:29:20,765: control.pubsub.bridge.0000: MainProcess                     : MainThread     : INFO    :                      pid: 10970
+2018-03-21 16:29:20,765: control.pubsub.bridge.0000: MainProcess                     : MainThread     : INFO    :                      tid: MainThread
+2018-03-21 16:29:20,765: control.pubsub.bridge.0000: MainProcess                     : MainThread     : INFO    : radical.pilot        version: 0.47.1
+2018-03-21 16:29:20,765: control.pubsub.bridge.0000: MainProcess                     : MainThread     : INFO    : create control_pubsub - bridge - tcp://*:*
+2018-03-21 16:29:20,767: control.pubsub.bridge.0000: MainProcess                     : MainThread     : DEBUG   : start process
+2018-03-21 16:29:20,771: control.pubsub.bridge.0000: control.pubsub.bridge.0000      : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-21 16:29:20,773: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: MainThread     : INFO    : child (me) initializing
+2018-03-21 16:29:20,773: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: MainThread     : DEBUG   : parent name: control.pubsub.bridge.0000.child.watch
+2018-03-21 16:29:20,773: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: MainThread     : DEBUG   : start thread
+2018-03-21 16:29:20,774: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: DEBUG   : child name: control.pubsub.bridge.0000.child.watch.thread
+2018-03-21 16:29:20,774: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: INFO    : child (me) initializing
+2018-03-21 16:29:20,774: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-03-21 16:29:20,774: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-03-21 16:29:20,774: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: INFO    : send alive
+2018-03-21 16:29:20,774: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: INFO    : put message: [control.pubsub.bridge.0000.child.watch.thread] alive
+2018-03-21 16:29:20,775: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: MainThread     : INFO    : get msg: alive
+2018-03-21 16:29:20,775: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-21 16:29:20,775: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-21 16:29:20,775: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: MainThread     : DEBUG   : child thread control.pubsub.bridge.0000.child.watch started
+2018-03-21 16:29:20,775: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: MainThread     : INFO    : child (me) is alive
+2018-03-21 16:29:20,775: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: MainThread     : INFO    : send alive
+2018-03-21 16:29:20,775: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: MainThread     : INFO    : send message: [control.pubsub.bridge.0000.child] alive
+2018-03-21 16:29:20,775: control.pubsub.bridge.0000: MainProcess                     : MainThread     : INFO    : recv message: alive
+2018-03-21 16:29:20,776: control.pubsub.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-21 16:29:20,777: control.pubsub.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-21 16:29:20,777: control.pubsub.bridge.0000: MainProcess                     : MainThread     : DEBUG   : parent name: control.pubsub.bridge.0000.watch
+2018-03-21 16:29:20,777: control.pubsub.bridge.0000: MainProcess                     : MainThread     : DEBUG   : start thread
+2018-03-21 16:29:20,777: control.pubsub.bridge.0000: MainProcess                     : control.pubsub.bridge.0000.watch: DEBUG   : child name: control.pubsub.bridge.0000.watch.thread
+2018-03-21 16:29:20,777: control.pubsub.bridge.0000: MainProcess                     : control.pubsub.bridge.0000.watch: INFO    : child (me) initializing
+2018-03-21 16:29:20,777: control.pubsub.bridge.0000: MainProcess                     : control.pubsub.bridge.0000.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-03-21 16:29:20,777: control.pubsub.bridge.0000: MainProcess                     : control.pubsub.bridge.0000.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-03-21 16:29:20,777: control.pubsub.bridge.0000: MainProcess                     : control.pubsub.bridge.0000.watch: INFO    : send alive
+2018-03-21 16:29:20,777: control.pubsub.bridge.0000: MainProcess                     : control.pubsub.bridge.0000.watch: INFO    : put message: [control.pubsub.bridge.0000.watch.thread] alive
+2018-03-21 16:29:20,778: control.pubsub.bridge.0000: MainProcess                     : MainThread     : INFO    : get msg: alive
+2018-03-21 16:29:20,778: control.pubsub.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-21 16:29:20,778: control.pubsub.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-21 16:29:20,779: control.pubsub.bridge.0000: MainProcess                     : MainThread     : DEBUG   : child thread control.pubsub.bridge.0000.watch started
+2018-03-21 16:29:20,779: control.pubsub.bridge.0000: MainProcess                     : MainThread     : INFO    : child is alive
+2018-03-21 16:29:20,779: control.pubsub.bridge.0000: MainProcess                     : MainThread     : DEBUG   : process class started child
+2018-03-21 17:09:18,745: control.pubsub.bridge.0000: MainProcess                     : MainThread     : INFO    : parent stops child  10970 -> 11093 [control.pubsub.bridge.0000]
+2018-03-21 17:09:18,745: control.pubsub.bridge.0000: MainProcess                     : MainThread     : INFO    : send message: [control.pubsub.bridge.0000] STOP
+2018-03-21 17:09:18,745: control.pubsub.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-21 17:09:18,745: control.pubsub.bridge.0000: MainProcess                     : MainThread     : INFO    : parent stops child
+2018-03-21 17:09:18,745: control.pubsub.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-21 17:09:18,745: control.pubsub.bridge.0000: MainProcess                     : MainThread     : DEBUG   : ru_finalize_common (NOOP)
+2018-03-21 17:09:18,778: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: INFO    : recv message: STOP
+2018-03-21 17:09:18,778: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: INFO    : message received: STOP
+2018-03-21 17:09:18,778: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: INFO    : STOP received: STOP
+2018-03-21 17:09:18,778: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: INFO    : watcher closes
+2018-03-21 17:09:18,778: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: INFO    : put message: [control.pubsub.bridge.0000.child.watch.thread] work finished
+2018-03-21 17:09:18,779: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-03-21 17:09:18,779: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-03-21 17:09:18,779: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: control.pubsub.bridge.0000.child.watch: INFO    : put message: [control.pubsub.bridge.0000.child.watch.thread] terminating
+2018-03-21 17:09:18,832: control.pubsub.bridge.0000: MainProcess                     : control.pubsub.bridge.0000.watch: INFO    : watcher closes
+2018-03-21 17:09:18,832: control.pubsub.bridge.0000: MainProcess                     : control.pubsub.bridge.0000.watch: INFO    : put message: [control.pubsub.bridge.0000.watch.thread] work finished
+2018-03-21 17:09:18,833: control.pubsub.bridge.0000: MainProcess                     : control.pubsub.bridge.0000.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-03-21 17:09:18,833: control.pubsub.bridge.0000: MainProcess                     : control.pubsub.bridge.0000.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-03-21 17:09:18,833: control.pubsub.bridge.0000: MainProcess                     : control.pubsub.bridge.0000.watch: INFO    : put message: [control.pubsub.bridge.0000.watch.thread] terminating
+2018-03-21 17:09:19,705: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: MainThread     : DEBUG   : ru_finalize_child (NOOP)
+2018-03-21 17:09:19,705: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: MainThread     : INFO    : send message: [control.pubsub.bridge.0000.child] terminating
+2018-03-21 17:09:19,705: control.pubsub.bridge.0000: control.pubsub.bridge.0000.child: MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
