@@ -80,4 +80,4 @@ for g in gens:
         error_v = np.append(error_v, [mbar_error], axis=0)
         second = 2.0
 
-    np.savetxt("results.csv", [times, mbar_v * factor, error_v * factor], delimiter=",", fmt="%10.3f")
+    np.savetxt("../raw_data/results.csv", [times, mbar_v * factor, error_v * factor], delimiter=",", fmt="%10.3f")
