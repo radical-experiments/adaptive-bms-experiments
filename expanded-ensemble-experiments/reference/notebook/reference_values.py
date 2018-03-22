@@ -50,7 +50,7 @@ average *= conv_factor
 std *= conv_factor
 
 # writing to file
-write_file = '../raw_data/results.txt'
+write_file = '../raw_data/results_average.txt'
 outfile = open(write_file, 'w')
 outfile.write(str(average) + '\n')
 outfile.write(str(std) + '\n')
